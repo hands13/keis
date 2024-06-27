@@ -29,8 +29,9 @@
     <!-- 공통 CSS -->
     <!-- 공통 퍼블리싱UI JS -->
      <script src="./resources/ui.js"></script>
+     <script src="./resources/jquery-3.7.1.slim.min.js"></script>
 
-    <title>이력서/자기소개서 관리</title>
+    <title>디지털이력서 상세보기</title>
 
     <script type="text/javascript">
       var _contextPath = "/wk";
@@ -239,6 +240,13 @@
       </section>
       <script type="text/javascript">
         $(document).ready(function () {
+          // $(".filp_btn").click(function(){
+          //   var index = $(".filp_btn").index(this);
+          //   console.log(index);
+          //     $(".badge_list_deck .badge_box").toggleClass("flip");
+          //   });
+
+
           $("#btn_footeropenPopClose")
             .off("click")
             .on("click", function () {
@@ -337,6 +345,9 @@
           }
 
           $(document).ready(function () {
+
+        
+
             var showSearchFlag = "";
 
             if (!ComLib.isEmpty(showSearchFlag)) {
@@ -2049,11 +2060,7 @@
                       >나의전자지갑</a
                     >
                   </li>
-                  <li>
-                    <a
-                      href="내일배움카드.html">내일배움카드</a
-                    >
-                  </li>
+
                   <li>
                     <a
                       href="증명서관리.html"
@@ -2064,8 +2071,8 @@
 
                   <li>
                     <a
-                      href="디지털배지관리.html"
-                      
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000037&#39;, &#39;/p/b/1112/retrieveEmailAplentHistList.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
                       >디지털배지 관리</a
                     >
                   </li>
@@ -2347,1105 +2354,1265 @@
           <!-- //#lnb -->
 
           <div class="cont_wrap">
-            <script
-              type="text/javascript"
-              src="./resources/hp_wk_common.js"
-            ></script>
-            <link rel="stylesheet" href="./resources/wk-common.css" />
 
+				
+
+
+
+
+
+
+
+
+
+
+            <script type="text/javascript" src="./resources/hp_wk_common.js"></script>
+            <link rel="stylesheet" href="./resources/wk-common.css">
+            
             <div class="cont_wrap_area">
-              <!-- title -->
-              <div class="sub_tl">
-                <h2 class="h2_sb">이력서/자기소개서 관리</h2>
-              </div>
-
-              <!-- S :안내 영역 -->
-
-              <!-- //notice -->
-
-              <!-- E :안내 영역 -->
-
-              <div class="box_section">
-                <!--	<h2 class="t2_sb">구직신청 안내
-			<span class="sub_txt ml08">반드시 <span class="point_color02">구직신청</span>을 하셔야 입사지원, 취업알선을 받으실 수 있습니다.</span>
-		</h2>z
-
-		<div class="mt24" style="border:1px solid #ddd;height:190px">(추후 자료제공 예정)</div>-->
-
-                <div class="box_border_type type_pd24 flex_s mt24">
-                  <div>
-                    <strong class="b1_sb"
-                      >AI일자리추천 서비스로 빠른 취업!</strong
-                    >
-                    <p class="b1_r">
-                      AI가 회원님만을 위한 추천일자리를 24시간 이내 분석하여
-                      제공합니다.
-                    </p>
-                    <span class="sub_txt point_color02"
-                      >*추천일자리는 기본이력서를 기준으로 제공됩니다.</span
-                    >
+                
+                
+                
+                <!-- title -->
+                <div class="sub_tl">
+                    <h2 class="h2_sb">디지털이력서 상세보기</h2>
+                </div>
+            
+                
+                
+            
+                
+                
+            
+                
+            
+                
+            
+                
+            
+                <!-- S :안내 영역 -->
+                
+                    
+                        
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- //notice -->
+            
+            
+            
+                
+                <!-- E :안내 영역 -->
+              <div class="box_btn_wrap flex_al_s">
+                <div class="cell">
+                  <a href="이력서.html" class="btn big type02">이전</a>
+                </div>
+                <div class="btn_box">
+                  <div class="cell">
+                    <a href="#" class="btn big type01 printResume" data-preview_yn="Y">이력서 제출</a>
                   </div>
-
-                  <a
-                    href="https://m.work24.go.kr/cm/b/a/0110/selectMyRecommand.do"
-                    class="btn medium type02"
-                    >AI일자리추천 확인하기</a
-                  >
                 </div>
               </div>
-
-              <!-- tableArea -->
-              <div class="box_section">
-                <div class="box_table_wrap">
-                  <div class="box_table_hd">
-                    <h3 class="t2_sb">나의 이력서</h3>
-
-                    <div class="box_btn_wrap flex_al_l type02">
-                      <div class="cell">
-                        <a
-                          id="resumeDetailPopup"
-                          href="디지털이력서발급.html"
-                          class="btn medium fill type01"
-                          >디지털이력서 발급
-                        </a>
-                        <a
-                          id="resumeDetailPopup"
-                          href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
-                          class="btn medium fill type01"
-                          >이력서+자기소개서 미리보기
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- table : l_type02 -->
-                  <table class="box_table">
-                    <caption>
-                      선택,이력서 제목,관리,최종수정일을(를) 제공하는 표
-                    </caption>
-
+              <div class="title_box">
+                <h3 class="t2_sb">홍길동님의 이력서 입니다.</h3>
+              </div>
+            
+              <div class="tit_mark_01">
+                <h3 class="t2_sb">기본정보</h3>
+              </div>
+              <div class="box_table_wrap write">
+                <div class="box_table_hd">
+                  <h3 class="t3_sb type_dot">인적사항</h3>
+                </div>
+                <!-- table -->
+                <div class="box_flex_wrap">
+                  
+                  <table class="box_table"><caption>성명,성별, 출생년도,주소,일반전화,휴대전화,이메일을(를) 제공하는 표</caption>
+                    
                     <colgroup>
-                      <col style="width: 10%" />
-                      <col />
-                      <col style="width: 25%" />
-                      <col style="width: 15%" />
+                      <col style="width:18%">
+                      <col>
+                      <col style="width:18%">
+                      <col>
                     </colgroup>
-                    <thead>
-                      <tr>
-                        <th scope="col">선택</th>
-                        <th scope="col">이력서 제목</th>
-                        <th scope="col">관리</th>
-                        <th scope="col">최종수정일</th>
-                      </tr>
-                    </thead>
                     <tbody>
-                      <tr>
-                        <td>
-                          <div class="box_radio-group">
-                            <span>
-                              <input
-                                id="basicResumeYn1"
-                                type="radio"
-                                name="basicResumeYn"
-                                value="1"
-                              />
-                              <label for="basicResumeYn1"
-                                ><span class="blind">선택</span></label
-                              >
-                              <input type="hidden" name="baseFlag" value="Y" />
-                              <input type="hidden" name="radioIdx" value="0" />
-                              <input
-                                type="hidden"
-                                name="resumeRegTpCd"
-                                value=""
-                              />
-                              <input type="hidden" name="regionChk" value="N" />
-                            </span>
-                          </div>
-                        </td>
-                        <td class="link">
-                          <div class="box_flex_al">
-                            <span class="tbl_label">기본 이력서</span>
-                            <a
-                              href="https://m.work24.go.kr/wk/p/a/1200/retrieveResumeDetail.do?tmplSeqno=1"
-                              class="btn_txt type2"
-                            >
-                              홍길동님의 이력서 입니다.
-                            </a>
-                          </div>
-
-                          <div class="box_hash_wrap mt08">
-                            <button
-                              type="button"
-                              class="btn small fill type01 mt08 jobAblAutoRecommendPopup"
-                              data-type="1"
-                              data-seqno="1"
-                            >
-                              직무능력 자동 추천
-                            </button>
-                            <span class="btn_hash small type02 r30 mt08"
-                              >#내 이력서 직무역량, 즉시 분석하고
-                              추천까지!!</span
-                            >
-                          </div>
-                        </td>
-                        <td>
-                          <span class="box_btn_group">
-                            <button
-                              type="button"
-                              class="btn xsmall type02 copyResume"
-                            >
-                              복사
-                            </button>
-                            <button
-                              type="button"
-                              class="btn xsmall type02 registerResume"
-                            >
-                              수정
-                            </button>
-
-                            <button
-                              type="button"
-                              class="btn xsmall type02 deleteResume"
-                            >
-                              삭제
-                            </button>
-                          </span>
-                        </td>
-                        <td>2024-06-13</td>
-                      </tr>
+                    <tr>
+                      <th scope="row">성명</th>
+                      <td>홍길동</td>
+                      <th scope="row">성별, 출생년도</th>
+                      <td>
+                        남, 1985년 생
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">주소</th>
+                      <td colspan="3">
+                        
+                        
+                        
+                        
+                        
+                        (27740) 충청북도 음성군 맹동면 태정로 6 한국고용정보원
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">일반전화</th>
+                      <td>
+                        
+                          
+                          -
+                        
+                      </td>
+                      <th scope="row">휴대전화</th>
+                      <td>
+                        
+                          
+                            010-1234-5678
+                          
+                          
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">이메일</th>
+                      <td colspan="3">
+                        
+                          
+                            abcdef@work24.go.kr
+                          
+                          
+                        
+                      </td>
+                    </tr>
                     </tbody>
                   </table>
-                  <!-- //table -->
                 </div>
-                <div class="box_btn_wrap flex_al_r mt24">
-                  <a
-                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
-                    class="btn medium type02"
-                    id="setBasicResume"
-                    >기본 이력서 설정</a
-                  >
-                  <a
-                    href="https://m.work24.go.kr/wk/p/a/1300/retrieveResumeRegTp.do"
-                    class="btn medium fill type01"
-                    >새 이력서 작성</a
-                  >
-                </div>
+                <!-- //table -->
               </div>
-
-              <div class="box_table_wrap">
-                <h3 class="t2_sb">나의 자기소개서</h3>
-                <!-- table : l_type02 -->
-                <table class="box_table">
-                  <caption>
-                    선택,자기소개서 제목,관리,최종수정일을(를) 제공하는 표
-                  </caption>
-
+            
+              
+              
+              <div class="box_table_wrap write" id="edu" data-item_clcd="9" data-item_name="학력사항">
+                <div class="box_table_hd">
+                  <h3 class="t3_sb type_dot">학력사항
+                    <span class="b1_r ml08">최종학력
+                      <span class="point_color02">
+                        대학교(4년제) 졸업
+                      </span>
+                    </span>
+                  </h3>
+                  
+                </div>
+            
+                <!-- table -->
+                
+                <table class="box_table "><caption>학교명,재학기간,재학 상태,학점,전공명을(를) 제공하는 표</caption>
+                  
                   <colgroup>
-                    <col style="width: 10%" />
-                    <col />
-                    <col style="width: 25%" />
-                    <col style="width: 15%" />
+                    <col style="width:18%">
+                    <col>
+                    <col style="width:18%">
+                    <col>
                   </colgroup>
-                  <thead>
-                    <tr>
-                      <th scope="col">선택</th>
-                      <th scope="col">자기소개서 제목</th>
-                      <th scope="col">관리</th>
-                      <th scope="col">최종수정일</th>
-                    </tr>
-                  </thead>
                   <tbody>
-                    <tr>
-                      <td>
-                        <div class="box_radio-group">
-                          <span>
-                            <input
-                              type="radio"
-                              id="arrSfidNo0"
-                              name="arrSfidNo"
-                              value="1"
-                            />
-                            <label for="arrSfidNo0"
-                              ><span class="blind">선택</span></label
-                            >
-                          </span>
-                        </div>
-                      </td>
-                      <td class="link">
-                        <div class="box_flex_al">
-                          <span class="tbl_label">기본 자소서</span>
-                          <input type="hidden" name="bassSfidYn" value="1" />
-                          <a
-                            href="https://m.work24.go.kr/wk/p/a/1200/retrieveSelfIntroView.do?tmplSeqno=1"
-                            class="btn_txt type2"
-                          >
-                            홍길동님의 자기소개서
-                          </a>
-                        </div>
-
-                        <button
-                          type="button"
-                          class="btn small fill type01 mt08 jobAblAutoRecommendPopup"
-                          data-type="2"
-                          data-seqno="1"
-                        >
-                          직무능력 자동 추천
-                        </button>
-                      </td>
-                      <td>
-                        <span class="box_btn_group box_month_area">
-                          <button
-                            type="button"
-                            class="btn xsmall type02 copySelfIntro"
-                          >
-                            복사
-                          </button>
-                          <button
-                            type="button"
-                            class="btn xsmall type02 registerSelfIntro"
-                          >
-                            수정
-                          </button>
-                          <button
-                            type="button"
-                            class="btn xsmall type02 deleteSelfIntro"
-                          >
-                            삭제
-                          </button>
-                        </span>
-                      </td>
-                      <td>2015-02-10</td>
-                    </tr>
+                  <tr>
+                    <th scope="row">학교명</th>
+                    <td>한국대학교</td>
+                    <th scope="row">재학기간</th>
+                    <td>
+                      
+                        
+                          
+                          
+                            
+                          
+                          
+                        
+                      
+                      
+                      2019-08
+                      ~
+                      
+                        
+                          
+                          
+                            
+                          
+                          
+                        
+                      
+                      
+                      2022-02
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">재학 상태</th>
+                    <td>
+                      
+                        
+                          대학교(4년제) 졸업
+                        
+                        
+                      
+                    </td>
+                    <th scope="row">학점</th>
+                    <td>
+                      
+                        
+                        
+                          -
+                        
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="v_top">전공명</th>
+                    <td colspan="3">
+                      <dl class="vline_group type3">
+                        
+                        <dt>전공</dt>
+                        <dd>전산학·컴퓨터공학/컴퓨터공학전공</dd>
+                        
+                        
+                      </dl>
+                      <dl class="vline_group type3 mt04">
+                        
+                        
+                      </dl>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+              
+            
+              <div class="tit_mark_02">
+                <h3 class="t2_sb">희망조건</h3>
+              </div>
+            
+              
+              <!-- 희망직종 -->
+              <div class="box_table_wrap write">
+                <div class="box_table_hd">
+                  <h3 class="t3_sb type_dot">희망직종</h3>
+                </div>
+            
+                <!-- table -->
+                
+                <table class="box_table "><caption>희망직종,경력여부,희망직무내용을(를) 제공하는 표</caption>
+                  
+                  <colgroup>
+                    <col style="width:18%">
+                    <col>
+                    <col style="width:18%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                  <tr>
+                    <th scope="row">희망직종</th>
+                    <td>개발자</td>
+                    <th scope="row">경력여부</th>
+                    <td>
+                      
+                        
+                      
+                        경력
+                      
+                      (6년 0개월)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">희망직무내용</th>
+                    <td colspan="3">맡은 프로젝트를&nbsp;최선을 다해서&nbsp;완료하겠습니다.</td>
+                  </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+              <!-- //희망직종 -->
+              
+            
+              
+              <div class="box_table_wrap write">
+                <div class="box_table_hd">
+                  <h3 class="t3_sb type_dot">희망 지역 및 임금</h3>
+                </div>
+                <!-- table -->
+                <table class="box_table"><caption>희망근무지역,희망임금을(를) 제공하는 표</caption>
+                  
+                  <colgroup>
+                    <col style="width:18%">
+                    <col>
+                    <col style="width:18%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                  <tr>
+                    <th scope="row">희망근무지역</th>
+                    <td>
+                        충북
+                    </td>
+                    <th scope="row">희망임금</th>
+                    <td>
+                          연봉
+                        3600
+                      만원이상
+                      (면접 후 결정 가능)
+                    </td>
+                  </tr>
                   </tbody>
                 </table>
                 <!-- //table -->
-                <div class="box_btn_wrap flex_al_r mt24">
-                  <a
-                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
-                    class="btn medium type02"
-                    id="unsetBasicSelfIntro"
-                    >기본 자소서 해제</a
-                  >
-                  <a
-                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
-                    class="btn medium type02"
-                    id="setBasicSelfIntro"
-                    >기본 자소서 설정</a
-                  >
-                  <a
-                    href="https://m.work24.go.kr/wk/p/a/1100/selfIntroRegIntro.do"
-                    class="btn medium fill type01"
-                    >새 자소서 작성</a
-                  >
-                </div>
               </div>
-
-              <div class="box_table_wrap">
+            
+              <div class="box_table_wrap write">
                 <div class="box_table_hd">
-                  <h3 class="t2_sb">나의 디지털이력서</h3>
-
-                  <div class="box_btn_wrap flex_al_l type02">
-                    <div class="cell">
-                      <a
-                        id="resumeDetailPopup"
-                        href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
-                        class="btn medium fill type01"
-                        >디지털이력서 제출
-                      </a>
-                    </div>
-                  </div>
+                  <h3 class="t3_sb type_dot">기타희망사항</h3>
                 </div>
-                <!-- table : l_type02 -->
-                <table class="box_table">
-                  <caption>
-                    선택,자기소개서 제목,관리,최종수정일을(를) 제공하는 표
-                  </caption>
-
+                <!-- table -->
+                <table class="box_table"><caption>고용형태,희망근무시간,병역대체 근무희망,그 밖의 희망사항을(를) 제공하는 표</caption>
+                  
                   <colgroup>
-                    <col style="width: 10%" />
-                    <col />
-                    <col style="width: 25%" />
-                    <col style="width: 15%" />
+                    <col style="width:18%">
+                    <col>
+                    <col style="width:18%">
+                    <col>
                   </colgroup>
-                  <thead>
-                    <tr>
-                      <th scope="col">선택</th>
-                      <th scope="col">자기소개서 제목</th>
-                      <th scope="col">관리</th>
-                      <th scope="col">최종수정일</th>
-                    </tr>
-                  </thead>
                   <tbody>
-                    <tr>
-                      <td>
-                        <div class="box_radio-group">
-                          <span>
-                            <input
-                              type="radio"
-                              id="arrSfidNo0"
-                              name="arrSfidNo"
-                              value="1"
-                            />
-                            <label for="arrSfidNo0"
-                              ><span class="blind">선택</span></label
-                            >
-                          </span>
-                        </div>
-                      </td>
-                      <td class="link">
-                        <div class="box_flex_al">
-                          <span class="tbl_label">전체</span>
-                          <input type="hidden" name="bassSfidYn" value="1" />
-                          <a
-                            href="https://m.work24.go.kr/wk/p/a/1200/retrieveSelfIntroView.do?tmplSeqno=1"
-                            class="btn_txt type2"
-                          >
-                            홍길동님의 디지털이력서
-                          </a>
-                        </div>
-                      </td>
-                      <td>
-                       
-                          <button
-                            type="button"
-                            class="btn xsmall type02 deleteSelfIntro"
-                          >
-                            삭제
-                          </button>
-                        </span>
-                      </td>
-                      <td>2015-02-10</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="box_radio-group">
-                          <span>
-                            <input
-                              type="radio"
-                              id="arrSfidNo0"
-                              name="arrSfidNo"
-                              value="1"
-                            />
-                            <label for="arrSfidNo0"
-                              ><span class="blind">선택</span></label
-                            >
-                          </span>
-                        </div>
-                      </td>
-                      <td class="link">
-                        <div class="box_flex_al">
-                          <span class="tbl_label">검증</span>
-                          <input type="hidden" name="bassSfidYn" value="1" />
-                          <a
-                            href="./디지털이력서검증발급.html"
-                            class="btn_txt type2"
-                          >
-                            홍길동님의 디지털이력서
-                          </a>
-                        </div>
-                      </td>
-                      <td>
-                       
-                          <button
-                            type="button"
-                            class="btn xsmall type02 deleteSelfIntro"
-                          >
-                            삭제
-                          </button>
-                        </span>
-                      </td>
-                      <td>2015-02-10</td>
-                    </tr>
+                  <tr>
+                    <th scope="row" class="v_top">고용형태</th>
+                    <td>
+                      기간에 정함이 없는 근로계약
+                    </td>
+                    <th scope="row">희망근무시간</th>
+                    <td>09:00 ~ 18:00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">병역대체 근무희망</th>
+                    <td colspan="3">
+                        해당없음
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">그 밖의 희망사항</th>
+                    <td colspan="3"></td>
+                  </tr>
                   </tbody>
                 </table>
                 <!-- //table -->
               </div>
               
-              <!-- //tableArea -->
-
-              <div class="box_section">
-                <h2 class="t2_sb">자유양식 이력서</h2>
-                <div class="box_message_wrap mt08">
-                  <ul class="box_list_area">
-                    <li class="txt_list">
-                      자유양식 이력서는 원하는 형식의 이력서 파일을 등록할 수
-                      있습니다.
-                    </li>
-                    <li class="txt_list">
-                      등록된 자유양식 이력서는 고용24 채용정보 상세화면에서
-                      [입사지원] 시에 사용이 가능합니다.
-                    </li>
-                    <li class="txt_list">
-                      하단의 이메일 보내기 버튼을 통해 자유양식이력서 이메일
-                      보내기가 가능합니다.
-                    </li>
-                    <li class="txt_list">
-                      등록된 파일은 등록일로부터
-                      <span class="point_color">5년간 유지</span>되며 5년
-                      이후에는 <span class="point_color">폐기</span>됩니다.
-                    </li>
-                  </ul>
-                </div>
+            
+              <div class="tit_mark_03">
+                <h3 class="t2_sb">보유역량</h3>
               </div>
-
-              <!-- tableArea -->
-              <div class="box_table_wrap mt40" id="reumeFileArea">
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <!-- 경력사항 -->
+              <div class="box_table_wrap write" id="skill" data-item_clcd="4" data-item_name="경력사항">
                 <div class="box_table_hd">
-                  <p class="b1_sb">전체 <span class="txt_total">0B</span></p>
+                  <h3 class="t3_sb type_dot">경력사항
+                    <span class="b1_r ml08">총 근무기간
+                      <span class="point_color02">4년 2개월</span>
+                    </span>
+                  </h3>
+                  
+                  
                 </div>
-
-                <!-- table : l_type02 -->
-                <table class="box_table">
-                  <caption>
-                    이력서 제목,관리,최종수정일을(를) 제공하는 표
-                  </caption>
-
+                <!-- table -->
+                <table class="box_table"><caption>회사명,재직 기간,직급/직책,재직 여부을(를) 제공하는 표</caption>
                   <colgroup>
-                    <col />
-                    <col style="width: 25%" />
-                    <col style="width: 15%" />
+                    <col style="width:18%">
+                    <col>
+                    <col style="width:18%">
+                    <col>
+                    <col>
+                    <col style="width: 10%;">
                   </colgroup>
-                  <thead>
-                    <tr>
-                      <th scope="col">이력서 제목</th>
-                      <th scope="col">관리</th>
-                      <th scope="col">최종수정일</th>
-                    </tr>
-                  </thead>
                   <tbody>
-                    <tr>
-                      <td colspan="3">등록된 자유양식 이력서가 없습니다.</td>
-                    </tr>
+                  <tr>
+                    <th scope="row">회사명</th>
+                    <td>(주)타임소프트</td>
+                    <th scope="row">재직 기간</th>
+                    <td> 2024-04~2024-05 (공개)</td>
+                    <th scope="row" td rowspan="2">검증</th>
+                    <td td rowspan="2">
+                      <img src="./resources/tg.png" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">직급/직책</th>
+                    <td>선임</td>
+                    <th scope="row">재직 여부</th>
+                    <td>
+                      재직
+                    </td>
+                  </tr>
+                  
                   </tbody>
                 </table>
-                <!-- //table -->
-                <div class="box_btn_wrap flex_al_r mt24">
-                  <a
-                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
-                    class="btn medium type02"
-                    id="sendResumeFileEmailPopup"
-                    >이력서 이메일 보내기</a
-                  >
-                  <a
-                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
-                    class="btn medium fill type01"
-                    id="registerResumeFilePopup"
-                    >이력서 파일등록</a
-                  >
-                </div>
+                
               </div>
-              <!-- //tableArea -->
-
-              <div class="box_section">
-                <h2 class="t2_sb">첨부파일</h2>
-                <div class="box_message_wrap mt08">
-                  <ul class="box_list_area">
-                    <li class="txt_list">
-                      [입사지원] 시에 첨부하여 보낼 수 있는 파일들을 등록,
-                      관리할 수 있는 기능을 제공합니다.
-                    </li>
-                    <li class="txt_list">
-                      등록된 파일은 등록일로부터
-                      <span class="point_color">5년간 유지</span>되며 5년
-                      이후에는 <span class="point_color">폐기</span>됩니다.
-                    </li>
+              <!-- //경력사항 -->
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <!-- 보유 자격면허 -->
+              <div class="box_table_wrap l_type02" id="license" data-item_clcd="1" data-item_name="보유 자격면허">
+                <div class="box_table_hd">
+                  <h3 class="t3_sb type_dot">보유 자격면허</h3>
+                  
+                  
+                </div>
+                <!-- table -->
+                
+                  <table class="box_table"><caption>구분,자격면허,발급기관,취득일을(를) 제공하는 표</caption>
+                    <colgroup>
+                      <col>
+                      <col>
+                      <col>
+                      <col>
+                      <col style="width: 10%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                      <th scope="col">구분</th>
+                      <th scope="col">자격면허</th>
+                      <th scope="col">발급기관</th>
+                      <th scope="col">취득일</th>
+                      <th scope="col">검증</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>공인자격(국가/민간)</td>
+                          <td>어로기능사</td>
+                          <td>한국산업인력공단</td>
+                          <td>
+                            1998-07-20
+                          </td>
+                          <td>
+                            <img src="./resources/tg.png" />
+                          </td>
+                        </tr>
+                      
+                        <tr>
+                          <td>공인자격(국가/민간)</td>
+                          <td>컴퓨터그래픽스운용기능사</td>
+                          <td>한국산업인력공단</td>
+                          <td>
+                            2006-12-29
+                          </td>
+                          <td>
+                            <img src="./resources/tg.png" />
+                          </td>
+                        </tr>
+                      
+                        <tr>
+                          <td>공인자격(국가/민간)</td>
+                          <td>컴퓨터활용능력1급</td>
+                          <td>대한상공회의소</td>
+                          <td>
+                            2021-02-26
+                          </td>
+                          <td>
+                            <img src="./resources/tg.png" />
+                          </td>
+                        </tr>
+                      
+                        <tr>
+                          <td>공인자격(국가/민간)</td>
+                          <td>정보처리기사</td>
+                          <td>한국산업인력공단</td>
+                          <td>
+                            2021-08-20
+                          </td>
+                          <td>
+                            <img src="./resources/tg.png" />
+                          </td>
+                        </tr>
+                        
+                    </tbody>
+                  </table>
+                
+              </div>
+              
+              <!-- //보유 자격면허 -->
+              
+              
+              <!-- 직업훈련 이수이력 -->
+              <div class="box_table_wrap write" id="isTraining" data-item_clcd="2" data-item_name="직업훈련 이수이력">
+                <div class="box_table_hd">
+                  <h3 class="t3_sb type_dot">직업훈련이력서</h3>
+                </div>
+                <!-- table -->
+                <div class="badge_list_box">
+                  <ul class="badge_list_deck">
+                    <li class="badge_box">
+                      <div class="inner">
+                        <div class="card">
+                          <div class="front">
+                            <div class="top">
+                              <button class="filp_btn">
+                                <img src="./resources/icon_flip.svg">
+                              </button>
+                            </div>
+                            <div class="contents">
+                              <div class="content_top">
+                                <div class="img_box">
+                                  <img src="./resources/digitalBadge.png" alt="디지털배지">
+                                </div>
+                                <div class="box_title">
+                                  <h2 class="h2_sb">퍼블릭 클라우드 개발을 위한 AWS 클라우드 과정</h2>
+                                </div>
+                              </div>
+                              <div class="info_list_box">
+                                <ul>
+                                  <li class="info_list name">
+                                    <h4>성명</h4>
+                                    <p>홍길동</p>
+                                  </li>
+                                  <li class="info_list submit_institute">
+                                    <h4>발급기관</h4>
+                                    <p>한국고용정보원</p>
+                                  </li>
+                                  <li class="info_list train_institute">
+                                    <h4>훈련기관</h4>
+                                    <p>한국소프트웨어산업협회</p>
+                                  </li>
+                                  <li class="info_list badge_number">
+                                    <h4>배지발급번호</h4>
+                                    <p>KEIS2024042219-0000011</p>
+                                  </li>
+                                  <li class="info_list train_time">
+                                    <h4>훈련기간</h4>
+                                    <p>20200926-20201104</p>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="back">
+                            <div class="top">
+                              <button class="filp_btn">
+                                <img src="./resources/icon_flip.svg">
+                              </button>
+                            </div>
+                            <div class="contents">
+                              <div class="box_title">
+                                <h4>배지상세정보</h4>
+                              </div>
+                              <div class="info_list_box">
+                                <ul>
+                                  <li class="info_list name">
+                                    <h4>과정명</h4>
+                                    <p>퍼블릭 클라우드 개발을 위한 AWS클라우드 과정</p>
+                                  </li>
+                                  <li class="info_list submit_institute">
+                                    <h4>발급기관</h4>
+                                    <p>한국고용정보원</p>
+                                  </li>
+                                  <li class="info_list train_institute">
+                                    <h4>훈련기관</h4>
+                                    <p>한국소프트웨어산업협회</p>
+                                  </li>
+                                  <li class="info_list badge_number">
+                                    <h4>배지발급번호</h4>
+                                    <p>KEIS2024042219-0000011</p>
+                                  </li>
+                                  <li class="info_list train_time">
+                                    <h4>훈련기간</h4>
+                                    <p>20200926-20201104</p>
+                                  </li>
+                                  <li class="info_list train_time">
+                                    <h4>NCS 직종명</h4>
+                                    <p>시스템SW엔지니어링</p>
+                                  </li>
+                                  <li class="info_list train_time">
+                                    <h4>NCS Code</h4>
+                                    <p>20010208</p>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <li class="badge_box">
+                      <div class="inner">
+                        <div class="card">
+                          <div class="front">
+                            <div class="top">
+                              <button class="filp_btn">
+                                <img src="./resources/icon_flip.svg">
+                              </button>
+                            </div>
+                            <div class="contents">
+                              <div class="content_top">
+                                <div class="img_box">
+                                  <img src="./resources/digitalBadge.png" alt="디지털배지">
+                                </div>
+                                <div class="box_title">
+                                  <h2 class="h2_sb">AI로 변화되는 미래_인공지능을 모르면 바보가 된다</h2>
+                                </div>
+                              </div>
+                              <div class="info_list_box">
+                                <ul>
+                                  <li class="info_list name">
+                                    <h4>성명</h4>
+                                    <p>홍길동</p>
+                                  </li>
+                                  <li class="info_list submit_institute">
+                                    <h4>발급기관</h4>
+                                    <p>한국고용정보원</p>
+                                  </li>
+                                  <li class="info_list train_institute">
+                                    <h4>훈련기관</h4>
+                                    <p>(주)한국직장인교육지원센터</p>
+                                  </li>
+                                  <li class="info_list badge_number">
+                                    <h4>배지발급번호</h4>
+                                    <p>KEIS2024042219-0000011</p>
+                                  </li>
+                                  <li class="info_list train_time">
+                                    <h4>훈련기간</h4>
+                                    <p>20200926-20201104</p>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="back">
+                            <div class="top">
+                              <button class="filp_btn">
+                                <img src="./resources/icon_flip.svg">
+                              </button>
+                            </div>
+                            <div class="contents">
+                              <div class="box_title">
+                                <h4>배지상세정보</h4>
+                              </div>
+                              <div class="info_list_box">
+                                <ul>
+                                  <li class="info_list name">
+                                    <h4>과정명</h4>
+                                    <p>AI로 변화되는 미래_인공지능을 모르면 바보가 된다</p>
+                                  </li>
+                                  <li class="info_list submit_institute">
+                                    <h4>발급기관</h4>
+                                    <p>한국고용정보원</p>
+                                  </li>
+                                  <li class="info_list train_institute">
+                                    <h4>훈련기관</h4>
+                                    <p>(주)한국직장인교육지원센터</p>
+                                  </li>
+                                  <li class="info_list badge_number">
+                                    <h4>배지발급번호</h4>
+                                    <p>KEIS2024042219-0000011</p>
+                                  </li>
+                                  <li class="info_list train_time">
+                                    <h4>훈련기간</h4>
+                                    <p>20200926-20201104</p>
+                                  </li>
+                                  <li class="info_list train_time">
+                                    <h4>NCS 직종명</h4>
+                                    <p>시스템SW엔지니어링</p>
+                                  </li>
+                                  <li class="info_list train_time">
+                                    <h4>NCS Code</h4>
+                                    <p>20010208</p>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       
+                       
+                      </div>
+                  </li> 
+              <li class="badge_box flip">
+                <div class="inner">
+                  <div class="card ">
+                    <div class="front">
+                      <div class="top">
+                        <button class="filp_btn">
+                          <img src="./resources/icon_flip.svg">
+                        </button>
+                      </div>
+                      <div class="contents">
+                        <div class="content_top">
+                          <div class="img_box">
+                            <img src="./resources/digitalBadge.png" alt="디지털배지">
+                          </div>
+                          <div class="box_title">
+                            <h2 class="h2_sb">AI로 변화되는 미래_인공지능을 모르면 바보가 된다</h2>
+                          </div>
+                        </div>
+                        <div class="info_list_box">
+                          <ul>
+                            <li class="info_list name">
+                              <h4>성명</h4>
+                              <p>홍길동</p>
+                            </li>
+                            <li class="info_list submit_institute">
+                              <h4>발급기관</h4>
+                              <p>한국고용정보원</p>
+                            </li>
+                            <li class="info_list train_institute">
+                              <h4>훈련기관</h4>
+                              <p>한국소프트웨어산업협회</p>
+                            </li>
+                            <li class="info_list badge_number">
+                              <h4>배지발급번호</h4>
+                              <p>KEIS2024042219-0000011</p>
+                            </li>
+                            <li class="info_list train_time">
+                              <h4>훈련기간</h4>
+                              <p>20200926-20201104</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="top">
+                        <button class="filp_btn">
+                          <img src="./resources/icon_flip.svg">
+                        </button>
+                      </div>
+                      <div class="contents">
+                        <div class="box_title">
+                          <h4>배지상세정보</h4>
+                        </div>
+                        <div class="info_list_box">
+                          <ul>
+                            <li class="info_list name">
+                              <h4>과정명</h4>
+                              <p>AI로 변화되는 미래_인공지능을 모르면 바보가 된다</p>
+                            </li>
+                            <li class="info_list submit_institute">
+                              <h4>발급기관</h4>
+                              <p>한국고용정보원</p>
+                            </li>
+                            <li class="info_list train_institute">
+                              <h4>훈련기관</h4>
+                              <p>(주)한국직장인교육지원센터</p>
+                            </li>
+                            <li class="info_list badge_number">
+                              <h4>배지발급번호</h4>
+                              <p>KEIS2024042219-0000011</p>
+                            </li>
+                            <li class="info_list train_time">
+                              <h4>훈련기간</h4>
+                              <p>20200926-20201104</p>
+                            </li>
+                            <li class="info_list train_time">
+                              <h4>NCS 직종명</h4>
+                              <p>시스템SW엔지니어링</p>
+                            </li>
+                            <li class="info_list train_time">
+                              <h4>NCS Code</h4>
+                              <p>20010208</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </li> 
                   </ul>
                 </div>
+                
+             
+               
+                
               </div>
-              <!-- tableArea -->
-              <div class="box_table_wrap" id="attachments">
+              <!-- //직업훈련 이수이력 -->
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <!-- 컴퓨터 활용 -->
+              <div class="box_table_wrap write" data-item_clcd="7" data-item_name="컴퓨터 활용">
                 <div class="box_table_hd">
-                  <p class="tit">전체 <span class="txt_total">0B</span></p>
+                  <h3 class="t3_sb type_dot">컴퓨터 활용</h3>
                 </div>
-                <table class="box_table">
-                  <caption>
-                    선택,파일명,등록/이관일을(를) 제공하는 표
-                  </caption>
+                <!-- table -->
+                <table class="box_table"><caption>컴퓨터 활용능력을(를) 제공하는 표</caption>
+                  
                   <colgroup>
-                    <col style="width: 5%" />
-                    <col />
-                    <col style="width: 20%" />
+                    <col style="width:18%">
+                    <col>
+                    <col style="width:18%">
+                    <col>
                   </colgroup>
-                  <thead>
-                    <tr>
-                      <th scope="col">선택</th>
-                      <th scope="col">파일명</th>
-                      <th scope="col">등록/이관일</th>
-                    </tr>
-                  </thead>
                   <tbody>
-                    <tr>
-                      <td colspan="3">등록된 파일이 없습니다.</td>
-                    </tr>
+                  <tr>
+                    <th scope="row">컴퓨터 활용능력</th>
+                    <td colspan="3">
+                    
+                      
+                        문서작성 (워드프로세스 활용)
+                      
+                    
+                      
+                        
+                      
+                    
+                      
+                        
+                      
+                    
+                      
+                        
+                      
+                    
+                      
+                        
+                      
+                    
+                    , 
+                    </td>
+                  </tr>
                   </tbody>
                 </table>
-                <!-- //table -->
-                <div class="box_btn_wrap flex_al_r type02">
-                  <button
-                    type="button"
-                    class="btn medium type02"
-                    id="deleteAttachedFile"
-                  >
-                    <span>삭제</span>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="btn medium fill type01"
-                    id="registerAttachedFilePopup"
-                  >
-                    <span>새 파일 등록</span>
-                  </button>
+              </div>
+              <!-- //컴퓨터 활용 -->
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+              
+              <div class="box_table_wrap write">
+                <div class="box_table_hd">
+                  <h3 class="t3_sb type_dot">운전 및 차량소유</h3>
+                </div>
+                <!-- table -->
+                <table class="box_table"><caption>운전여부,차량소지여부을(를) 제공하는 표</caption>
+                  
+                  <colgroup>
+                    <col style="width:18%">
+                    <col>
+                    <col style="width:18%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                  <tr>
+                    <th scope="row">운전여부</th>
+                    <td>
+                      예
+                      
+                    </td>
+                    <th scope="row">차량소지여부</th>
+                    <td>
+                      예
+                      
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+            
+              
+            
+              <!-- 하단 서명 영역 -->
+              <div class="sign_area">
+                <p class="sign_txt t3_r">상기 등록한 내용은 사실과 다름 없음을 확인합니다.</p>
+                <p class="sign_date">
+                  
+                  
+                  <span class="b1_r">2024년 06월 13일</span>
+                  <span class="t3_r"><strong class="t3_sb">신청자</strong>홍길동<span>(서명 또는 인)</span></span>
+                </p>
+              </div>
+              <!-- //하단 서명 영역 -->
+              <div class="box_btn_wrap flex_al_s">
+                <div class="cell">
+                  <a href="이력서.html" class="btn big type02">이전</a>
+                </div>
+                <div class="btn_box">
+                  <div class="cell">
+                    <a href="#" class="btn big type01 printResume" data-preview_yn="Y">이력서 제출</a>
+                  </div>
                 </div>
               </div>
-              <!-- //tableArea -->
-
-              <form
-                id="resumeSrchVO"
-                name="resumeSrchVO"
-                action="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do"
-                method="post"
-              >
-                <input type="hidden" id="tempAge" name="tempAge" value="43" />
-                <input type="hidden" id="tmplSeqno" name="tmplSeqno" value="" />
-                <input
-                  type="hidden"
-                  id="tmplFileSeq"
-                  name="tmplFileSeq"
-                  value=""
-                />
-                <input
-                  type="hidden"
-                  id="baseFlagSt"
-                  name="baseFlagSt"
-                  value=""
-                />
-                <input
-                  type="hidden"
-                  name="seoulIfAgree"
-                  id="seoulIfAgree"
-                  value=""
-                />
-                <input type="hidden" name="fileSel[]" id="fileSel" />
-                <input type="hidden" name="arrSeqno[]" id="arrSeqno" />
-              </form>
-
+            
+              
               <script>
-                hpwkpa1200m01 = null;
-                $(document).ready(() => {
-                  /* callBackFunc start */
-                  // 직무능력 자동추천 추가
-                  function appendJobAblAutoRecommendItem(obj) {
-                    var ajaxUrl = "/wk/p/a/1300/registerJobAbl.do";
-                    var parameter = {
-                      tmplSeqno: obj.tmptSn,
-                      jhntMbn: obj.jhntMbn,
-                      anlyTrgtSevl: obj.anlyTrgtSevl,
-                      matchDocId: obj.matchDocId,
-                    };
-                    var ajaxRequest = ComLib.ajaxReqObj(
-                      ajaxUrl,
-                      parameter,
-                      false
-                    );
-                    ajaxRequest.done(function (res) {
-                      if (res.alertMessageText) alert(res.alertMessageText);
-                      if (window.location.search === "")
-                        window.location.reload();
-                      else window.location.search = "";
-                    });
+              $(document).ready(() => {
+            
+                /* functions start */
+                var fn_printResume = function (previewYN, seekCustNo, tmplSeqno, photoUrl, disableCd, sortOrdr, sfidNo) {
+                  var detailAddrCheck = confirm('도로명주소 이하 상세주소를 제외하고 출력합니다.\n상세주소를 포함하시겠습니까?\n"확인"선택 시 "상세주소 포함"\n"취소"선택 시 "상세주소 미포함"')
+                    ? "Y"
+                    : "N";
+                  var disableCheck = "N";
+                  if (disableCd === "Y") {
+                    disableCheck = confirm('장애사항을 포함하시겠습니까?\n"확인"선택 시 "장애사항 포함"\n"취소"선택 시 "장애사항 미포함"') ? "Y" : "N";
                   }
-                  /* callBackFunc end */
-                  function openJobAblAutoRecommendPopup(
-                    tmplSeqno,
-                    anlyTrgtSevl
-                  ) {
-                    var ajaxUrl = "/wk/p/a/1200/retrieveResumeInfoAjax.do";
-                    var ajaxParameter = {
-                      tmplSeqno: tmplSeqno,
-                      anlyTrgtSevl: anlyTrgtSevl,
-                    };
-                    var ajaxRequest = ComLib.ajaxReqObj(
-                      ajaxUrl,
-                      ajaxParameter,
-                      false
-                    );
-                    ajaxRequest.done(function (res) {
-                      if (!res.isValid) {
-                        alert("희망직무, 학력은 필수값 입니다.");
-                        return;
-                      }
-                      var popupId = "hpwkpa1300p05";
-                      var popupUrl =
-                        "/wk/p/a/1300/retrievePopJobAblAutoRecommend.do";
-                      var popupParameter = {
-                        tmplSeqno: tmplSeqno,
-                        anlyTrgtSevl: anlyTrgtSevl,
-                        reqGbn: "1",
-                        seekAuthNo: "",
-                        empHopeJobCont: res.empHopeJobCont
-                          ? res.empHopeJobCont
-                              .replace(/^\s+|\s+$/g, "")
-                              .replace(/\n/gi, "")
-                          : "",
-                        eduInfoCont: res.eduInfoCont
-                          ? res.eduInfoCont
-                              .replace(/^\s+|\s+$/g, "")
-                              .replace(/\n/gi, "")
-                          : "",
-                        licenseInfoCont: res.licenseInfoCont
-                          ? res.licenseInfoCont
-                              .replace(/^\s+|\s+$/g, "")
-                              .replace(/\n/gi, "")
-                          : "",
-                        carrerInfoCont: res.carrerInfoCont
-                          ? res.carrerInfoCont
-                              .replace(/^\s+|\s+$/g, "")
-                              .replace(/\n/gi, "")
-                          : "",
-                        prjtInfoCont: res.prjtInfoCont
-                          ? res.prjtInfoCont
-                              .replace(/^\s+|\s+$/g, "")
-                              .replace(/\n/gi, "")
-                          : "",
-                        selfIntroCont: res.selfIntroCont
-                          ? res.selfIntroCont
-                              .replace(/^\s+|\s+$/g, "")
-                              .replace(/\n/gi, "")
-                          : "",
-                        callBackFunc:
-                          "hpwkpa1200m01.appendJobAblAutoRecommendItem",
-                      };
-                      ComFnLib.fn_openLayerPopup(
-                        popupId,
-                        popupUrl,
-                        popupParameter
-                      );
-                    });
-                  }
-                  function jobAblAutoRecommendInquiry(tmplSeqno, anlyTrgtSevl) {
-                    var tmplSeqnoVal = tmplSeqno ? tmplSeqno : "";
-                    var anlyTrgtSevlVal = anlyTrgtSevl ? anlyTrgtSevl : "";
-                    var $html = $(`
-					<section id="jobAblAutoRecommendInquiryPopup" class="full_pop large full_01">
-						<!-- 헤더 -->
-						<header class="head">
-							<!-- 타이틀 -->
-							<h1 class="h2_sb">직무능력 자동 추천</h1>
-							<!--// 타이틀 -->
-						</header>
-						<!--// 헤더 -->
-						<!-- 본문 컨텐츠 -->
-						<div class="cont">
-							<div class="box_border_type type_result">
-								<h3 class="t3_sb">빅데이터 및 AI기술 기반으로 직무능력을 추천받고
-								<br/>이력서에 적용하실 수 있어요.
-								<br/><span class="col_txt_blue">직무능력을 추천받아 보시겠어요?</span></h3>
-								<div class="box_btn_wrap flex_al_c">
-									<a
-										href="#none"
-										class="btn big type01 fill jobAblAutoRecommendPopup"
-										data-tmpl_seqno="${tmplSeqnoVal}"
-										data-anly_trgt_sevl="${anlyTrgtSevlVal}"
-									><span>추천받기</span></a>
-									<a href="#none" class="btn big type01 closed"><span>창 닫기</span></a>
-								</div>
-							</div>
-							<div class="box_border_type mt40">
-								<p class="b1_sb">직무능력 추가하시면 받으실 수 있는 혜택!!</p>
-								<ul class="box_list_area">
-									<li class="txt_list">작성하신 이력서를 나의 직무능력 키워드별로 확인할 수 있어요.</li>
-								</ul>
-								<p class="b1_sb">향후 추가될 혜택!!</p>
-								<ul class="box_list_area">
-									<li class="txt_list">본인의 직무능력에 꼭 맞는 맞춤채용정보를 받아보실 수 있어요.</li>
-									<li class="txt_list">보유하신 직무능력을 요구하는 기업에 인재로 추천돼요.</li>
-									<li class="txt_list">직무능력별로 채용공고를 검색할 수 있어 기존 직종별 검색보다 더 정밀한 검색이 가능해요.</li>
-									<li class="txt_list">희망직종 선택이 어렵고 힘들 때 선택하신 직무능력에 알맞은 직종을 추천해줘요.</li>
-								</ul>
-							</div>
-						</div>
-						<!-- 닫기 -->
-						<a href="#none" class="closed">
-							<span class="blind">팝업 닫기</span>
-						</a>
-						<!--// 닫기 -->
-					</section>
-					<!--// 팝업 -->
-				`);
-                    $html.find(".jobAblAutoRecommendPopup").click(function () {
-                      var tmplSeqno = this.dataset.tmpl_seqno;
-                      var anlyTrgtSevl = this.dataset.anly_trgt_sevl;
-                      if (tmplSeqno && anlyTrgtSevl)
-                        openJobAblAutoRecommendPopup(tmplSeqno, anlyTrgtSevl);
-                    });
-                    $html.find(".closed").click(function () {
-                      var target = $(this).closest(".full_pop");
-                      target.fadeOut(150).removeClass("on");
-                      ui.dimHide();
-                    });
-                    if ($("#layer_dialog").length > 0) {
-                      $("#layer_dialog").remove();
-                    }
-                    var dialog = $(
-                      '<div id="layer_dialog" class="box_btn_wrap"></div>'
-                    );
-                    dialog.html($html);
-                    $(document.body).append(dialog);
-                    ui.fullPopup();
-                    ui.dimShow();
-                    $("#jobAblAutoRecommendInquiryPopup")
-                      .fadeIn(150)
-                      .addClass("on");
-                  }
-                  /* event listener start */
-                  // 이력서 복사
-                  $(".copyResume").click(function () {
-                    var $form = $("#resumeSrchVO");
-                    var url = "/wk/p/a/1200/modifyResumeCopy.do";
-                    $form.attr("action", url);
-                    $form
-                      .find("[name=tmplSeqno]")
-                      .val(
-                        $(this)
-                          .parent()
-                          .parent()
-                          .parent()
-                          .find("input[name=basicResumeYn]")
-                          .val()
-                      );
-                    if (confirm("복사 하시겠습니까?")) $form.submit();
-                  });
-                  // 이력서 삭제
-                  $(".deleteResume").click(function () {
-                    var $form = $("#resumeSrchVO");
-                    var url = "/wk/p/a/1200/deleteResume.do";
-                    $form.attr("action", url);
-                    $form
-                      .find("[name=tmplSeqno]")
-                      .val(
-                        $(this)
-                          .parent()
-                          .parent()
-                          .parent()
-                          .find("input[name=basicResumeYn]")
-                          .val()
-                      );
-                    if (confirm("삭제 하시겠습니까?")) $form.submit();
-                  });
-                  // 이력서 수정
-                  $(".registerResume").click(function () {
-                    var tmplSeqno = $(this)
-                      .parent()
-                      .parent()
-                      .parent()
-                      .find("input[name=basicResumeYn]")
-                      .val();
-                    var url =
-                      "/wk/p/a/1300/mypageRegisterResume.do" +
-                      "?tmplSeqno=" +
-                      tmplSeqno;
-                    window.location.href = url;
-                  });
-
-                  // 기본 이력서 설정
-                  $("#setBasicResume").click(function () {
-                    if (
-                      !$("input:checked[name=basicResumeYn]").is(":checked")
-                    ) {
-                      alert("이력서를 선택해 주세요");
-                      return false;
-                    }
-                    var url = "/wk/p/a/1200/modifyBasicResume.do";
-                    var seoulIfAgree = $("#seoulIfAgree").val();
-                    var regionChk = $("input:checked[name=basicResumeYn]")
-                      .siblings("input[name=regionChk]")
-                      .val();
-                    resumeSrchVO.action = url;
-                    $("#tmplSeqno").val(
-                      $("input:checked[name=basicResumeYn]").val()
-                    );
-                    baseFlagSt.value = $("input:checked[name=basicResumeYn]")
-                      .siblings("input[name=baseFlag]")
-                      .val();
-
-                    if (tmplSeqno.value == "" || baseFlagSt.value == "Y") {
-                      alert(
-                        "선택한 이력서는 이미 기본이력서로 설정되어 있습니다."
-                      );
-                      return;
-                    } else if (baseFlagSt.value == "T") {
-                      alert(
-                        '작성중인 이력서는 기본이력서로 등록할 수 없습니다.\n이력서 수정화면에서 "이력서등록완료"를 통해 등록을 완료하시기 바랍니다.'
-                      );
-                      return;
-                    } else if (baseFlagSt.value == "H") {
-                      alert(
-                        "구직신청 상태가 보류 중일 경우 기본이력서를 변경할 수 없습니다."
-                      );
-                      return;
-                    } else if (baseFlagSt.value == "S") {
-                      alert(
-                        "구직신청 상태가 대기 중일 경우 기본이력서를 변경할 수 없습니다."
-                      );
-                      return;
-                    } else if (seoulIfAgree == "Y" && regionChk == "N") {
-                      alert(
-                        "지방자치단체 제공 동의 여부가 선택되었습니다. 변경하시려는 이력서에는 서울, 경기, 인천, 지역무관 중 한개이상의 희망근무지역이 선택되어 있어야 합니다."
-                      );
-                      return;
-                    } else {
-                      if (
-                        confirm(
-                          "선택하신 이력서를 기본이력서로 설정하시겠습니까?"
-                        )
-                      )
-                        resumeSrchVO.submit();
-                    }
-                  });
-
-                  // 자기소개서 복사
-                  $(".copySelfIntro").click(function () {
-                    var $form = $("#resumeSrchVO");
-                    var url = "/wk/p/a/1200/copySelfIntro.do";
-                    $form.attr("action", url);
-                    $form
-                      .find("[name=tmplSeqno]")
-                      .val(
-                        $(this)
-                          .parent()
-                          .parent()
-                          .parent()
-                          .find("input[name=arrSfidNo]")
-                          .val()
-                      );
-                    if (confirm("복사 하시겠습니까?")) $form.submit();
-                  });
-                  // 자기소개서 삭제
-                  $(".deleteSelfIntro").click(function () {
-                    var $form = $("#resumeSrchVO");
-                    var url = "/wk/p/a/1200/deleteSelfIntro.do";
-                    $form.attr("action", url);
-                    $form
-                      .find("[name=tmplSeqno]")
-                      .val(
-                        $(this)
-                          .parent()
-                          .parent()
-                          .parent()
-                          .find("input[name=arrSfidNo]")
-                          .val()
-                      );
-                    if (confirm("삭제 하시겠습니까?")) $form.submit();
-                  });
-                  // 자기소개서 수정
-                  $(".registerSelfIntro").click(function () {
-                    var tmplSeqno = $(this)
-                      .parent()
-                      .parent()
-                      .parent()
-                      .find("input[name=arrSfidNo]")
-                      .val();
-                    var url =
-                      "/wk/p/a/1100/retrieveSelfIntroReg.do" +
-                      "?tmplSeqno=" +
-                      tmplSeqno;
-                    window.location.href = url;
-                  });
-                  // 기본 자기소개서 설정
-                  $("#setBasicSelfIntro").click(function () {
-                    if ($("input:checked[name=arrSfidNo]").length === 0) {
-                      alert("자기소개서를 선택하세요.");
-                      return;
-                    }
-                    if (!confirm("기본 자기소개서로 설정 하시겠습니까?"))
-                      return;
-
-                    var $form = $("#resumeSrchVO");
-                    var url = "/wk/p/a/1200/registerSelfIntroBass.do";
-                    $form.attr("action", url);
-                    $form
-                      .find("[name=tmplSeqno]")
-                      .val($("input:checked[name=arrSfidNo]").val());
-                    $form.submit();
-                  });
-                  // 기본 자기소개서 해제
-                  $("#unsetBasicSelfIntro").click(function () {
-                    var basicSelfIntroSeqno = $(
-                      "input[name='bassSfidYn']"
-                    ).val();
-                    if (!basicSelfIntroSeqno) {
-                      alert("기본 자기소개서가 없습니다.");
-                      return;
-                    }
-                    if (!confirm("기본 자기소개서를 해제 하시겠습니까?"))
-                      return false;
-                    var ajaxUrl = "/wk/p/a/1200/deleteSelfIntroBass.do";
-                    var parameter = {
-                      tmplSeqno: basicSelfIntroSeqno,
-                    };
-                    var ajaxRequest = ComLib.ajaxReqObj(
-                      ajaxUrl,
-                      parameter,
-                      false
-                    );
-                    ajaxRequest.done(function (responseJSON) {
-                      if (responseJSON.alertMessageText)
-                        alert(responseJSON.alertMessageText);
-                      location.reload();
-                    });
-                  });
-
-                  // 자유양식 이력서 삭제
-                  $(".deleteResumeFile").click(function () {
-                    if (!confirm("삭제 하시겠습니까?")) return;
-                    var $form = $("#resumeSrchVO");
-                    var url = "/wk/p/a/1200/deleteResumeFile.do";
-                    $form.attr("action", url);
-                    $form
-                      .find("[name=tmplFileSeq]")
-                      .val(
-                        $(this)
-                          .parent()
-                          .parent()
-                          .parent()
-                          .find("input[name=arrFileSeqno]")
-                          .val()
-                      );
-                    $form.submit();
-                  });
-                  // 이력서 이메일 보내기 팝업
-                  $("#sendResumeFileEmailPopup").click(function () {
-                    var popupUrl =
-                      "/wk/p/a/1200/registerResumeEmailSendView.do";
-                    ComFnLib.fn_openLayerPopup("hpwkpa1200p05", popupUrl, null);
-                  });
-                  // 이력서 파일등록 팝업
-                  $("#registerResumeFilePopup").click(function () {
-                    if (
-                      $("#reumeFileArea").find("[name=arrFileSeqno]").length >=
-                      10
-                    ) {
-                      alert("이력서 첨부파일은 10개까지 등록 가능합니다.");
-                      return false;
-                    }
-
-                    var popupUrl = "/wk/p/a/1200/PopResumeMngFileUpload.do";
-                    var param = { athflSeq: $("#resumeAthflSeq").val() };
-                    ComFnLib.fn_openLayerPopup(
-                      "hpwkpa1200p06",
-                      popupUrl,
-                      param
-                    );
-                  });
-                  // 이력서 + 자기소개서 미리보기 팝업
-                  $("#resumeDetailPopup").click(() => {
-                    var popupUrl = "/wk/p/a/1200/retrievePopResumeDetail.do";
-                    var $tmplSeqnoSelected = $(
-                      "input[name=basicResumeYn]:checked"
-                    );
-                    if ($tmplSeqnoSelected.length < 1) {
-                      alert("이력서를 선택해주세요.");
-                      return;
-                    }
-                    // 선택한 이력서, 자기소개서 번호
-                    var parameter = {
-                      tmplSeqno: $tmplSeqnoSelected.val(),
-                    };
-                    var $arrSfidNoSelected = $("input[name=arrSfidNo]:checked");
-                    if ($arrSfidNoSelected.length > 0) {
-                      parameter.sfidNo = $arrSfidNoSelected.val();
-                    }
-                    ComFnLib.fn_openLayerPopup(
-                      "hpwkpa1200p04",
-                      popupUrl,
-                      parameter
-                    );
-                  });
-
-                  // 첨부파일 관리 - 새 파일 등록 팝업
-                  $("#registerAttachedFilePopup").click(() => {
-                    var $fileList = $("input[type=checkbox][name=fileSel]");
-                    if ($fileList.length >= 10) {
-                      alert("이력서 첨부파일은 10개까지 등록 가능합니다.");
-                      return false;
-                    }
-
-                    var popupUrl = "/wk/p/a/4110/addrSrchList.do";
-                    var param = { athflSeq: $("#athflSeq").val() };
-                    ComFnLib.fn_openLayerPopup(
-                      "hpwkpa4110p02",
-                      popupUrl,
-                      param
-                    );
-                  });
-
-                  // 첨부파일 관리 - 첨부파일 삭제
-                  $("#deleteAttachedFile").click(() => {
-                    var $fileList = $("input[type=checkbox][name=fileSel]");
-                    if ($fileList.filter(":checked").length === 0) {
-                      alert("삭제할 파일이 없습니다.");
-                      return false;
-                    }
-                    if (confirm("삭제하시겠습니까?")) {
-                      var fileSelArray = [];
-                      var arrSeqnoArray = [];
-                      $fileList.each((index, element) => {
-                        if (element.checked) fileSelArray.push(element.value);
-                        arrSeqnoArray.push(
-                          $(element).siblings("input[name=arrSeqno]").val()
-                        );
-                      });
-                      var parameter = {
-                        fileSel: fileSelArray,
-                        arrSeqno: arrSeqnoArray,
-                      };
-                      var ajaxUrl = "/wk/p/a/4110/deleteAtchFile.do";
-                      var ajaxRequest = ComLib.ajaxReqObj(
-                        ajaxUrl,
-                        parameter,
-                        false
-                      );
-                      ajaxRequest.done(function (res) {
-                        if (res.alertMessageText) alert(res.alertMessageText);
-                        window.location.reload();
-                      });
-                    }
-                  });
-
-                  // 직무능력 자동추천 팝업
-                  $(".jobAblAutoRecommendPopup").click(function () {
-                    openJobAblAutoRecommendPopup(
-                      this.dataset.seqno,
-                      this.dataset.type
-                    );
-                  });
-                  /* event listener end */
-                  /* initialize start */
-                  hpwkpa1200m01 = {
-                    appendJobAblAutoRecommendItem:
-                      appendJobAblAutoRecommendItem,
-                    jobAblAutoRecommendInquiry: jobAblAutoRecommendInquiry,
-                  };
-                  // 직무능력 추천 사용 여부 팝업
-                  var anlyTrgtSevl = "";
-                  var tmplSeqno = "";
-                  if ("" !== anlyTrgtSevl && "" !== tmplSeqno) {
-                    jobAblAutoRecommendInquiry(tmplSeqno, anlyTrgtSevl);
-                  }
-                  /* initialize end */
+                  var sortOrderValue = null;
+                  if (sortOrdr === undefined || sortOrdr === null || sortOrdr === "") sortOrderValue = "DESC"
+                  else sortOrderValue = sortOrdr;
+            
+                  var order = new Array();
+                   order.push(1);
+                   order.push(2);
+                   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    order.push(10);
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                    order.push(6);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  
+                    
+                    order.push(3);
+                    order.push(4);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  
+                    
+                    
+                    order.push(5);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                    
+                    
+                    order.push(8);
+                    
+                    
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  
+                  order.push(13);
+                   order.push(14);
+                   order.push(15);
+                   if(sfidNo != "") order.push(16);
+                   order.push(17);
+                  var report = new RptLib.report( "이력서 보기", "wk", "/wk/mrd/p/a/hpwkpa1100r00.mrd" );
+                  report.setValue(seekCustNo)
+                    .setValue(tmplSeqno)		// 이력서
+                    .setValue(sfidNo)		// 자기소개서
+                    .setValue('')
+                    .setValue(disableCd)
+                    .setValue(sortOrderValue)
+                    .setValue(photoUrl)
+                    .setValue(disableCheck)
+                    .setValue(detailAddrCheck)
+                  ;
+                  report.setParamValue("host", "https://m.work24.go.kr");
+                  report.setParamValue("encAthflSeq", encodeURIComponent(""));
+                  report.setParamValue("atchFsno", "");
+            
+                  report.setOption("rpageorder",order)
+                    .setOption("rhwpmlopt", "4")
+                    .setOption("rincludefile", "../../common_include_v1.mrd")
+                  ;
+                  if (previewYN === "N") report.setDirectDownload("Y","pdf"); //직접다운로드 "xls" or "pdf"
+                  report.setPopupYn("Y").setEl($("#report001")).refresh();
+                  return;
+                }
+                /* functions end */
+                var itemList = []
+                $(".box_table_wrap").each(function(index, element) {
+                  if (!element.dataset.item_name || !element.dataset.item_clcd) return;
+                  itemList.push(element.dataset.item_name + "|" + element.dataset.item_clcd);
                 });
+                
+            
+                var eduList = []
+                for(i = 2; i < $('#edu table').length+2; i++){
+                  var $eachTable = $('#edu table:nth-child('+i+')');
+                  var schoolName = $eachTable.find('tbody :first :nth-child(2)').text();
+                  var period = $eachTable.find('tbody :first :nth-child(4)').text();
+                  var eduEndList = $eachTable.find('tbody tr:nth-child(2) td:first').text().trim()
+                  eduList.push(schoolName + "|" + period + "|" + eduEndList);
+                }
+            
+                var skillList = []
+                for(i = 2; i < $('#skill table').length+2; i++){
+                  skillList.push($('#skill table:nth-child('+i+')').find('tbody :first :nth-child(2)').text() + "|" + $('#skill table:nth-child('+i+')').find('tbody :first :nth-child(4)').text().replaceAll('\n','').replaceAll('\t','') + "|" + $('#skill table:nth-child('+i+')').find('tbody tr:nth-child(2) td:nth-child(4)').text().trim())
+                }
+                
+                var joinedProjectList = []
+                for(i = 2; i < $('#joinedProject table').length+2; i++){
+                  joinedProjectList.push($('#joinedProject table:nth-child('+i+')').find('tbody :first :nth-child(2)').text() + "|" + $('#joinedProject table:nth-child('+i+')').find('tbody :first :nth-child(4)').text().replaceAll('\n','').replaceAll('\t','') + "|" + $('#joinedProject table:nth-child('+i+')').find('tbody tr:nth-child(2) td:nth-child(2)').text().trim())
+                }
+                
+                var awardsList = []
+                for(i = 2; i < $('#awards table').length+2; i++){
+                  awardsList.push($('#awards table:nth-child('+i+')').find('tbody :first :nth-child(2)').text() + "|" + $('#awards table:nth-child('+i+')').find('tbody :first :nth-child(4)').text().replaceAll('\n','').replaceAll('\t','') + "|" + $('#awards table:nth-child('+i+')').find('tbody tr:nth-child(2) td:nth-child(4)').text().trim())
+                }
+                var actionItemClcdList = []
+                $("div#awards table").each((idx, element) => {
+                  actionItemClcdList.push(element.dataset.actionitemclcd);
+                });
+            
+                var overseasExList = []
+                for(i = 2; i < $('#overseasEx table').length+2; i++){
+                  overseasExList.push($('#overseasEx table:nth-child('+i+')').find('tbody :first :nth-child(2)').text() + "|" + $('#overseasEx table:nth-child('+i+')').find('tbody :first :nth-child(4)').text().replaceAll('\n','').replaceAll('\t','') + "|" + $('#overseasEx table:nth-child('+i+')').find('tbody tr:nth-child(2) td:nth-child(2)').text().trim())
+                }
+            
+                var foreignLangList = []
+                $('#foreignLang table').each((idx, ele)=>{
+                  $(ele).find("tbody tr").each((idx2, foreignLangTr) => {
+                    var $tr = $(foreignLangTr);
+                    var histDate = $tr.find("td:nth-child(5)").text();
+                    var foreignLangName = $tr.find("td:nth-child(1)").text();
+                    var foreignLangTestName = $tr.find("td:nth-child(3)").text();
+                    foreignLangList.push(foreignLangName+"|"+histDate+"|"+foreignLangTestName);
+                  });
+                });
+            
+                var isTrainingList =[]
+                for(i = 2; i < $('#isTraining table').length+2; i++){
+                  isTrainingList.push($('#isTraining table:nth-child('+i+')').find('tbody tr:nth-child(2) td:nth-child(2)').text().trim() + "|" + $('#isTraining table:nth-child(2)').find('tbody tr:nth-child(2) td:nth-child(4)').text().replaceAll('\n','').replaceAll('\t','') + "|" + $('#isTraining table:nth-child('+i+')').find('tbody :first :nth-child(2)').text())
+                }
+            
+                var licenseList = []
+                $("#license table").not(".exclude").each(function(index, element) {
+                  $(element).find("tbody tr").each((idx, ele) => {
+                    var $tr = $(ele);
+                    var orgLicense = $tr.find("td:nth-child(3)").text().trim();
+                    var startLicense = $tr.find("td:nth-child(4)").text().replaceAll('\n','').replaceAll('\t','');
+                    var txtLicense = $tr.find("td:nth-child(2)").text();
+                    licenseList.push(orgLicense + "|" + startLicense + "|" + txtLicense);
+                  });
+                });
+                
+            
+                // event listener
+                // 항목 순서 변경
+                $(".itemOrderChangePopup").click(() => {
+                  var popupUrl = "/wk/p/a/1200/resumeItemOrderChgPopup.do";
+                  var parameter = {
+                    tmplSeqno : "1",
+                    resumeItemClcdList : itemList
+                  }
+                  ComFnLib.fn_openLayerPopup("hpwkpa1200l07", popupUrl, parameter);
+            
+                });
+                // 각 항목의 입력항목 순서 변경
+                $(".recordOrderChangePopup").click((event) => {
+                  var popupUrl = "/wk/p/a/1200/resumeItemOrderChgPopup.do";
+                  var parameter = {
+                    tmplSeqno : "1",
+                    itemOrderChgClcd: event.target.dataset.clcd,
+                    resumeItemClcdList : itemList,
+                    resumeActionItemClcdList : awardsList,
+                    actionItemClcdList: actionItemClcdList,		
+                    resumeSchoolItemClcdList : eduList,
+                    resumeLicenseItemClcdList : licenseList,
+                    resumeNationItemClcdList : overseasExList,
+                    resumeJobTrainItemClcdList : isTrainingList,
+                    resumeCareerItemClcdList : skillList,
+                    resumePrjtItemClcdList : joinedProjectList,
+                    resumeForeignItemClcdList : foreignLangList
+                    }
+                  ComFnLib.fn_openLayerPopup("hpwkpa1200l07", popupUrl, parameter);
+                });
+                // 이력서 이메일 보내기 팝업
+                $(".resumeEmailSendPopup").click(function(){
+                  var popupUrl = "/wk/p/a/1200/registerResumeEmailSendView.do";
+                  ComFnLib.fn_openLayerPopup("hpwkpa1200p05", popupUrl, {tmplSeqno : "1"});
+                });
+                // 이력서 출력
+                $(".printResume").click(function() {
+                  fn_printResume(
+                    this.dataset.preview_yn
+                    , "0000007849222"
+                    , "1"
+                    , "https://m.work24.go.kr"
+                    , ""
+                    , ""
+                    , ""
+                  );
+                });
+              });
               </script>
+              
+            
+            
+            
+            
+            
+            
+            
+            
             </div>
-
-            <!-- S : survey_wrap -->
-
+            
+                    <!-- S : survey_wrap -->
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <script type="text/javascript">
-              $(document).ready(function () {});
+            $(document).ready(function() {
+            
+            });
             </script>
-
-            <!-- E : survey_wrap -->
-          </div>
+            
+            
+            
+                    <!-- E : survey_wrap -->
+                    </div>
         </div>
       </section>
 
