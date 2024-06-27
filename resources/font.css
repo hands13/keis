@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* ------------------------------ [ Font ] ------------------------------------------------------------------------------------------ */
+
+/* 한글/영어 font : Pretendard  */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src:local(※),url('../font/Pretendard-Bold.eot');
+	src:local(※),url('../font/Pretendard-Bold.eot?#iefix') format("embedded-opentype"),
+		url('../font/Pretendard-Bold.woff2') format('woff2'),
+		url('../font/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src:local(※),url('../font/Pretendard-SemiBold.eot');
+	src:local(※),url('../font/Pretendard-SemiBold.eot?#iefix') format("embedded-opentype"),
+		url('../font/Pretendard-SemiBold.woff2') format('woff2'),
+		url('../font/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-display: swap;
+    src:local(※),url('../font/Pretendard-Medium.eot');
+    src:local(※),url('../font/Pretendard-Medium.eot?#iefix') format("embedded-opentype"),
+        url('../font/Pretendard-Medium.woff2') format('woff2'),
+        url('../font/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src:local(※),url('../font/Pretendard-Regular.eot');
+	src:local(※),url('../font/Pretendard-Regular.eot?#iefix') format("embedded-opentype"),
+		url('../font/Pretendard-Regular.woff2') format('woff2'),
+		url('../font/Pretendard-Regular.woff') format('woff');
+}

@@ -1,0 +1,4643 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://m.work24.go.kr/wk/p/a/1200/resumeMng.do -->
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- 헤더에 csrf토큰 -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link
+      rel="icon"
+      href="https://m.work24.go.kr/cm/static/images/work24_logo_ico.png"
+    />
+    <!-- favicon -->
+    <link rel="stylesheet" href="./resources/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./resources/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./resources/style.css" />
+    <!-- 공통 CSS -->
+    <!-- 공통 퍼블리싱UI JS -->
+
+    <title>이력서/자기소개서 관리</title>
+
+    <script type="text/javascript">
+      var _contextPath = "/wk";
+      var _prgmId = "";
+      var _menuId = "EBG020000000551";
+    </script>
+  </head>
+  <body style="">
+    <input type="hidden" id="currentMenuId" value="EBG020000000443" />
+
+    <div id="wrap" class="person">
+      <!-- skip navigation -->
+      <!-- 임시 팝업 -->
+      <section
+        class="full_pop middle full_01"
+        id="layerPop_imsipop"
+        tabindex="0"
+      >
+        <!-- 헤더 -->
+        <header class="head">
+          <!-- 타이틀 -->
+          <h1 class="h2_sb">고용24</h1>
+          <!--// 타이틀 -->
+        </header>
+        <!--// 헤더 -->
+
+        <h2 class="pop_subtl t3_sb blind">고용24 메인 안내</h2>
+        <!-- 본문 컨텐츠 -->
+        <div class="cont">
+          <div class="flex_box js_c flex_al_e">
+            <img
+              src="./resources/moel_logo01.jpg"
+              alt="고용노동부"
+              class="w_xsmall03"
+            />
+            <img
+              src="./resources/keis_logo01.jpg"
+              alt="한국고용정보원"
+              class="w_xsmall02"
+            />
+          </div>
+
+          <p class="text_center h2_sb mt32">
+            <span class="h2_sb">
+              '고용24<span class="f_weight_400 f_size_24"
+                >(www.work24.go.kr)</span
+              >'에서<br />
+              <span class="point_color02 bold">모든 신고서비스</span>를 이용하실
+              수 있습니다. </span
+            ><br />
+          </p>
+
+          <div class="mt32 text_center">
+            <span class="t2_r point_color02">
+              고용24 공식앱은 앱스토어/플레이스토어에서 [고용24]를 검색하여
+              이용이 가능합니다.<br />
+              모바일 웹(m.work24.go.kr)에서도 동일한 서비스를 제공 받을 수
+              있습니다.<br />
+            </span>
+            <span class="t2_r point_color">
+              동일/유사한 이름의 다른앱을 다운받지 않도록 주의하시기 바랍니다.
+            </span>
+          </div>
+          <div class="box_table_wrap mt40 border_t">
+            <table class="box_table">
+              <caption>
+                고용24란?을(를) 제공하는 표
+              </caption>
+              <colgroup>
+                <col style="width: 24%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>고용24란?</th>
+                  <td class="text_left">
+                    모든 온라인 고용서비스를 한 곳에서 신청하고, 결과를 확인할
+                    수 있는 통합포털입니다.<br />
+                    개인은 일자리 검색, 구직신청(이력서 등록), 실업급여 신청,
+                    출산휴가급여 신청, 국민내일배움카드 신청 등을 기업은
+                    구인신청, 인재 검색, 고용 장려금 신청, 근로자 훈련 신청,
+                    이직확인서, 출산휴가확인서 작성 등을 할 수 있습니다.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt32">
+            <span class="point_color02"
+              >현재 고용관련 모든 서비스를 제공 중입니다.</span
+            >
+          </div>
+          <div class="mt08">
+            <span>
+              구직신청(워크넷), 실업인정 신청, 모성보호 지원금 신청, 이직확인서
+              신고(고용보험), 내일배움카드 신청(HRD-Net), 취업지원참여신청 ,
+              구직촉진수당신청(국민취업지원제도), 고용허가발급신청, 특례외국인
+              고용가능 확인(외국인고용관리) 등 기존에 이용하시던 워크넷,
+              고용보험, HRD-Net, EPS, 국민취업지원 홈페이지
+              <strong>신고서비스를 고용24에서 그대로</strong> 이용하실 수
+              있습니다.
+            </span>
+          </div>
+          <div class="mt32">
+            <span class="point_color">
+              <a href="https://www.work.go.kr/" target="_blank"
+                >워크넷(www.work.go.kr)</a
+              >,
+              <a href="https://www.ei.go.kr/" target="_blank"
+                >고용보험(www.ei.go.kr)</a
+              >,
+              <a href="https://www.hrd.go.kr/" target="_blank"
+                >HRD-Net(www.hrd.go.kr)</a
+              >,
+              <a href="https://www.eps.go.kr/" target="_blank"
+                >외국인고용관리(www.eps.go.kr)</a
+              >,
+              <a href="https://www.kua.go.kr/" target="_blank"
+                >국민취업지원제도(www.kua.go.kr)</a
+              >
+            </span>
+          </div>
+
+          <div class="mt32">
+            <a
+              href="https://m.work24.go.kr/cm/c/a/0100/selectBbttInfo.do?ntceStno=7&amp;bbsClCd=kf9cT1sUygs8E64dnqWAxg%3D%3D&amp;currentPageNo=1&amp;recordCountPerPage=10&amp;sortTycd=1&amp;startDt=&amp;endDt=&amp;searchDeTpCd=termSearchGbn0&amp;searchTxt=&amp;searchTycd=1&amp;upprJobClCd=&amp;jobClCd=&amp;bbsUrl=%2Fc%2Fa%2F0100%2FselectBbttListPost.do"
+            >
+              <span class="point_color02"
+                ><font size="14"> ☞ </font>고용24 개인회원 통합 안내문(자세한
+                사항은 클릭해서 확인하십시오)</span
+              >
+            </a>
+            <br />
+            고용24는 통합서비스 제공을 위해 워크넷, 고용보험, HRD-Net 등 각
+            서비스 개인회원 정보를 고용노동부 원아이디 정보를 기준으로 고용24 및
+            워크넷, HRD-Net 통합회원으로 전환하겠습니다. <br />
+            각 서비스에서 이용하셨던 정보는 삭제되지 않고, 실명인증 후 확인이
+            가능합니다.
+          </div>
+          <div class="mt32">
+            <a
+              href="https://m.work24.go.kr/cm/c/a/0100/selectBbttInfo.do?ntceStno=6&amp;bbsClCd=kf9cT1sUygs8E64dnqWAxg%3D%3D&amp;currentPageNo=1&amp;recordCountPerPage=10&amp;sortTycd=1&amp;startDt=&amp;endDt=&amp;searchDeTpCd=termSearchGbn0&amp;searchTxt=&amp;searchTycd=1&amp;upprJobClCd=&amp;jobClCd=&amp;bbsUrl=%2Fc%2Fa%2F0100%2FselectBbttListPost.do"
+            >
+              <span class="point_color02"
+                ><font size="14"> ☞ </font>고용24 회원가입 및 인증절차
+                안내(자세한 사항은 클릭해서 확인하십시오)</span
+              >
+            </a>
+            <br />
+            1단계) 회원가입 단계<font size="14"> → </font>2단계) 실명인증
+            단계(최초 1회)<font size="14"> → </font>3단계) 공동인증서 등록
+            단계(선택사항)
+          </div>
+          <div class="mt32">
+            <span class="point_color02"
+              ><font size="14"> ☞ </font>고용24는 개인정보의 보호 및 보안을
+              위하여 공동 및 금융인증서로 본인여부를 확인합니다.</span
+            >
+            <br />
+            정부 민원 업무용 인증서를 발급받으시면 사용이 가능합니다. 인증서는
+            무료로도 발급 가능하오니, 아래 내용을 확인하시어 발급받으시기
+            바랍니다. <br />
+            <a
+              href="https://m.work24.go.kr/cm/c/d/0170/retrieveCprtCrtUseGudn.do"
+            >
+              <span class="point_color02"
+                >인증서 이용안내 자세히 보기&gt;&gt;</span
+              >
+            </a>
+          </div>
+
+          <div class="mt60">
+            <div class="box_btn_wrap flex_al_r">
+              <a
+                href="https://m.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do"
+                class="btn big type01 w_medium02"
+                ><span>전산오류문의(1577-7114)</span></a
+              >
+              <a
+                href="https://m.work24.go.kr/cm/a/a/0110/openJoinPage.do"
+                class="btn big type01 fill w_medium02"
+                ><span>고용24 회원가입하기</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <!--// 본문 컨텐츠 -->
+        <div class="btmt" style="display: block">
+          <div class="box_chk-group mt14">
+            <span>
+              <input type="checkbox" id="signYn_open" />
+              <label for="signYn_open">일주일동안 보지 않기</label>
+            </span>
+          </div>
+        </div>
+
+        <!-- 닫기 -->
+        <a
+          href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+          class="closed"
+          id="btn_footeropenPopClose"
+        >
+          <span class="blind">팝업 닫기</span>
+        </a>
+        <!--// 닫기 -->
+      </section>
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $("#btn_footeropenPopClose")
+            .off("click")
+            .on("click", function () {
+              ui.dimHide();
+              $("#layerPop_imsipop").hide();
+              if (typeof fn_layerPopupClose != "undefined") {
+                fn_layerPopupClose("layerPop_imsipop", "signYn_open");
+              }
+            });
+
+          var today = DateLib.getToday("YYYYMMDD");
+
+          var retImsiPopHideList = [];
+          var preImsiList =
+            localStorage.getItem("g24ImsiLayerPopup") == null
+              ? {}
+              : JsonLib.parse(localStorage.getItem("g24ImsiLayerPopup"));
+
+          if (preImsiList != null) {
+            for (var i in preImsiList) {
+              for (var o in preImsiList[i]) {
+                var layerId = o;
+                var extDay = preImsiList[i][o].extDay;
+                if (extDay >= today) {
+                  retImsiPopHideList.push(layerId);
+                }
+              }
+            }
+          }
+
+          //매핑된것들 숨긴다
+          for (var idx in retImsiPopHideList) {
+            $("#" + retImsiPopHideList[idx]).remove();
+            if ($("section[id^=layerPop]").length == 0) {
+              ui.dimHide();
+            }
+          }
+
+          if ($("section[id^=layerPop]").length == 0) {
+            ui.dimHide();
+          }
+
+          //retPopHideList 기준으로 localStorage 재 구성
+          localStorage.removeItem("g24ImsiLayerPopup");
+          var preList = new Array();
+          for (var idx in retImsiPopHideList) {
+            var o = {};
+            o[retImsiPopHideList[idx]] = { extDay: today };
+            preList.push(o);
+            var ret = JsonLib.stringify(preList);
+            localStorage.setItem("g24ImsiLayerPopup", ret);
+          }
+        });
+      </script>
+      <nav id="skipnav">
+        <a
+          href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+          onclick="fn_skipNavigator(&#39;cont_wrap_area&#39;);"
+          >본문 바로가기</a
+        >
+        <a href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#gnb"
+          >주메뉴 바로가기</a
+        >
+        <!-- 23/10/10 퍼블 추가 -->
+        <a href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#quick_menu"
+          >퀵메뉴 바로가기</a
+        >
+
+        <!--// 23/10/10 퍼블 추가 -->
+      </nav>
+      <!-- //skip navigation -->
+
+      <!-- #HEADER -->
+      <header>
+        <script type="text/javascript">
+          //메시지 출력
+          if (``) {
+            alert(``);
+          } else if (``) {
+            alert(``);
+          }
+
+          if ("") {
+            var strUrl = "";
+            if (strUrl.indexOf("Post.do") <= -1) {
+              location.href = strUrl;
+            } else {
+              var form = new FormLib.Form();
+              form
+                .createForm("dummy0001", strUrl, "POST", null, null)
+                .addHidden("_csrf", $("meta[name='_csrf']").attr("content"));
+              form.addBody();
+
+              ComLib.submit("dummy0001");
+            }
+          }
+
+          $(document).ready(function () {
+            var showSearchFlag = "";
+
+            if (!ComLib.isEmpty(showSearchFlag)) {
+              $(".header_search").hide();
+            } else {
+              $(".header_search").show();
+            }
+
+            $(".btn_quick_login").on("click", function () {
+              $(".quick_login_guide").toggle();
+            });
+
+            //금지여부 체크
+            fn_checkProhibit();
+            fn_checkMenuAuth();
+
+            $("#btn_survayRate").on("click", function () {
+              if ($("#satisRgstedYn").val() == "Y") {
+                alert("만족도조사는 1번만 가능합니다");
+                return;
+              }
+
+              $("input[name='rating']:checked").val();
+
+              var data = {
+                stdgTrgtMenuId: _menuId,
+                stdgTrgtUrla: window.location.href,
+                stdgScor: $("input[name='rating']:checked").val(),
+                stdgQsinRspnCn: $("#stdgQsinRspnCn").val(),
+                stdgQsinDsfcCn: $("#stdgQsinDsfcCn").val(),
+              };
+
+              var request = ComLib.ajaxReqObj(
+                "/wk/common/insertSatifyRate.do",
+                data
+              );
+              request.done(function (responseObj, statusText, xhr) {
+                $("#satisRgstedYn").val("Y");
+                alert("소중한 의견 감사합니다.");
+              });
+            });
+          });
+
+          function fn_checkMenuAuth() {
+            if (document.referrer != "") return;
+            if (location.pathname == "/cm/z/b/0210/openLginPage.do") return;
+            if (location.pathname == "/cm/main.do") return;
+
+            var menuId = "";
+            var menuUrla = "";
+            var menuPurpSecd = "";
+            var pwdCfrmYn = "";
+
+            var data = {
+              url: location.pathname,
+            };
+            var request = ComLib.ajaxReqObj(
+              "/wk/cmm/menu/checkMenuAuth.do",
+              data,
+              false
+            );
+            request.done(function (responseObj, statusText, xhr) {
+              if (responseObj != null) {
+                menuId = responseObj.menuInfo.menuId;
+                menuUrla = responseObj.menuInfo.menuUrla;
+                menuPurpSecd = responseObj.menuInfo.menuPurpSecd;
+                pwdCfrmYn = responseObj.menuInfo.pwdCfrmYn;
+              }
+            });
+            console.log(
+              menuId + ":" + menuUrla + ":" + menuPurpSecd + ":" + pwdCfrmYn
+            );
+            console.log(
+              menuId + ":" + menuUrla + ":" + menuPurpSecd + ":" + pwdCfrmYn
+            );
+
+            fn_checkAuth("/wk", menuId, menuUrla, "", pwdCfrmYn);
+          }
+
+          function fn_checkProhibit() {
+            var request = ComLib.ajaxReqObj(
+              "/wk/cmm/menu/checkProhibitedUrl.do",
+              data
+            );
+            var data = {
+              menuId: _menuId,
+              stdgTrgtUrla: window.location.href,
+            };
+
+            request.done(function (responseObj, statusText, xhr) {
+              if (responseObj.auth == "fail") {
+                alert(responseObj.authMsg);
+                location.href = responseObj.authRedirect;
+              }
+            });
+          }
+
+          //개인/기업 메뉴 선택 시
+          function fn_click_header_top_area(gbn) {
+            $("#topArea_header").val(gbn);
+            $("#headerMenuVO").submit();
+          }
+
+          // 2레벨 메뉴 선택 시
+          function fn_click_top_menu(menuId) {
+            $("#currentMenuId_header").val(menuId);
+            $("#headerMenuVO").attr("action", "/wk/cmm/menu/clickMenu.do");
+            ComLib.submit("headerMenuVO");
+          }
+
+          function fn_goPageUrl(
+            contextPath,
+            menuId,
+            strUrl,
+            menuPurpSecd,
+            pwdCfrmYn,
+            netFunnel
+          ) {
+            if (strUrl.indexOf("http") != -1) {
+              window.open(strUrl, "_blank");
+              return;
+            }
+
+            var go = true;
+            if (menuId != null && menuId.length > 10) {
+              var request = ComLib.ajaxReqObj(
+                contextPath + "/cmm/menu/checkMenuInfo.do",
+                { menuId: menuId },
+                false
+              );
+              request.done(function (responseObj, statusText, xhr) {
+                if (responseObj != null && responseObj.ssoRedirectUrl != null) {
+                  window.open(responseObj.ssoRedirectUrl, "_blank");
+                  go = false;
+                  return;
+                }
+              });
+            }
+            if (!go) {
+              return;
+            }
+            $("#currentMenuId_header").val(menuId);
+            $("#redirectUrl_header").val(strUrl);
+            $("#menuPurpSecd_header").val(menuPurpSecd);
+            $("#headerMenuVO").attr(
+              "action",
+              contextPath + "/cmm/menu/clickMenu.do"
+            );
+
+            if ($("#pwdCfrmForm000")[0] != null) {
+              $("#pwdCfrmForm000")[0].reset();
+            }
+
+            var request = ComLib.ajaxReqObj(
+              "/cm/z/b/0220/countChkPwdCfrmYn.do",
+              { menuUrl: strUrl, menuId: menuId },
+              false
+            );
+
+            request.done(function (responseObj, statusText, xhr) {
+              if (!ComLib.isEmpty(responseObj.auth)) {
+                if (responseObj.auth != "ok") {
+                  if (
+                    responseObj.authMsg != null &&
+                    responseObj.authMsg != ""
+                  ) {
+                    alert(responseObj.authMsg);
+                  }
+
+                  if (
+                    responseObj.authRedirect != null &&
+                    responseObj.authRedirect != ""
+                  ) {
+                    location.href = responseObj.authRedirect;
+                  }
+                  return;
+                }
+              }
+
+              if (responseObj.ret == "NA") {
+                if (netFunnel != null && netFunnel != "") {
+                  ComLib.submit("headerMenuVO", {
+                    isNetfunnel: true,
+                    actionId: netFunnel,
+                  });
+                } else {
+                  ComLib.submit("headerMenuVO");
+                }
+              } else if (responseObj.ret == null) {
+                if (netFunnel != null && netFunnel != "") {
+                  ComLib.submit("headerMenuVO", {
+                    isNetfunnel: true,
+                    actionId: netFunnel,
+                  });
+                } else {
+                  ComLib.submit("headerMenuVO");
+                }
+              } else if (responseObj.ret.cnt == "0") {
+                //로그인등록 화면
+                ui.dimShow();
+                $("#chkPwdCfrmYnAdd").show();
+              } else if (responseObj.ret.cnt > 0) {
+                //로그인 확인화면
+                ui.dimShow();
+                $("#chkPwdCfrmYn").show();
+              }
+            });
+          }
+
+          function fn_chkPwdCfrmYn() {
+            var request = ComLib.ajaxReqObj(
+              "/wk/cmm/menu/chkPwdCfrmYn.do",
+              { pwdCfrmYnPwd: $("#pwdCfrmYnPwd").val() },
+              false
+            );
+            request.done(function (responseObj, statusText, xhr) {
+              if (responseObj.ret == "Y") {
+                ComLib.submit("headerMenuVO");
+              } else if (responseObj.ret == "NA") {
+                alert("등록된 비밀번호가 없습니다. 등록 페이지로 이동합니다.");
+                location.href = "/cm";
+              } else {
+                alert("비밀번호가 다릅니다.");
+              }
+            });
+          }
+
+          function fn_goPopPageUrl(contextPath, menuId, strUrl, menuPurpSecd) {
+            $("#currentMenuId_header").val(menuId);
+            $("#redirectUrl_header").val(strUrl);
+            $("#menuPurpSecd_header").val(menuPurpSecd);
+            $("#headerMenuVO").attr(
+              "action",
+              contextPath + "/cmm/menu/clickMenu.do"
+            );
+            var name = "firmCare";
+            var height = 800;
+            var width = 1200;
+            var scroll = true;
+
+            PopLib.openPostPup($("#headerMenuVO"), name, height, width, scroll);
+          }
+
+          function fn_goPopPage() {
+            window.open("/cm/pub/index.html");
+          }
+
+          function fn_goPopList() {
+            window.open("/cm/pub/guide/guide.html");
+          }
+
+          function fn_checkAuth(
+            contextPath,
+            menuId,
+            strUrl,
+            menuPurpSecd,
+            pwdCfrmYn,
+            netFunnel
+          ) {
+            var go = true;
+            if (menuId != null && menuId.length > 10) {
+              var request = ComLib.ajaxReqObj(
+                contextPath + "/cmm/menu/checkMenuInfo.do",
+                { menuId: menuId },
+                false
+              );
+              request.done(function (responseObj, statusText, xhr) {
+                if (responseObj != null && responseObj.ssoRedirectUrl != null) {
+                  window.open(responseObj.ssoRedirectUrl, "_blank");
+                  go = false;
+                  return;
+                }
+              });
+            }
+            if (!go) {
+              return;
+            }
+            $("#currentMenuId_header").val(menuId);
+            $("#redirectUrl_header").val(strUrl);
+            $("#menuPurpSecd_header").val(menuPurpSecd);
+            $("#headerMenuVO").attr(
+              "action",
+              contextPath + "/cmm/menu/clickMenu.do"
+            );
+
+            if ($("#pwdCfrmForm000")[0] != null) {
+              $("#pwdCfrmForm000")[0].reset();
+            }
+
+            var request = ComLib.ajaxReqObj(
+              "/cm/z/b/0220/countChkPwdCfrmYn.do",
+              { menuUrl: strUrl, menuId: menuId },
+              false
+            );
+
+            request.done(function (responseObj, statusText, xhr) {
+              if (!ComLib.isEmpty(responseObj.auth)) {
+                if (responseObj.auth != "ok") {
+                  if (
+                    responseObj.authMsg != null &&
+                    responseObj.authMsg != ""
+                  ) {
+                    alert(responseObj.authMsg);
+                  }
+
+                  if (
+                    responseObj.authRedirect != null &&
+                    responseObj.authRedirect != ""
+                  ) {
+                    location.href = responseObj.authRedirect;
+                  }
+                  return;
+                }
+              }
+
+              if (responseObj.ret == "NA") {
+                if (netFunnel != null && netFunnel != "") {
+                  ComLib.submit("headerMenuVO", {
+                    isNetfunnel: true,
+                    actionId: netFunnel,
+                  });
+                } else {
+                  ComLib.submit("headerMenuVO");
+                }
+              } else if (responseObj.ret == null) {
+                console.log("무사통과");
+              } else if (responseObj.ret.cnt == "0") {
+                //로그인등록 화면
+                ui.dimShow();
+                $("#chkPwdCfrmYnAdd").show();
+              } else if (responseObj.ret.cnt > 0) {
+                //로그인 확인화면
+                ui.dimShow();
+                $("#chkPwdCfrmYn").show();
+              }
+            });
+          }
+        </script>
+
+        <form
+          id="headerMenuVO"
+          action="https://m.work24.go.kr/wk/cmm/menu/topArea.do"
+          method="POST"
+        >
+          <input type="hidden" name="topArea" id="topArea_header" />
+          <input type="hidden" name="currentMenuId" id="currentMenuId_header" />
+          <input type="hidden" name="redirectUrl" id="redirectUrl_header" />
+          <input type="hidden" name="menuPurpSecd" id="menuPurpSecd_header" />
+        </form>
+
+        <!-- #header_top -->
+        <div id="header_top">
+          <div class="header_top_area">
+            <ul class="header_type">
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_click_header_top_area(&#39;EBM01&#39;)"
+                  >개인</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_click_header_top_area(&#39;EBM00&#39;)"
+                  >기업</a
+                >
+              </li>
+            </ul>
+            <ul class="header_info">
+              <!-- <li>
+                    <a href="javascript:void(0);" onclick="fn_goPopPage()" title="웹스타일가이드">퍼블</a>
+                </li> -->
+              <li>
+                <span id="timeOut" class="ml57">29분00초</span>&nbsp;&nbsp;
+                <a
+                  href="javascript:void(0);"
+                  onclick="gfn_nowTimeAdd()"
+                  class="btn xxsmall btn_round type05"
+                  >시간연장</a
+                >&nbsp;&nbsp;
+                <span class="mr10 at_header_name_area">홍길동님</span>&nbsp;
+                <a
+                  href="https://m.work24.go.kr/cm/z/b/0210/lgut.do"
+                  class="btn xxsmall btn_round type05"
+                  >로그아웃</a
+                >
+                &nbsp;<a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000001287&#39;, &#39;/z/z/1000/selectMyPageByPersonPost.do&#39;, &#39;EBM04&#39;);"
+                  class="btn xxsmall btn_round type05"
+                  >마이페이지</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;x&#39;, &#39;/c/d/0180/retrieveSiteEasyHpcmPost.do&#39;)"
+                  >이용안내 |
+                </a>
+              </li>
+              <li class="headerliSpaceCtrl">
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000001589&#39;, &#39;/c/c/0120/selectUtzeInqrLstPost.do&#39;, &#39;EBM02&#39;, &#39;N&#39;, &#39;&#39;)"
+                  >질문과 답변 |
+                </a>
+              </li>
+              <li><a href="http://as82.kr/keis">원격지원</a></li>
+              <!--<li class="bul_li"><a href="#none">글자크기</a></li>
+                <li><button type="button" class="btn_num plus" onclick="zoomControl.zoomIn();"><span class="blind">확대</span></button></li>
+                <li><button type="button" class="btn_num minus" onclick="zoomControl.zoomOut();"><span class="blind">축소</span></button></li> -->
+            </ul>
+          </div>
+        </div>
+        <!-- //#header_top -->
+
+        <!-- #header_bottom : hover시 extend 클래스 추가 -->
+        <div id="header_bottom" class="">
+          <div class="header_bottom_area">
+            <h1>
+              <!-- 23/12/04 퍼블: .temp 추가 시 "고용24(시범운영)" 로고 -->
+              <a href="https://m.work24.go.kr/cm"
+                ><span class="blind">고용24</span></a
+              >
+            </h1>
+
+            <!-- gnb -->
+            <div id="gnb">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">채용정보</a>
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000002&#39;, &#39;/a/b/1200/retriveDtlEmpSrchListPost.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >일자리 찾기</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000016&#39;, &#39;/a/b/2100/resumeMngMainPost.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >구직신청</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000001836&#39;, &#39;/a/f/1100/retrieveEmpEventListPost.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >채용행사</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000050&#39;, &#39;/jobyoung/smallGiants/corpInfoSrchList.do?coGbCd=small&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        title="새창 열림"
+                        >강소기업</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="javascript:void(0);">취업지원</a>
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000054&#39;, &#39;&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >취업역량강화</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000084&#39;, &#39;/r/d/1110/resumeSelfIntroGuide1Post.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >취업가이드</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/ua&#39;, &#39;EBG120000000001&#39;, &#39;&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >국민취업지원제도</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000120&#39;, &#39;/c/a/1110/ExperiPgmInfoView.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >일 경험</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000134&#39;, &#39;&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >취업지원금</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="javascript:void(0);">실업급여</a>
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/ei&#39;, &#39;EBG020000000160&#39;, &#39;/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >수급자격</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/ei&#39;, &#39;EBG020000000206&#39;, &#39;/a/h/1100/retrieveEmpymnHopeCardInfoPost.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >실업인정</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/ei&#39;, &#39;EBG020000000265&#39;, &#39;/a/m/1200/createPuElempAllwncViewPost.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >취업촉진수당</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="javascript:void(0);">직업 능력 개발</a>
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000295&#39;, &#39;/h/a/1100/selectIssueRequestPost.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >국민내일배움카드</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000308&#39;, &#39;/a/a/1100/trnnCrsInfPost.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >훈련 찾기·신청</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000324&#39;, &#39;/i/b/1100/selectCrqfcIssuReqstPost.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >훈련 기관·강사</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="javascript:void(0);">출산 휴가·육아 휴직</a>
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/ei&#39;, &#39;EBG020000000393&#39;, &#39;/b/a/1100/openHPEIBA1100M02Post.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >출산(전후)휴가</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="fn_goPageUrl(&#39;/ei&#39;, &#39;EBG020000000418&#39;, &#39;/b/b/1100/openHPEIBB1100M01Post.do&#39;, &#39;&#39;, &#39;N&#39;, &#39;&#39;)"
+                        >육아휴직</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- //gnb -->
+
+            <!-- utility -->
+            <ul class="header_util">
+              <li class="header_search">
+                <a href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                  ><span class="blind">검색</span></a
+                >
+              </li>
+              <li class="header_category">
+                <a
+                  href="javascript:void(0)"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/c/d/0150/retrieveStmpPost.do&#39;)"
+                  ><span class="blind">메뉴 전체보기</span></a
+                >
+              </li>
+            </ul>
+            <!-- //utility -->
+          </div>
+        </div>
+        <!-- //#header_bottom -->
+
+        <script type="text/javascript">
+          //상단 검색 돋보기 버튼
+          $("#header_bottom ul.header_util .header_search a").on(
+            "click",
+            function () {
+              $("#keyword").empty();
+              $("#topQuery").val("");
+              $(".layer_auto_search_wrap").css("display", "none");
+              if ($(".sub_search_wrap").hasClass("active")) {
+                $(".sub_search_wrap").removeClass("active");
+                $(this).removeClass("on");
+              } else {
+                $(".sub_search_wrap").addClass("active");
+                $(this).addClass("on");
+              }
+            }
+          );
+        </script>
+
+        <script type="text/javascript">
+          $(document).ready(function () {
+            //추천검색어
+            var request = ComLib.ajaxReqObj(
+              "/cm/f/c/0100/retrieveRecommandWord.do",
+              { query: "" }
+            );
+            request.done(function (responseObj, statusText, xhr) {
+              if (responseObj.recommandValue == null) {
+                return;
+              }
+              if (responseObj.recommandValue.Data.Return > 0) {
+                $("#recommendArea").empty();
+                for (var idx in responseObj.recommandValue.Data.Word) {
+                  var w = responseObj.recommandValue.Data.Word;
+                  $("#recommendArea").append(
+                    '<li><a href="javascript:void(0);" onclick="fn_popWordClick(\'' +
+                      w[idx] +
+                      "')\">" +
+                      w[idx] +
+                      "</a></li>"
+                  );
+                }
+              }
+            });
+
+            //엔터키 이벤트
+            $("#topQuery").keydown(function (theEvent) {
+              var keyCode = window.event ? event.keyCode : theEvent.which;
+              if (keyCode == 13) {
+                $("#findSearchData").click();
+                return false;
+              }
+            });
+
+            $("#findSearchData").on("click", function () {
+              $("#topQueryData").val($("#topQuery").val());
+              var ret = $("#topQueryData").val();
+              if (ret != "" && ret != null) {
+                ComLib.submit("searchDataForm");
+              } else {
+                alert("검색어를 입력하세요.");
+              }
+            });
+
+            $("#header_bottom ul.header_util .header_search a").on(
+              "click",
+              function () {
+                $("#topQuery").focus();
+              }
+            );
+
+            $("#topQuerySelect").on("click", function () {
+              $(".layer_search.layer_cate_search").css("display", "");
+            });
+
+            $(".layer_search.layer_cate_search ul li a").on(
+              "click",
+              function () {
+                $(".layer_search.layer_cate_search ul li a").each(function () {
+                  $(this).removeClass("active");
+                });
+                $(this).addClass("active");
+                $("#topQuerySelect span").text($(this).data("title"));
+                $("#topQuerySearchArea").val($(this).data("value"));
+                $(".layer_search.layer_cate_search").css("display", "none");
+              }
+            );
+
+            $("#topQuery").autocomplete({
+              source: function (req, res) {
+                req.term = StrLib.trimSpecialChar(req.term);
+                $("#topQuery").val(req.term);
+                if (req.term == null || req.term == "") {
+                  return;
+                }
+                var request = ComLib.ajaxReqObj(
+                  "/cm/f/c/0110/autoComplete.do",
+                  { query: req.term }
+                );
+                request.done(function (responseObj, statusText, xhr) {
+                  $("#keyword").empty();
+                  $("#policyList").empty();
+
+                  var retList = responseObj.ret.result;
+                  var retList2 = [];
+                  if (responseObj.retList2.result != null) {
+                    retList2 = responseObj.retList2.result[0].items; //정책
+                  }
+                  let mergeAry = new Array();
+                  $.each(retList, function (i, key) {
+                    //배열 합치고
+                    if (retList[i].totalcount > 0) {
+                      mergeAry = $.merge(mergeAry, retList[i].items);
+                    }
+                  });
+                  $.each(mergeAry, function (i, key) {
+                    //label 추가 한다.
+                    mergeAry[i].label = mergeAry[i].keyword;
+                  });
+                  if (mergeAry != null && mergeAry.length > 0) {
+                    $(".layer_auto_search_wrap").css("display", "");
+                    if (retList2 != null && retList2.length > 0) {
+                      $.each(retList2, function (i, key) {
+                        var hkeyword = retList2[i].hkeyword
+                          .replace("@stag@", "<span class='point_color02'>")
+                          .replace("@etag@", "</span>");
+                        var sp = retList2[i].linkurl.split("?wn?");
+                        if (retList2[i].linkname == "menu") {
+                          //contextPath, menuId, strUrl, menuPurpSecd, pwdCfrmYn, netFunnel
+                          var ret =
+                            '<li class="txt_list"><a href="#none" onclick="fn_goPageUrl(\'' +
+                            sp[0] +
+                            "', '" +
+                            sp[2] +
+                            "', '" +
+                            sp[1] +
+                            "', '" +
+                            sp[3] +
+                            "');\">" +
+                            hkeyword +
+                            "</a></li>";
+                        } else {
+                          var ret =
+                            '<li class="txt_list"><a href="#none" onclick="fn_goPolicyIntrotop(\'' +
+                            sp[1] +
+                            "', '" +
+                            sp[0] +
+                            "');\">" +
+                            hkeyword +
+                            "</a></li>";
+                        }
+                        $("#policyList").append(ret);
+                      });
+                      // 						$.each(retList2,function(i,key){
+                      // 							console.log("1-->", retList2[i]);
+                      // 							var hkeyword = retList2[i].hkeyword.replace("@stag@","<span class='point_color02'>").replace("@etag@","</span>");
+                      // 							var ret = '<li class="txt_list"><a href="#none" onclick="fn_goPolicyIntrotop(\''+ retList2[i].linkurl +'\', \''+retList2[i].linkname+'\');">'+hkeyword+'</a></li>';
+                      // 							$("#policyList").append(ret);
+                      // 						});
+                    }
+                  } else if (retList2 != null && retList2.length > 0) {
+                    $.each(retList2, function (i, key) {
+                      var hkeyword = retList2[i].hkeyword
+                        .replace("@stag@", "<span class='point_color02'>")
+                        .replace("@etag@", "</span>");
+                      var sp = retList2[i].linkurl.split("?wn?");
+                      if (retList2[i].linkname == "menu") {
+                        //contextPath, menuId, strUrl, menuPurpSecd, pwdCfrmYn, netFunnel
+                        var ret =
+                          '<li class="txt_list"><a href="#none" onclick="fn_goPageUrl(\'' +
+                          sp[0] +
+                          "', '" +
+                          sp[2] +
+                          "', '" +
+                          sp[1] +
+                          "', '" +
+                          sp[3] +
+                          "');\">" +
+                          hkeyword +
+                          "</a></li>";
+                      } else {
+                        var ret =
+                          '<li class="txt_list"><a href="#none" onclick="fn_goPolicyIntrotop(\'' +
+                          sp[1] +
+                          "', '" +
+                          sp[0] +
+                          "');\">" +
+                          hkeyword +
+                          "</a></li>";
+                      }
+                      $("#policyList").append(ret);
+                    });
+                    // 					$.each(retList2,function(i,key){
+                    // 						console.log("2-->", retList2[i]);
+                    // 						var hkeyword = retList2[i].hkeyword.replace("@stag@","<span class='point_color02'>").replace("@etag@","</span>");
+                    // 						//var ret = '<li class="txt_list" onclick="topQueryClick2(\''+retList2[i].keyword+'\')"><a href="#none">'+hkeyword+'</a></li>';
+                    // 						var ret = '<li class="txt_list"><a href="#none" onclick="fn_goPolicyIntrotop(\''+retList2[i].linkurl+'\', \''+retList2[i].linkname+'\');">'+hkeyword+'</a></li>';
+                    // 						$("#policyList").append(ret);
+                    // 					});
+                    $(".layer_auto_search_wrap").css("display", "");
+                  }
+                  res(mergeAry); //autocomplete에 추가 한다.
+                });
+              },
+              focus: function (event, item) {
+                return false;
+              },
+              delay: 600,
+              minLength: 2,
+              autofocus: true,
+            });
+
+            //검색창 입력값 특수문자 제거 로직
+            $("#topQuery").keypress(function (e) {
+              $(this).val(StrLib.trimSpecialChar($(this).val()));
+            });
+            $("#topQuery").keyup(function (e) {
+              $(this).val(StrLib.trimSpecialChar($(this).val()));
+            });
+
+            $("#topQuery").keyup(function () {
+              var ret = $(this).val();
+              if (ret == "") {
+                $("#keyword").empty();
+                $("#policyList").empty();
+                $(".layer_search.layer_cate_search").css("display", "none");
+                $(".layer_auto_search_wrap").css("display", "none");
+              }
+            });
+
+            //css변경 및 제어등
+            $("#topQuery").autocomplete("instance")._renderItem = function (
+              ul,
+              item
+            ) {
+              var hkeyword = item.hkeyword
+                .replace("@stag@", "<span class='point_color02'>")
+                .replace("@etag@", "</span>");
+              var ret =
+                '<li><a href="javascript:void(0);" onclick="topQuerySet(\'' +
+                item.value +
+                "')\">" +
+                hkeyword +
+                "</a></li>";
+              return $(ret).appendTo($("#keyword"));
+            };
+          });
+
+          function fn_popWordClick(w) {
+            $("#topQuery").val(w);
+          }
+
+          function topQuerySet(v) {
+            $("#topQuery").val(v);
+            var request = ComLib.ajaxReqObj(
+              "/cm/f/c/0100/retrieveRecommandWord.do",
+              { query: v }
+            );
+            request.done(function (responseObj, statusText, xhr) {
+              if (responseObj.recommandValue.Data.Return > 0) {
+                $("#recommendArea").empty();
+                for (var idx in responseObj.recommandValue.Data.Word) {
+                  var w = responseObj.recommandValue.Data.Word;
+                  $("#recommendArea").append(
+                    '<li><a href="javascript:void(0);" onclick="fn_popWordClick(\'' +
+                      w[idx] +
+                      "')\">" +
+                      w[idx] +
+                      "</a></li>"
+                  );
+                }
+              }
+            });
+            $(".layer_search.layer_cate_search").css("display", "none");
+            $(".layer_auto_search_wrap").css("display", "none");
+          }
+
+          function topQueryClick(v) {
+            $("#topQueryData").val(v);
+            ComLib.submit("searchDataForm");
+          }
+          //서비스 검색
+          function topQueryClick2(v) {
+            $("#topQueryData").val(v);
+            $("#topQuerySearchArea").val("policy_emp"); //정책
+            ComLib.submit("searchDataForm");
+          }
+
+          //정책바로가기 이동
+          function fn_goPolicyIntrotop(systClId, systId) {
+            $("#topsystClId").val(systClId);
+            $("#topsystId").val(systId);
+
+            if (ComLib.isEmpty(systId))
+              //정책분류인 경우
+              $("#searchDataForm").attr(
+                "action",
+                "/wk/c/f/1100/selecPolicyInfoPost.do"
+              );
+            //제도인 경우
+            else
+              $("#searchDataForm").attr(
+                "action",
+                "/wk/c/f/1100/selecSystInfoPost.do"
+              );
+            ComLib.submit("searchDataForm");
+          }
+        </script>
+
+        <form
+          id="searchDataForm"
+          action="https://m.work24.go.kr/cm/f/c/0100/selectUnifySearchPost.do"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            id="topQuerySearchArea"
+            name="topQuerySearchArea"
+            value="all"
+          />
+          <input type="hidden" id="topQueryData" name="topQueryData" />
+          <input type="hidden" id="startCount" name="startCount" value="1" />
+          <input type="hidden" id="listCount" name="listCount" value="5" />
+          <input type="hidden" name="systClId" id="topsystClId" />
+          <input type="hidden" name="systId" id="topsystId" />
+        </form>
+        <!-- 서브검색 : 메인에서는 예외처리, 서브만 노출 -->
+        <div class="sub_search_wrap">
+          <div class="top_search_form pt16">
+            <!-- 검색영역 -->
+            <div class="topsearch_wrap">
+              <div class="form_search_wrap">
+                <div class="main_search_area">
+                  <div class="inner_search">
+                    <button
+                      type="button"
+                      class="btn_cate_select"
+                      id="topQuerySelect"
+                    >
+                      <span>전체</span>
+                    </button>
+                    <span class="bar"></span>
+                    <input
+                      type="text"
+                      placeholder="필요한 서비스를 찾아보세요"
+                      title="필요한 서비스를 찾아보세요"
+                      id="topQuery"
+                      maxlength="150"
+                      class="ui-autocomplete-input"
+                      autocomplete="off"
+                    />
+                    <a
+                      href="javascript:void(0);"
+                      id="findSearchData"
+                      class="btn_main_search"
+                      ><span class="blind">검색</span></a
+                    >
+                  </div>
+                </div>
+                <!-- 카테고리레이어 -->
+                <div
+                  class="layer_search layer_cate_search"
+                  style="display: none"
+                >
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="active"
+                        data-value="all"
+                        data-title="전체"
+                        ><span>전체</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="report"
+                        data-title="신고·신청"
+                        ><span>신고·신청</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="policy_emp"
+                        data-title="정책"
+                        ><span>정책</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="tb_workinfo"
+                        data-title="채용"
+                        ><span>채용</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="tb_bizinfo"
+                        data-title="기업"
+                        ><span>기업</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="training"
+                        data-title="훈련"
+                        ><span>훈련</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="news"
+                        data-title="뉴스·자료"
+                        ><span>뉴스·자료</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="jobCourse"
+                        data-title="직업·진로"
+                        ><span>직업·진로</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="qual"
+                        data-title="자격"
+                        ><span>자격</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="tb_resident"
+                        data-title="인재"
+                        ><span>인재</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        data-value="etc"
+                        data-title="기타"
+                        ><span>기타</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- //카테고리레이어 -->
+                <!-- 자동완성레이어 -->
+                <div class="layer_auto_search_wrap" style="display: none">
+                  <div class="layer_search layer_auto_search">
+                    <ul class="keyword" id="keyword"></ul>
+                    <div class="service">
+                      <p class="b1_sb">정책/서비스 바로가기</p>
+                      <ul class="box_list_area" id="policyList"></ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- 자동완성레이어 -->
+              </div>
+            </div>
+            <!-- //검색영역 -->
+
+            <!-- 추천검색어 -->
+            <dl class="recommend_keyword">
+              <dt>추천검색어</dt>
+              <dd>
+                <ul id="recommendArea">
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_popWordClick(&#39;실업급여&#39;)"
+                      >실업급여</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_popWordClick(&#39;근로계약서&#39;)"
+                      >근로계약서</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_popWordClick(&#39;육아휴직&#39;)"
+                      >육아휴직</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_popWordClick(&#39;국민내일배움카드&#39;)"
+                      >국민내일배움카드</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_popWordClick(&#39;일자리채움 청년지원금&#39;)"
+                      >일자리채움 청년지원금</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_popWordClick(&#39;직업훈련&#39;)"
+                      >직업훈련</a
+                    >
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <!-- //추천검색어 -->
+          </div>
+        </div>
+        <!-- //서브검색 -->
+      </header>
+
+      <section id="container">
+        <!-- location -->
+
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var dataUrl = {
+              bkmkUrla: window.location.href,
+              strMenuId: "EBG020000000443",
+            };
+
+            var request = ComLib.ajaxReqObj(
+              "/cm/d/d/0110/selectBkmkInfo.do",
+              dataUrl
+            );
+            request.done(function (responseObj, statusText, xhr) {
+              if (!ComLib.isEmpty(responseObj.rtnMap)) {
+                $("#btn_favorate").addClass("active");
+                $("#btn_favorate").attr("flag", "true");
+              } else {
+                $("#btn_favorate").removeClass("active");
+                $("#btn_favorate").attr("flag", "");
+              }
+            });
+
+            $("#btn_favorate").on("click", function () {
+              if ($("#btn_favorate").attr("flag") == "true") {
+                alert("이미 즐겨찾기로 등록된 컨텐츠입니다.");
+                return false;
+              }
+
+              var data = {
+                bkmkUrla: window.location.href,
+                bmkn: $(document).find("title").text(),
+                strMenuId: "EBG020000000443",
+              };
+
+              var request = ComLib.ajaxReqObj(
+                "/cm/d/d/0110/insertBkmkLst.do",
+                data
+              );
+              request.done(function (responseObj, statusText, xhr) {
+                alert("즐겨찾기를 추가했습니다.");
+                $("#btn_favorate").addClass("active");
+                $("#btn_favorate").attr("flag", "true");
+              });
+            });
+          });
+
+          function fn_goNaviPageUrl(menuId, contextPath, strUrl) {
+            $("#currentMenuId_header").val(menuId);
+            $("#redirectUrl_header").val(strUrl);
+            $("#headerMenuVO").attr(
+              "action",
+              contextPath + "/cmm/menu/clickMenu.do"
+            );
+            ComLib.submit("headerMenuVO");
+          }
+          //메뉴 다운그릴 처리
+          function fn_locationDiv(param) {
+            for (var i = 1; i < 4; i++) {
+              if (i == param) {
+                continue;
+              } else {
+                $("#loc_" + i).hide();
+              }
+            }
+
+            $("#loc_" + param).toggle();
+
+            return false;
+          }
+        </script>
+        <!-- location -->
+        <div class="location">
+          <ul class="location_cont form_search_wrap">
+            <li class="home">
+              <a href="https://m.work24.go.kr/cm/main.do">홈</a>
+            </li>
+
+            <li>
+              <button
+                type="button"
+                class="btn_downgrill"
+                title="1번째 카테고리 선택하기"
+                onclick="fn_locationDiv(1)"
+              >
+                <span>마이페이지</span>
+              </button>
+              <!-- 카테고리 목록 -->
+              <div
+                class="layer_search layer_cate_search"
+                style="display: none"
+                id="loc_1"
+              >
+                <ul class="location_list">
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000443&#39;, &#39;/cm&#39;, &#39;&#39;);"
+                      class="active"
+                      ><span>마이페이지</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--// 카테고리 목록 -->
+            </li>
+
+            <li>
+              <button
+                type="button"
+                class="btn_downgrill"
+                title="2번째 카테고리 선택하기"
+                onclick="fn_locationDiv(2)"
+              >
+                <span>구직관리</span>
+              </button>
+              <!-- 카테고리 목록 -->
+              <div
+                class="layer_search layer_cate_search"
+                style="display: none"
+                id="loc_2"
+              >
+                <ul class="location_list">
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000444&#39;, &#39;/cm&#39;, &#39;/z/z/1000/selectMyPageByPersonPost.do&#39;);"
+                      ><span>마이페이지(개인)</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000445&#39;, &#39;/cm&#39;, &#39;&#39;);"
+                      ><span>회원정보관리</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000454&#39;, &#39;/wk&#39;, &#39;/p/c/1310/custmadeInfoListPost.do&#39;);"
+                      ><span>맞춤정보</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000496&#39;, &#39;/cm&#39;, &#39;/d/b/0000/selectCvplRqutListPersonPost.do&#39;);"
+                      ><span>민원신청 현황</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000510&#39;, &#39;/cm&#39;, &#39;/b/a/0410/selectRcvSvcListPost.do&#39;);"
+                      ><span>서비스이력</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000550&#39;, &#39;/wk&#39;, &#39;&#39;);"
+                      class="active"
+                      ><span>구직관리</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000601&#39;, &#39;/hr&#39;, &#39;/h/a/4110/selectCardRequestListPost.do&#39;);"
+                      ><span>훈련관리</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000678&#39;, &#39;/cm&#39;, &#39;&#39;);"
+                      ><span>참여 프로그램 관리</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000710&#39;, &#39;/cm&#39;, &#39;/c/c/0110/retrieveMyConsDtlLstPersonPost.do&#39;);"
+                      ><span>상담내역</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000500336&#39;, &#39;/ep&#39;, &#39;&#39;);"
+                      ><span>외국인고용사업주</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG120000000111&#39;, &#39;/cm&#39;, &#39;/z/z/1000/selectMobileSetByPersonPost.do&#39;);"
+                      ><span>모바일 환경설정</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--// 카테고리 목록 -->
+            </li>
+
+            <li>
+              <button
+                type="button"
+                class="btn_downgrill"
+                title="3번째 카테고리 선택하기"
+                onclick="fn_locationDiv(3)"
+              >
+                <span>이력서/자기소개서 관리</span>
+              </button>
+              <!-- 카테고리 목록 -->
+              <div
+                class="layer_search layer_cate_search"
+                style="display: none"
+                id="loc_3"
+              >
+                <ul class="location_list">
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000582&#39;, &#39;/wk&#39;, &#39;/a/b/2100/mypageResumeMngMainPost.do&#39;);"
+                      ><span>구직신청관리</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="이력서.html"
+                      class="active"
+                      ><span>이력서/자기소개서 관리</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000037&#39;, &#39;/wk&#39;, &#39;/p/b/1112/retrieveEmailAplentHistList.do&#39;);"
+                      ><span>알선/입사지원 내역</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                      onclick="fn_goNaviPageUrl(&#39;EBG020000000598&#39;, &#39;/wk&#39;, &#39;/e/b/2110/wApApplicationListPost.do&#39;);"
+                      ><span>e-채용마당 지원서관리</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--// 카테고리 목록 -->
+            </li>
+
+            <li class="on">
+              <a href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                >이력서/자기소개서 관리</a
+              >
+            </li>
+          </ul>
+          <div class="lct_area">
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              class="lct_btn_fav"
+              id="btn_favorate"
+              flag=""
+              ><span class="blind">즐겨찾기 추가</span></a
+            >
+            <!-- [D] active 클래스 추가시 즐겨찾기 ON -->
+
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              class="lct_btn_print"
+              ><span class="blind">프린트하기</span></a
+            >
+          </div>
+        </div>
+        <!-- // location -->
+
+        <div id="contents">
+          <script type="text/javascript">
+            //검색카테고리
+            $(function () {
+              $(".btn_cate_select")
+                .off("click")
+                .on("click", function () {
+                  if (
+                    $(this)
+                      .closest(".form_search_wrap")
+                      .find(".layer_cate_search")
+                      .css("display") === "none"
+                  ) {
+                    $(".layer_cate_search").hide();
+                    $(this)
+                      .closest(".form_search_wrap")
+                      .find(".layer_cate_search")
+                      .show();
+                  } else if (
+                    $(this)
+                      .closest(".form_search_wrap")
+                      .find(".layer_cate_search")
+                      .css("display") !== "none"
+                  ) {
+                    $(this)
+                      .closest(".form_search_wrap")
+                      .find(".layer_cate_search")
+                      .hide();
+                  }
+                });
+              $(".layer_cate_search a").on("click", function (e) {
+                e.preventDefault();
+                const txt = $(this).find("span").text();
+                $(".layer_cate_search a").removeClass("active");
+                $(this)
+                  .addClass("active")
+                  .parents(".layer_cate_search")
+                  .hide()
+                  .closest(".form_search_wrap")
+                  .find(".btn_cate_select")
+                  .find("span")
+                  .text(txt);
+              });
+            });
+          </script>
+
+          <!-- #lnb -->
+          <div class="lnb">
+            <h2 class="h2_sb">마이페이지(개인)</h2>
+            <ul>
+              <li class="">
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000444&#39;, &#39;/z/z/1000/selectMyPageByPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                  >마이페이지(개인)</a
+                >
+
+                <ul></ul>
+              </li>
+
+              <li class="depth">
+                <a href="javascript:void(0);">회원정보관리</a>
+
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000446&#39;, &#39;/a/a/0210/openIndvMberInfoUpdtPagePost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >개인회원 정보 수정</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000448&#39;, &#39;/a/a/0210/openIndvMberNmUpdtPagePost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >개인회원 성명 변경</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000450&#39;, &#39;/z/b/0110/openPwdChngPagePost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >비밀번호 변경</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000451&#39;, &#39;/a/a/0210/openRgstMberCrtPagePost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >회원 인증서 관리</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000452&#39;, &#39;/z/z/0110/openScsnMberPagePost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >회원 탈퇴</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000453&#39;, &#39;/d/d/0110/retrieveBkmkLstPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >즐겨찾기</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="depth">
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000454&#39;, &#39;/p/c/1310/custmadeInfoListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                  >맞춤정보</a
+                >
+
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000462&#39;, &#39;/p/c/1310/custmadeInfoListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >맞춤채용정보</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG029000000004&#39;, &#39;/a/a/2100/custmadeTrainInfoPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >맞춤훈련정보</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG029000000003&#39;, &#39;/a/a/2200/custmadeQualInfoPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >맞춤자격정보</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000473&#39;, &#39;/b/a/0110/selectMyRecommandPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >AI추천정보</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000487&#39;, &#39;/a/a/4100/retrieveEmpConcernListPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >관심정보</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000495&#39;, &#39;/jobCare/introExp/jobCareIntroExp.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      title="새창 열림"
+                      class="btn_link right blue"
+                      >잡케어</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="depth">
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000496&#39;, &#39;/d/b/0000/selectCvplRqutListPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                  >민원신청 현황</a
+                >
+
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000497&#39;, &#39;/d/b/0000/selectCvplRqutListPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >민원신청 현황조회</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000498&#39;, &#39;/d/b/0003/selectCvplNotiListPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >민원처리 알림</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="depth">
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000510&#39;, &#39;/b/a/0410/selectRcvSvcListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                  >서비스이력</a
+                >
+
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000511&#39;, &#39;/b/a/0410/selectRcvSvcListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >서비스 수혜이력조회</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000527&#39;, &#39;/d/a/0110/retrieveCrtfIssuRqutCrstLstPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >증명서 발급 신청</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="depth">
+                <a href="이력서.html">구직관리</a>
+
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000582&#39;, &#39;/a/b/2100/mypageResumeMngMainPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >구직신청관리</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000551&#39;, &#39;/p/a/1200/resumeMngPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >이력서/자기소개서 관리</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000037&#39;, &#39;/p/b/1112/retrieveEmailAplentHistList.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >알선/입사지원 내역</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000598&#39;, &#39;/e/b/2110/wApApplicationListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >e-채용마당 지원서관리</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="depth">
+                <a href="나의전자지갑.html" class="on">전자지갑</a>
+
+                <ul style="display: block">
+                  <li>
+                    <a
+                      href="나의전자지갑.html"
+                      
+                      >나의전자지갑</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="내일배움카드.html">내일배움카드</a
+                    >
+                  </li>
+
+
+                  <li class="on">
+                    <a
+                      href="증명서관리.html"
+                      
+                      >증명서관리</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="디지털배지관리.html"
+                      >디지털배지 관리</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000598&#39;, &#39;/e/b/2110/wApApplicationListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >이용내역</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000598&#39;, &#39;/e/b/2110/wApApplicationListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >디지털이력서 확인</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="depth">
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000601&#39;, &#39;/h/a/4110/selectCardRequestListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                  >훈련관리</a
+                >
+
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000602&#39;, &#39;/h/a/4110/selectCardRequestListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >국민내일배움카드</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000614&#39;, &#39;/h/a/5110/selectUseDtcnListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >내일배움카드(20년 이전)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000623&#39;, &#39;/i/a/1120/selectOnlineEnrolmentListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >온라인 수강신청 이력</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000629&#39;, &#39;/i/a/1110/selectTraHisPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >직업훈련이력</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000656&#39;, &#39;/i/a/1240/selectStuAcyPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >일학습병행제</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000671&#39;, &#39;/hrdp/ps/ppspo/PPSPO0100S.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      title="새창 열림"
+                      class="btn_link right blue"
+                      >심사평가위원 정보등록</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000672&#39;, &#39;/e/d/1100/selectBhaEvlVrfcPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >BHA평가검증</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000677&#39;, &#39;/hrdp/ps/ppspo/PPSPO0100L.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      title="새창 열림"
+                      class="btn_link right blue"
+                      >심사관리</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="depth">
+                <a href="javascript:void(0);">참여 프로그램 관리</a>
+
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000702&#39;, &#39;/p/f/3310/joinResultPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >구직자취업역량강화프로그램</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000688&#39;, &#39;/g/b/1110/applyListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >청년도전지원사업</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/ua&#39;, &#39;EBG120000000012&#39;, &#39;/u/a/1100/selectMyPrcpStts.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >국민취업지원제도</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000680&#39;, &#39;/c/a/1120/joinCurtStateListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >미래내일 일경험 사업</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/ua&#39;, &#39;EBG120000000013&#39;, &#39;/u/b/2100/selectJoinInquiry.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >(국민취업)일경험프로그램</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000692&#39;, &#39;/l/b/1110/tomorrowOperOrgDetailPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >청년내일채움공제</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020270501001&#39;, &#39;/m/b/1110/fillJobApplStatusInfo.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >일자리채움청년지원금</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="depth">
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000710&#39;, &#39;/c/c/0110/retrieveMyConsDtlLstPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                  >상담내역</a
+                >
+
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000526&#39;, &#39;/c/c/0110/retrieveMyConsDtlLstPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >나의 상담내역</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000711&#39;, &#39;/i/a/2130/PPSTC0115LPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >훈련진단상담</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000733&#39;, &#39;/i/a/2120/trnnDscsnHisInqPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >훈련상담이력조회</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000001833&#39;, &#39;/h/a/2120/selectTrnnHisInqPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >훈련상담 이력조회(2020년 이전)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/hr&#39;, &#39;EBG020000000735&#39;, &#39;/i/a/2120/selectTrInqryListPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >훈련문의내역</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000000737&#39;, &#39;/a/i/1120/weSchEmpConsltRoomSvcInvitePost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >우리학교취업지원실 상담</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000739&#39;, &#39;/consltJobCarpa/jobPsyExamNew/conslt/jobPsyExamConsltGetList.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      title="새창 열림"
+                      class="btn_link right blue"
+                      >심리검사 상담</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="depth">
+                <a href="javascript:void(0);">외국인고용사업주</a>
+
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/ep&#39;, &#39;EBG020000500444&#39;, &#39;/c/a/0013/hpepca0013m01PerPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >채용관리</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/ep&#39;, &#39;EBG020000500461&#39;, &#39;/d/a/0021/hpepda0021m00PerPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >도입관리</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/ep&#39;, &#39;EBG020000500483&#39;, &#39;/b/a/2100/hpepba2100m01PerPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >외국인업무지원</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      onclick="fn_goPageUrl(&#39;/ep&#39;, &#39;EBG020000500337&#39;, &#39;/a/a/0001/hpepaa0001m30PerPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                      >외국인고용 민원사무 신청</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="">
+                <a
+                  href="javascript:void(0);"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG120000000111&#39;, &#39;/z/z/1000/selectMobileSetByPersonPost.do&#39;, &#39;EBM04&#39;, &#39;N&#39;, &#39;&#39;)"
+                  >모바일 환경설정</a
+                >
+
+                <ul></ul>
+              </li>
+            </ul>
+          </div>
+          <!-- //#lnb -->
+
+          <div class="cont_wrap">
+            <script
+              type="text/javascript"
+              src="./resources/hp_wk_common.js"
+            ></script>
+            <link rel="stylesheet" href="./resources/wk-common.css" />
+
+            <div class="cont_wrap_area">
+              <!-- title -->
+              <div class="sub_tl">
+                <h2 class="h2_sb">증명서 관리</h2>
+              </div>
+
+              <!-- S :안내 영역 -->
+
+              <!-- //notice -->
+
+              <!-- E :안내 영역 -->
+
+              <div class="box_section">
+                <!--	<h2 class="t2_sb">구직신청 안내
+			<span class="sub_txt ml08">반드시 <span class="point_color02">구직신청</span>을 하셔야 입사지원, 취업알선을 받으실 수 있습니다.</span>
+		</h2>z
+
+		<div class="mt24" style="border:1px solid #ddd;height:190px">(추후 자료제공 예정)</div>-->
+
+                <!-- <div class="box_border_type type_pd24 flex_s mt24">
+                  <div>
+                    <strong class="b1_sb"
+                      >증명서!</strong
+                    >
+                    <p class="b1_r">
+                      AI가 회원님만을 위한 추천일자리를 24시간 이내 분석하여
+                      제공합니다.
+                    </p>
+                    <span class="sub_txt point_color02"
+                      >*증명서는 .</span
+                    >
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- tableArea -->
+              <div class="box_section">
+                <div class="box_table_wrap">
+                  <div class="box_table_hd">
+                    <h3 class="t2_sb">증명서 보관함</h3>
+
+                    <div class="box_btn_wrap flex_al_l type02">
+                      <div class="cell">
+                        <a
+                          id="resumeDetailPopup"
+                          href="증명서목록.html"
+                          class="btn medium fill type01"
+                          >증명서 발급
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- table : l_type02 -->
+                  <table class="box_table">
+                    <caption>
+                      선택,이력서 제목,관리,최종수정일을(를) 제공하는 표
+                    </caption>
+
+                    <colgroup>
+                      <col />
+                      <col style="width: 25%" />
+                      <col style="width: 15%" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">증명서 제목</th>
+                        <th scope="col">관리</th>
+                        <th scope="col">발급일</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="link prototype">
+                          <div class="certificate_list">
+                            <a
+                              href="토익증명서.html"
+                              class=""
+                            >
+                              TOEIC 성적증명서
+                            </a>
+                            <span class="tbl_label">YBM 한국TOEIC위원회</span>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="box_btn_group">
+                            <button
+                              type="button"
+                              class="btn xsmall type02 registerResume"
+                            >
+                              삭제
+                            </button>
+                           </span>
+                        </td>
+                        <td>2024-06-13</td>
+                      </tr>
+                      <tr>
+                        <td class="link prototype">
+                          <div class="certificate_list">
+                            <a
+                              href="https://m.work24.go.kr/wk/p/a/1200/retrieveResumeDetail.do?tmplSeqno=1"
+                              class=""
+                            >
+                              정보처리기사
+                            </a>
+                            <span class="tbl_label" style=" background: #ff9661;">한국산업인력공단</span>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="box_btn_group">
+                            <button
+                              type="button"
+                              class="btn xsmall type02 registerResume"
+                            >
+                              삭제
+                            </button>
+                           </span>
+                        </td>
+                        <td>2024-06-13</td>
+                      </tr>
+                      <tr>
+                        <td class="link prototype">
+                          <div class="certificate_list">
+                           
+                            <a
+                              href="https://m.work24.go.kr/wk/p/a/1200/retrieveResumeDetail.do?tmplSeqno=1"
+                              class=""
+                            >
+                              컴퓨터공학전공
+                            </a>
+                            <span class="tbl_label" style=" background: #47ad47;">한국산업인력공단</span>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="box_btn_group">
+                            <button
+                              type="button"
+                              class="btn xsmall type02 registerResume"
+                            >
+                              삭제
+                            </button>
+                           </span>
+                        </td>
+                        <td>2024-06-13</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- //table -->
+                </div>
+              </div>
+
+          
+
+
+              <form
+                id="resumeSrchVO"
+                name="resumeSrchVO"
+                action="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do"
+                method="post"
+              >
+                <input type="hidden" id="tempAge" name="tempAge" value="43" />
+                <input type="hidden" id="tmplSeqno" name="tmplSeqno" value="" />
+                <input
+                  type="hidden"
+                  id="tmplFileSeq"
+                  name="tmplFileSeq"
+                  value=""
+                />
+                <input
+                  type="hidden"
+                  id="baseFlagSt"
+                  name="baseFlagSt"
+                  value=""
+                />
+                <input
+                  type="hidden"
+                  name="seoulIfAgree"
+                  id="seoulIfAgree"
+                  value=""
+                />
+                <input type="hidden" name="fileSel[]" id="fileSel" />
+                <input type="hidden" name="arrSeqno[]" id="arrSeqno" />
+              </form>
+
+              <script>
+                hpwkpa1200m01 = null;
+                $(document).ready(() => {
+                  /* callBackFunc start */
+                  // 직무능력 자동추천 추가
+                  function appendJobAblAutoRecommendItem(obj) {
+                    var ajaxUrl = "/wk/p/a/1300/registerJobAbl.do";
+                    var parameter = {
+                      tmplSeqno: obj.tmptSn,
+                      jhntMbn: obj.jhntMbn,
+                      anlyTrgtSevl: obj.anlyTrgtSevl,
+                      matchDocId: obj.matchDocId,
+                    };
+                    var ajaxRequest = ComLib.ajaxReqObj(
+                      ajaxUrl,
+                      parameter,
+                      false
+                    );
+                    ajaxRequest.done(function (res) {
+                      if (res.alertMessageText) alert(res.alertMessageText);
+                      if (window.location.search === "")
+                        window.location.reload();
+                      else window.location.search = "";
+                    });
+                  }
+                  /* callBackFunc end */
+                  function openJobAblAutoRecommendPopup(
+                    tmplSeqno,
+                    anlyTrgtSevl
+                  ) {
+                    var ajaxUrl = "/wk/p/a/1200/retrieveResumeInfoAjax.do";
+                    var ajaxParameter = {
+                      tmplSeqno: tmplSeqno,
+                      anlyTrgtSevl: anlyTrgtSevl,
+                    };
+                    var ajaxRequest = ComLib.ajaxReqObj(
+                      ajaxUrl,
+                      ajaxParameter,
+                      false
+                    );
+                    ajaxRequest.done(function (res) {
+                      if (!res.isValid) {
+                        alert("희망직무, 학력은 필수값 입니다.");
+                        return;
+                      }
+                      var popupId = "hpwkpa1300p05";
+                      var popupUrl =
+                        "/wk/p/a/1300/retrievePopJobAblAutoRecommend.do";
+                      var popupParameter = {
+                        tmplSeqno: tmplSeqno,
+                        anlyTrgtSevl: anlyTrgtSevl,
+                        reqGbn: "1",
+                        seekAuthNo: "",
+                        empHopeJobCont: res.empHopeJobCont
+                          ? res.empHopeJobCont
+                              .replace(/^\s+|\s+$/g, "")
+                              .replace(/\n/gi, "")
+                          : "",
+                        eduInfoCont: res.eduInfoCont
+                          ? res.eduInfoCont
+                              .replace(/^\s+|\s+$/g, "")
+                              .replace(/\n/gi, "")
+                          : "",
+                        licenseInfoCont: res.licenseInfoCont
+                          ? res.licenseInfoCont
+                              .replace(/^\s+|\s+$/g, "")
+                              .replace(/\n/gi, "")
+                          : "",
+                        carrerInfoCont: res.carrerInfoCont
+                          ? res.carrerInfoCont
+                              .replace(/^\s+|\s+$/g, "")
+                              .replace(/\n/gi, "")
+                          : "",
+                        prjtInfoCont: res.prjtInfoCont
+                          ? res.prjtInfoCont
+                              .replace(/^\s+|\s+$/g, "")
+                              .replace(/\n/gi, "")
+                          : "",
+                        selfIntroCont: res.selfIntroCont
+                          ? res.selfIntroCont
+                              .replace(/^\s+|\s+$/g, "")
+                              .replace(/\n/gi, "")
+                          : "",
+                        callBackFunc:
+                          "hpwkpa1200m01.appendJobAblAutoRecommendItem",
+                      };
+                      ComFnLib.fn_openLayerPopup(
+                        popupId,
+                        popupUrl,
+                        popupParameter
+                      );
+                    });
+                  }
+                  function jobAblAutoRecommendInquiry(tmplSeqno, anlyTrgtSevl) {
+                    var tmplSeqnoVal = tmplSeqno ? tmplSeqno : "";
+                    var anlyTrgtSevlVal = anlyTrgtSevl ? anlyTrgtSevl : "";
+                    var $html = $(`
+					<section id="jobAblAutoRecommendInquiryPopup" class="full_pop large full_01">
+						<!-- 헤더 -->
+						<header class="head">
+							<!-- 타이틀 -->
+							<h1 class="h2_sb">직무능력 자동 추천</h1>
+							<!--// 타이틀 -->
+						</header>
+						<!--// 헤더 -->
+						<!-- 본문 컨텐츠 -->
+						<div class="cont">
+							<div class="box_border_type type_result">
+								<h3 class="t3_sb">빅데이터 및 AI기술 기반으로 직무능력을 추천받고
+								<br/>이력서에 적용하실 수 있어요.
+								<br/><span class="col_txt_blue">직무능력을 추천받아 보시겠어요?</span></h3>
+								<div class="box_btn_wrap flex_al_c">
+									<a
+										href="#none"
+										class="btn big type01 fill jobAblAutoRecommendPopup"
+										data-tmpl_seqno="${tmplSeqnoVal}"
+										data-anly_trgt_sevl="${anlyTrgtSevlVal}"
+									><span>추천받기</span></a>
+									<a href="#none" class="btn big type01 closed"><span>창 닫기</span></a>
+								</div>
+							</div>
+							<div class="box_border_type mt40">
+								<p class="b1_sb">직무능력 추가하시면 받으실 수 있는 혜택!!</p>
+								<ul class="box_list_area">
+									<li class="txt_list">작성하신 이력서를 나의 직무능력 키워드별로 확인할 수 있어요.</li>
+								</ul>
+								<p class="b1_sb">향후 추가될 혜택!!</p>
+								<ul class="box_list_area">
+									<li class="txt_list">본인의 직무능력에 꼭 맞는 맞춤채용정보를 받아보실 수 있어요.</li>
+									<li class="txt_list">보유하신 직무능력을 요구하는 기업에 인재로 추천돼요.</li>
+									<li class="txt_list">직무능력별로 채용공고를 검색할 수 있어 기존 직종별 검색보다 더 정밀한 검색이 가능해요.</li>
+									<li class="txt_list">희망직종 선택이 어렵고 힘들 때 선택하신 직무능력에 알맞은 직종을 추천해줘요.</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 닫기 -->
+						<a href="#none" class="closed">
+							<span class="blind">팝업 닫기</span>
+						</a>
+						<!--// 닫기 -->
+					</section>
+					<!--// 팝업 -->
+				`);
+                    $html.find(".jobAblAutoRecommendPopup").click(function () {
+                      var tmplSeqno = this.dataset.tmpl_seqno;
+                      var anlyTrgtSevl = this.dataset.anly_trgt_sevl;
+                      if (tmplSeqno && anlyTrgtSevl)
+                        openJobAblAutoRecommendPopup(tmplSeqno, anlyTrgtSevl);
+                    });
+                    $html.find(".closed").click(function () {
+                      var target = $(this).closest(".full_pop");
+                      target.fadeOut(150).removeClass("on");
+                      ui.dimHide();
+                    });
+                    if ($("#layer_dialog").length > 0) {
+                      $("#layer_dialog").remove();
+                    }
+                    var dialog = $(
+                      '<div id="layer_dialog" class="box_btn_wrap"></div>'
+                    );
+                    dialog.html($html);
+                    $(document.body).append(dialog);
+                    ui.fullPopup();
+                    ui.dimShow();
+                    $("#jobAblAutoRecommendInquiryPopup")
+                      .fadeIn(150)
+                      .addClass("on");
+                  }
+                  /* event listener start */
+                  // 이력서 복사
+                  $(".copyResume").click(function () {
+                    var $form = $("#resumeSrchVO");
+                    var url = "/wk/p/a/1200/modifyResumeCopy.do";
+                    $form.attr("action", url);
+                    $form
+                      .find("[name=tmplSeqno]")
+                      .val(
+                        $(this)
+                          .parent()
+                          .parent()
+                          .parent()
+                          .find("input[name=basicResumeYn]")
+                          .val()
+                      );
+                    if (confirm("복사 하시겠습니까?")) $form.submit();
+                  });
+                  // 이력서 삭제
+                  $(".deleteResume").click(function () {
+                    var $form = $("#resumeSrchVO");
+                    var url = "/wk/p/a/1200/deleteResume.do";
+                    $form.attr("action", url);
+                    $form
+                      .find("[name=tmplSeqno]")
+                      .val(
+                        $(this)
+                          .parent()
+                          .parent()
+                          .parent()
+                          .find("input[name=basicResumeYn]")
+                          .val()
+                      );
+                    if (confirm("삭제 하시겠습니까?")) $form.submit();
+                  });
+                  // 이력서 수정
+                  $(".registerResume").click(function () {
+                    var tmplSeqno = $(this)
+                      .parent()
+                      .parent()
+                      .parent()
+                      .find("input[name=basicResumeYn]")
+                      .val();
+                    var url =
+                      "/wk/p/a/1300/mypageRegisterResume.do" +
+                      "?tmplSeqno=" +
+                      tmplSeqno;
+                    window.location.href = url;
+                  });
+
+                  // 기본 이력서 설정
+                  $("#setBasicResume").click(function () {
+                    if (
+                      !$("input:checked[name=basicResumeYn]").is(":checked")
+                    ) {
+                      alert("이력서를 선택해 주세요");
+                      return false;
+                    }
+                    var url = "/wk/p/a/1200/modifyBasicResume.do";
+                    var seoulIfAgree = $("#seoulIfAgree").val();
+                    var regionChk = $("input:checked[name=basicResumeYn]")
+                      .siblings("input[name=regionChk]")
+                      .val();
+                    resumeSrchVO.action = url;
+                    $("#tmplSeqno").val(
+                      $("input:checked[name=basicResumeYn]").val()
+                    );
+                    baseFlagSt.value = $("input:checked[name=basicResumeYn]")
+                      .siblings("input[name=baseFlag]")
+                      .val();
+
+                    if (tmplSeqno.value == "" || baseFlagSt.value == "Y") {
+                      alert(
+                        "선택한 이력서는 이미 기본이력서로 설정되어 있습니다."
+                      );
+                      return;
+                    } else if (baseFlagSt.value == "T") {
+                      alert(
+                        '작성중인 이력서는 기본이력서로 등록할 수 없습니다.\n이력서 수정화면에서 "이력서등록완료"를 통해 등록을 완료하시기 바랍니다.'
+                      );
+                      return;
+                    } else if (baseFlagSt.value == "H") {
+                      alert(
+                        "구직신청 상태가 보류 중일 경우 기본이력서를 변경할 수 없습니다."
+                      );
+                      return;
+                    } else if (baseFlagSt.value == "S") {
+                      alert(
+                        "구직신청 상태가 대기 중일 경우 기본이력서를 변경할 수 없습니다."
+                      );
+                      return;
+                    } else if (seoulIfAgree == "Y" && regionChk == "N") {
+                      alert(
+                        "지방자치단체 제공 동의 여부가 선택되었습니다. 변경하시려는 이력서에는 서울, 경기, 인천, 지역무관 중 한개이상의 희망근무지역이 선택되어 있어야 합니다."
+                      );
+                      return;
+                    } else {
+                      if (
+                        confirm(
+                          "선택하신 이력서를 기본이력서로 설정하시겠습니까?"
+                        )
+                      )
+                        resumeSrchVO.submit();
+                    }
+                  });
+
+                  // 자기소개서 복사
+                  $(".copySelfIntro").click(function () {
+                    var $form = $("#resumeSrchVO");
+                    var url = "/wk/p/a/1200/copySelfIntro.do";
+                    $form.attr("action", url);
+                    $form
+                      .find("[name=tmplSeqno]")
+                      .val(
+                        $(this)
+                          .parent()
+                          .parent()
+                          .parent()
+                          .find("input[name=arrSfidNo]")
+                          .val()
+                      );
+                    if (confirm("복사 하시겠습니까?")) $form.submit();
+                  });
+                  // 자기소개서 삭제
+                  $(".deleteSelfIntro").click(function () {
+                    var $form = $("#resumeSrchVO");
+                    var url = "/wk/p/a/1200/deleteSelfIntro.do";
+                    $form.attr("action", url);
+                    $form
+                      .find("[name=tmplSeqno]")
+                      .val(
+                        $(this)
+                          .parent()
+                          .parent()
+                          .parent()
+                          .find("input[name=arrSfidNo]")
+                          .val()
+                      );
+                    if (confirm("삭제 하시겠습니까?")) $form.submit();
+                  });
+                  // 자기소개서 수정
+                  $(".registerSelfIntro").click(function () {
+                    var tmplSeqno = $(this)
+                      .parent()
+                      .parent()
+                      .parent()
+                      .find("input[name=arrSfidNo]")
+                      .val();
+                    var url =
+                      "/wk/p/a/1100/retrieveSelfIntroReg.do" +
+                      "?tmplSeqno=" +
+                      tmplSeqno;
+                    window.location.href = url;
+                  });
+                  // 기본 자기소개서 설정
+                  $("#setBasicSelfIntro").click(function () {
+                    if ($("input:checked[name=arrSfidNo]").length === 0) {
+                      alert("자기소개서를 선택하세요.");
+                      return;
+                    }
+                    if (!confirm("기본 자기소개서로 설정 하시겠습니까?"))
+                      return;
+
+                    var $form = $("#resumeSrchVO");
+                    var url = "/wk/p/a/1200/registerSelfIntroBass.do";
+                    $form.attr("action", url);
+                    $form
+                      .find("[name=tmplSeqno]")
+                      .val($("input:checked[name=arrSfidNo]").val());
+                    $form.submit();
+                  });
+                  // 기본 자기소개서 해제
+                  $("#unsetBasicSelfIntro").click(function () {
+                    var basicSelfIntroSeqno = $(
+                      "input[name='bassSfidYn']"
+                    ).val();
+                    if (!basicSelfIntroSeqno) {
+                      alert("기본 자기소개서가 없습니다.");
+                      return;
+                    }
+                    if (!confirm("기본 자기소개서를 해제 하시겠습니까?"))
+                      return false;
+                    var ajaxUrl = "/wk/p/a/1200/deleteSelfIntroBass.do";
+                    var parameter = {
+                      tmplSeqno: basicSelfIntroSeqno,
+                    };
+                    var ajaxRequest = ComLib.ajaxReqObj(
+                      ajaxUrl,
+                      parameter,
+                      false
+                    );
+                    ajaxRequest.done(function (responseJSON) {
+                      if (responseJSON.alertMessageText)
+                        alert(responseJSON.alertMessageText);
+                      location.reload();
+                    });
+                  });
+
+                  // 자유양식 이력서 삭제
+                  $(".deleteResumeFile").click(function () {
+                    if (!confirm("삭제 하시겠습니까?")) return;
+                    var $form = $("#resumeSrchVO");
+                    var url = "/wk/p/a/1200/deleteResumeFile.do";
+                    $form.attr("action", url);
+                    $form
+                      .find("[name=tmplFileSeq]")
+                      .val(
+                        $(this)
+                          .parent()
+                          .parent()
+                          .parent()
+                          .find("input[name=arrFileSeqno]")
+                          .val()
+                      );
+                    $form.submit();
+                  });
+                  // 이력서 이메일 보내기 팝업
+                  $("#sendResumeFileEmailPopup").click(function () {
+                    var popupUrl =
+                      "/wk/p/a/1200/registerResumeEmailSendView.do";
+                    ComFnLib.fn_openLayerPopup("hpwkpa1200p05", popupUrl, null);
+                  });
+                  // 이력서 파일등록 팝업
+                  $("#registerResumeFilePopup").click(function () {
+                    if (
+                      $("#reumeFileArea").find("[name=arrFileSeqno]").length >=
+                      10
+                    ) {
+                      alert("이력서 첨부파일은 10개까지 등록 가능합니다.");
+                      return false;
+                    }
+
+                    var popupUrl = "/wk/p/a/1200/PopResumeMngFileUpload.do";
+                    var param = { athflSeq: $("#resumeAthflSeq").val() };
+                    ComFnLib.fn_openLayerPopup(
+                      "hpwkpa1200p06",
+                      popupUrl,
+                      param
+                    );
+                  });
+                  // 이력서 + 자기소개서 미리보기 팝업
+                  $("#resumeDetailPopup").click(() => {
+                    var popupUrl = "/wk/p/a/1200/retrievePopResumeDetail.do";
+                    var $tmplSeqnoSelected = $(
+                      "input[name=basicResumeYn]:checked"
+                    );
+                    if ($tmplSeqnoSelected.length < 1) {
+                      alert("이력서를 선택해주세요.");
+                      return;
+                    }
+                    // 선택한 이력서, 자기소개서 번호
+                    var parameter = {
+                      tmplSeqno: $tmplSeqnoSelected.val(),
+                    };
+                    var $arrSfidNoSelected = $("input[name=arrSfidNo]:checked");
+                    if ($arrSfidNoSelected.length > 0) {
+                      parameter.sfidNo = $arrSfidNoSelected.val();
+                    }
+                    ComFnLib.fn_openLayerPopup(
+                      "hpwkpa1200p04",
+                      popupUrl,
+                      parameter
+                    );
+                  });
+
+                  // 첨부파일 관리 - 새 파일 등록 팝업
+                  $("#registerAttachedFilePopup").click(() => {
+                    var $fileList = $("input[type=checkbox][name=fileSel]");
+                    if ($fileList.length >= 10) {
+                      alert("이력서 첨부파일은 10개까지 등록 가능합니다.");
+                      return false;
+                    }
+
+                    var popupUrl = "/wk/p/a/4110/addrSrchList.do";
+                    var param = { athflSeq: $("#athflSeq").val() };
+                    ComFnLib.fn_openLayerPopup(
+                      "hpwkpa4110p02",
+                      popupUrl,
+                      param
+                    );
+                  });
+
+                  // 첨부파일 관리 - 첨부파일 삭제
+                  $("#deleteAttachedFile").click(() => {
+                    var $fileList = $("input[type=checkbox][name=fileSel]");
+                    if ($fileList.filter(":checked").length === 0) {
+                      alert("삭제할 파일이 없습니다.");
+                      return false;
+                    }
+                    if (confirm("삭제하시겠습니까?")) {
+                      var fileSelArray = [];
+                      var arrSeqnoArray = [];
+                      $fileList.each((index, element) => {
+                        if (element.checked) fileSelArray.push(element.value);
+                        arrSeqnoArray.push(
+                          $(element).siblings("input[name=arrSeqno]").val()
+                        );
+                      });
+                      var parameter = {
+                        fileSel: fileSelArray,
+                        arrSeqno: arrSeqnoArray,
+                      };
+                      var ajaxUrl = "/wk/p/a/4110/deleteAtchFile.do";
+                      var ajaxRequest = ComLib.ajaxReqObj(
+                        ajaxUrl,
+                        parameter,
+                        false
+                      );
+                      ajaxRequest.done(function (res) {
+                        if (res.alertMessageText) alert(res.alertMessageText);
+                        window.location.reload();
+                      });
+                    }
+                  });
+
+                  // 직무능력 자동추천 팝업
+                  $(".jobAblAutoRecommendPopup").click(function () {
+                    openJobAblAutoRecommendPopup(
+                      this.dataset.seqno,
+                      this.dataset.type
+                    );
+                  });
+                  /* event listener end */
+                  /* initialize start */
+                  hpwkpa1200m01 = {
+                    appendJobAblAutoRecommendItem:
+                      appendJobAblAutoRecommendItem,
+                    jobAblAutoRecommendInquiry: jobAblAutoRecommendInquiry,
+                  };
+                  // 직무능력 추천 사용 여부 팝업
+                  var anlyTrgtSevl = "";
+                  var tmplSeqno = "";
+                  if ("" !== anlyTrgtSevl && "" !== tmplSeqno) {
+                    jobAblAutoRecommendInquiry(tmplSeqno, anlyTrgtSevl);
+                  }
+                  /* initialize end */
+                });
+              </script>
+            </div>
+
+            <!-- S : survey_wrap -->
+
+            <script type="text/javascript">
+              $(document).ready(function () {});
+            </script>
+
+            <!-- E : survey_wrap -->
+          </div>
+        </div>
+      </section>
+
+      <!-- #quick_menu : 마우스오버시 class="on" 추가  -->
+      <div id="quick_menu" class="">
+        <div class="quick_tl">
+          <span class="blind">quick menu</span>
+        </div>
+        <ul class="quick_menu_btn">
+          <li>
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;x&#39;, &#39;/c/d/0190/retrieveInstSrchLstViewPost.do&#39;);"
+            >
+              <span class="quick_menu_txt">고용센터찾기</span>
+              <span class="quick_ico ico01"></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;x&#39;, &#39;/c/a/0130/selectBbttListPost.do&#39;);"
+            >
+              <span class="quick_menu_txt">자주하는 질문</span>
+              <span class="quick_ico ico02"></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000001691&#39;, &#39;/c/d/0180/retrieveSiteEasyHpcmPost.do&#39;, &#39;EBM02&#39;, &#39;N&#39;, &#39;&#39;)"
+            >
+              <span class="quick_menu_txt">이용안내</span>
+              <span class="quick_ico ico03"></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;x&#39;, &#39;/c/f/1100/selecPolicyListPost.do&#39;);"
+            >
+              <span class="quick_menu_txt">정책/제도</span>
+              <span class="quick_ico ico04"></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000001581&#39;, &#39;/c/c/0120/selectUtzeInqrLstPost.do&#39;, &#39;EBM02&#39;, &#39;N&#39;);"
+            >
+              <span class="quick_menu_txt">고객센터</span>
+              <span class="quick_ico ico05"></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;x&#39;, &#39;/c/f/1200/selecSimulateCalcPost.do&#39;);"
+            >
+              <span class="quick_menu_txt">모의계산</span>
+              <span class="quick_ico ico06"></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;x&#39;, &#39;/p/a/5110/retrievePopJobsSalary.do&#39;);"
+            >
+              <span class="quick_menu_txt">직종별 임금정보</span>
+              <span class="quick_ico ico07"></span>
+            </a>
+          </li>
+        </ul>
+        <!-- <div class="quick_chatbot">
+				<a href="#none" onclick="alert('서비스 준비중')"><span class="blind">챗봇</span></a>
+			</div>
+			 -->
+      </div>
+
+      <!-- 좌하단 fixed btn -->
+      <div class="quick_top">
+        <div class="quick_login_guide"></div>
+        <!-- // quick_login_guide -->
+        <div class="quick_login_guide login_guide" style="display: none">
+          <p>
+            지금, 고용24에 <span>로그인</span> 하시면 다음과 같은 서비스를 받을
+            수 있습니다.
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              class="btn medium r30 type01"
+              onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;1&#39;, &#39;/z/b/0210/openLginPagePost.do&#39;);"
+              >로그인</a
+            >
+          </p>
+          <ul>
+            <li>
+              <span class="ico ico01"></span>
+              <span
+                ><a
+                  href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/d/b/0000/selectCvplRqutListPost.do&#39;);"
+                  >내 신청 조회</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="ico ico02"></span>
+              <span
+                ><a
+                  href=""
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/d/a/0110/retrieveCrtfIssuRqutCrstLstPost.do&#39;);"
+                  >증명서 발급</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="ico ico03"></span>
+              <span
+                ><a
+                  href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/b/b/0410/selectBpRcvSvcListPost.do&#39;);"
+                  >놓치고 있는 혜택 확인</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="ico ico04"></span>
+              <span
+                ><a
+                  href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                  onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000000495&#39;, &#39;https://www.work.go.kr/jobCare/introExp/jobCareIntroExp.do&#39;);"
+                  >일자리, 교육훈련, 자격증 추천</a
+                ></span
+              >
+            </li>
+          </ul>
+
+          <button type="button" class="btn_close">
+            <span class="blind">닫기</span>
+          </button>
+        </div>
+        <!-- // login_guide -->
+
+        <a
+          href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+          class="btn_quick_top"
+          ><span class="blind">맨위로 가기</span></a
+        >
+      </div>
+      <!-- //좌하단 fixed btn -->
+
+      <!-- #footer -->
+      <script>
+        $(document).ready(function () {
+          document.oncontextmenu = function () {
+            return false;
+          };
+        });
+        $(function () {
+          $(".acd_btnFooter").click(function () {
+            if ($(this).hasClass("acd_open")) {
+              $(this).removeClass("acd_open");
+
+              $(".acd_cont").hide();
+              //$('.acd.slide_type ul > li, .acd_slide').removeClass('on').attr('aria-expanded', 'false');
+              //$('.acd.slide_type ul > li .acd_cont, .acd_slide .acd_cont').stop().slideUp();
+              $(this).find(".txt").text("펼치기");
+            } else {
+              $(this).addClass("acd_open");
+              $(".acd_cont").show();
+              //$('.acd.slide_type ul > li, .acd_slide'a).addClass('on').attr('aria-expanded', 'true');
+              //$('.acd.slide_type ul > li .acd_cont, .acd_slide .acd_cont').stop().slideDown();
+              $(this).find(".txt").text("접기");
+            }
+          });
+        });
+      </script>
+      <footer id="footer" class="footer_type02 acd slide_type acd_slide">
+        <!-- 메인일시 노출-->
+        <div class="footer_container01">
+          <ul>
+            <!-- <li><a onclick="fn_goPageUrl('/cm', 'X', '/c/d/0110/retrieveSiteItcnPost.do')">서비스소개</a></li> -->
+            <li>
+              <a
+                href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/c/d/0130/retrieveUtzeStptPost.do&#39;)"
+                >이용약관</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/c/d/0130/selectBbttListPost.do&#39;)"
+                ><strong class="point_color02">개인정보처리방침</strong></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/c/d/0130/retrieveEmailAdrPrssPlcyPost.do&#39;)"
+                >이메일무단수집거부</a
+              >
+            </li>
+            <!-- <li><a onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveWbpgAcesPolyPost.do')">웹접근성정책</a></li> -->
+            <li>
+              <a
+                href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/c/d/0130/retrieveCpyrPolyPost.do&#39;)"
+                >저작권보호정책</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/e/a/0110/selectOpenApiIntroPost.do&#39;)"
+                >오픈API 서비스</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                onclick="fn_goPageUrl(&#39;/wk&#39;, &#39;EBG020000001790&#39;, &#39;/s/a/1100/loginForm.do&#39;);"
+                >화상상담 관리자</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;X&#39;, &#39;/c/d/0150/retrieveStmpPost.do&#39;)"
+                >사이트맵</a
+              >
+            </li>
+          </ul>
+
+          <div>
+            <button
+              type="button"
+              class="btn big type02 acd_btnFooter acd_arow bg_tp mb0"
+            >
+              <span class="btn_text">패밀리 및 유관기관 사이트</span
+              ><span class="txt blind">펼치기</span>
+            </button>
+          </div>
+        </div>
+        <!-- //메인일시 노출-->
+
+        <div class="footer_container02 acd_cont">
+          <div class="container02">
+            <div class="footer_info_list">
+              <span class="tit bold">패밀리사이트</span>
+              <ul class="list">
+                <li class="item">
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    title="새창 열림"
+                    onclick="ComLib.getSsoToken(&#39;WK&#39;,&#39;https://www.work.go.kr/seekWantedMain.do&#39;);"
+                    >워크넷</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    title="새창 열림"
+                    onclick="ComLib.getSsoToken(&#39;HRD&#39;,&#39;https://www.hrd.go.kr/hrdp/mb/pmbao/ssoLoginG24.do&#39;);"
+                    >직업훈련포털</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    title="새창 열림"
+                    onclick="ComLib.getSsoToken(&#39;EPS&#39;,&#39;https://www.eps.go.kr/eo/ssoLogin.eo&#39;);"
+                    >외국인고용</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    title="새창 열림"
+                    onclick="ComLib.getSsoToken(&#39;UA&#39;,&#39;https://www.kua.go.kr/ua/api/v1/login/ssoLinkWise.do&#39;);"
+                    >국민취업지원제도</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="https://eis.work.go.kr/" target="_blank"
+                    >고용행정통계</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="https://www.workplus.go.kr/" target="_blank"
+                    >고용복지센터</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    title="새창 열림"
+                    onclick="ComLib.getSsoToken(&#39;WKT&#39;,&#39;https://www.worktogether.or.kr/main.do&#39;);"
+                    >장애인고용포털</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    title="새창 열림"
+                    onclick="ComLib.getSsoToken(&#39;CED&#39;,&#39;https://www.work.go.kr/cyberedu/main.do&#39;);"
+                    >사이버진로교육센터</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="https://saeil.mogef.go.kr/hom/HOM_Main.do"
+                    target="_blank"
+                    >여성새로일하기센터</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="https://www.gasarang.go.kr/hpgsMain.do"
+                    target="_blank"
+                    >가사랑</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer_info_list">
+              <span class="tit bold">유관기관</span>
+              <ul class="list">
+                <li class="item">
+                  <a
+                    href="https://www.4insure.or.kr/ins4/ptl/Main.do"
+                    target="_blank"
+                    >4대사회보험정보연계센터</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="https://www.comwel.or.kr/" target="_blank"
+                    >근로복지공단</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="https://www.hrdkorea.or.kr/" target="_blank"
+                    >한국산업인력공단</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="https://ncs.go.kr/" target="_blank">직무능력표준</a>
+                </li>
+                <li class="item">
+                  <a href="https://c.q-net.or.kr/" target="_blank">CQ넷</a>
+                </li>
+                <li class="item">
+                  <a href="https://www.koreatech.ac.kr/" target="_blank"
+                    >한국기술교육대학교</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="https://www.kopo.ac.kr/" target="_blank"
+                    >한국폴리텍대학</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="https://www.hikorea.go.kr/" target="_blank"
+                    >하이코리아</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="https://eps.hrdkorea.or.kr/h2/main/main.do"
+                    target="_blank"
+                    >외국국적동포(H-2)취업교육홈페이지</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="http://www.hugkorea.or.kr/" target="_blank"
+                    >외국인력상담센터</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="https://www.kosha.or.kr/" target="_blank"
+                    >안전보건공단</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_wrap">
+          <div class="footer_top_ci">
+            <ul>
+              <li>
+                <a href="http://www.moel.go.kr/" target="_blank"
+                  ><img src="./resources/footer_ci01.png" alt="고용노동부"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.keis.or.kr/" target="_blank"
+                  ><img src="./resources/footer_ci02.png" alt="한국고용정보원"
+                /></a>
+              </li>
+              <!-- <li><a href="#none"><img src="/cm/static/images/footer_ci03.png" alt="근로복지공단"></a></li>
+                <li><a href="#none"><img src="/cm/static/images/footer_ci04.png" alt="4대사회보험정보연계센터"></a></li>
+                <li><a href="#none"><img src="/cm/static/images/footer_ci05.png" alt="국민취업지원제도"></a></li>
+                <li><a href="#none"><img src="/cm/static/images/footer_ci06.png" alt="고용행정통계"></a></li> -->
+            </ul>
+          </div>
+          <!-- 모바일에서만 노출 footer_logo -->
+          <div class="logo_info_wrap">
+            <div class="footer_logo">
+              <a href="http://www.work24.go.kr/"
+                ><span class="blind">고용24 홈으로 가기</span></a
+              >
+            </div>
+            <div class="footer_info">
+              고용24는 <strong>통신판매중개자</strong>이며, 통신판매의 당사자가
+              아닙니다.<br />
+              상품(훈련), 상품(훈련)정보, 거래에 관한
+              <strong>의무와 책임</strong>은
+              <strong>판매자(훈련기관)</strong>에게 있습니다.
+            </div>
+            <div class="footer_copy">
+              27740 충청북도 음성군 맹동면 태정로 6 한국고용정보원<br />
+              <span class="mr08"
+                >홈페이지 전산 이용 문의 :
+                <a href="tel:1577-7114">1577-7114</a>(유료, 한국고용정보원
+                고객상담센터 평일 09:00~18:00) </span
+              ><br />
+              고용·노동 분야 제도 문의: 국번없이
+              <a href="tel:1350">1350</a> (유료, 고용노동부 고객상담센터 평일
+              09:00~18:00)<br />
+              Copyright © 2023 고용노동부 한국고용정보원 all rights reserved.
+            </div>
+          </div>
+        </div>
+
+        <form id="pwdCfrmForm000">
+          <section
+            class="full_pop large full_01"
+            id="chkPwdCfrmYnAdd"
+            tabindex="0"
+          >
+            <!-- 헤더 -->
+            <header class="head type2">
+              <h1 class="h2_sb">비밀번호 신규 추가</h1>
+            </header>
+            <!--// 헤더 -->
+            <!-- 본문 컨텐츠 -->
+            <div class="cont">
+              <div class="box_notice_wrap">
+                <p class="tit">안내</p>
+                <ul class="box_list_area">
+                  <li class="txt_list">
+                    다량의 개인정보가 포함된 메뉴를 특정사용자만 이용하시려면
+                    비밀번호 설정 후 이용하실 수 있습니다.
+                  </li>
+                  <li class="txt_list">
+                    인증서로 로그인한 사용자가 모든 메뉴를 같이 이용하려면
+                    비밀번호 "미사용"으로 설정하시기 바랍니다.
+                  </li>
+                  <li class="txt_list">
+                    비밀번호 사용여부는 기업회원 정보 수정 메뉴에서 설정
+                    가능합니다.
+                  </li>
+                  <!-- 				<li class="txt_list">비밀번호 사용여부는 기업회원 정보 수정 메뉴에서 설정 가능합니다.</li> -->
+                  <!-- 				<li class="txt_list"> -->
+                  <!-- 					<p class="txt">다음과 같은 비밀번호는 피해 주십시요.</p> -->
+                  <!-- 					<ul class="box_list_area"> -->
+                  <!-- 						<li class="txt_list">아이디와 같은 비밀번호</li> -->
+                  <!-- 						<li class="txt_list">주민등록번호, 생일, 학번, 일반전화 등 개인정보와 관련된 숫자</li> -->
+                  <!-- 					</ul> -->
+                  <!-- 				</li> -->
+                </ul>
+              </div>
+
+              <!-- 팝업 1 -->
+              <div class="box_form_login">
+                <h3 class="t1_sb">
+                  비밀번호 신규 추가<span class="cir_required"
+                    >(<span></span>표시된 부분은 필수 입력 항목입니다.)
+                  </span>
+                </h3>
+
+                <ul class="box_form_table">
+                  <li class="type2">
+                    <label class="list_tit" for="pwdCfrmYnPwd01"
+                      >새 비밀번호<span class="essential"
+                        ><i class="blind">필수</i></span
+                      ></label
+                    >
+                    <div class="list_txt">
+                      <div class="box_table_group">
+                        <div class="cell">
+                          <div class="cell_wrap">
+                            <span class="box_ipt">
+                              <input
+                                type="password"
+                                class="input_txt big"
+                                title="신규 비밀번호를 입력"
+                                placeholder="신규 비밀번호를 입력해 주세요."
+                                name="pwdCfrmYnPwd01"
+                                id="pwdCfrmYnPwd01"
+                                maxlength="24"
+                              />
+                              <button type="reset" class="ico16_delete">
+                                <span class="blind">삭제</span>
+                              </button>
+                            </span>
+                          </div>
+                          <p class="txt_notice">
+                            비밀번호는 영문(대/소문자)과 숫자, 특수문자 중 3가지
+                            이상 종류로 조합하여 8~24 이내로 입력합니다. (단 ,
+                            ^, _, \, ‘, [, ], 〮, -, &lt;, &gt; 제외)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <label class="list_tit" for="pwdCfrmYnPwd02"
+                      >새 비밀번호 확인<span class="essential"
+                        ><i class="blind">필수</i></span
+                      >
+                    </label>
+                    <div class="list_txt">
+                      <div class="box_table_group">
+                        <div class="cell">
+                          <span class="box_ipt">
+                            <input
+                              type="password"
+                              class="input_txt big"
+                              title="신규 비밀번호를 한번 더 입력"
+                              placeholder="신규 비밀번호를 한번 더 입력해 주세요."
+                              name="pwdCfrmYnPwd02"
+                              id="pwdCfrmYnPwd02"
+                              maxlength="24"
+                            />
+                            <button type="reset" class="ico16_delete">
+                              <span class="blind">삭제</span>
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <label class="list_tit" for="pwdCfrmUsrNm"
+                      >변경자 성명<span class="essential"
+                        ><i class="blind">필수</i></span
+                      >
+                    </label>
+                    <div class="list_txt">
+                      <div class="box_table_group">
+                        <div class="cell">
+                          <div class="cell_wrap">
+                            <span class="box_ipt">
+                              <input
+                                type="text"
+                                class="input_txt big"
+                                title="성명입력"
+                                placeholder="성명을 입력해 주세요."
+                                name="pwdCfrmUsrNm2"
+                                id="pwdCfrmUsrNm2"
+                                maxlength="24"
+                              />
+                              <button type="reset" class="ico16_delete">
+                                <span class="blind">삭제</span>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="box_btn_wrap flex_al_c">
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    class="btn big closed type02"
+                    id="btn_chkPwdCfrmYnAddClose"
+                    >취소</a
+                  >
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    class="btn fill big type01"
+                    id="btn_chkPwdCfrmYnAdd"
+                    >저장</a
+                  >
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    class="btn fill big type01"
+                    id="btn_chkPwdCfrmYnCancel"
+                    >미사용</a
+                  >
+                </div>
+              </div>
+              <!--// 팝업 1 -->
+            </div>
+            <!-- 닫기 -->
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              class="closed"
+            >
+              <span class="blind">팝업 닫기</span>
+            </a>
+            <!--// 닫기 -->
+          </section>
+          <!--  비밀번호 확인 -->
+          <section
+            class="full_pop large full_01"
+            id="chkPwdCfrmYn"
+            tabindex="0"
+          >
+            <!-- 헤더 -->
+            <header class="head type2">
+              <h1 class="h2_sb">비밀번호 확인</h1>
+            </header>
+            <!--// 헤더 -->
+            <div class="cont">
+              <div class="box_notice_wrap">
+                <p class="tit">안내</p>
+                <ul class="box_list_area">
+                  <li class="txt_list">
+                    다량의 개인정보가 포함된 메뉴를 특정사용자만 이용하시려면
+                    비밀번호 설정 후 이용하실 수 있습니다.
+                  </li>
+                  <li class="txt_list">
+                    "비밀번호 초기화" 버튼을 누르시는 경우 기업회원정보에 등록된
+                    대표담당자 휴대전화로 초기화 비밀번호가 전송됩니다.
+                  </li>
+                  <li class="txt_list">
+                    인증서로 로그인한 사용자가 모든 메뉴를 같이 이용하려면
+                    기업회원 정보 수정 메뉴에서 비밀번호 "미사용"으로 설정하시기
+                    바랍니다.
+                  </li>
+                </ul>
+              </div>
+              <!-- 팝업 2 -->
+              <div class="box_form_login">
+                <h3 class="t1_sb">
+                  비밀번호 확인<span class="cir_required"
+                    >(<span></span>표시된 부분은 필수 입력 항목입니다.)
+                  </span>
+                </h3>
+
+                <ul class="box_form_table">
+                  <li>
+                    <label class="list_tit" for="pwdCfrmYnPwd00"
+                      >비밀번호<span class="essential"
+                        ><i class="blind">필수</i></span
+                      ></label
+                    >
+                    <div class="list_txt">
+                      <div class="box_table_group">
+                        <div class="cell">
+                          <div class="cell_wrap">
+                            <span class="box_ipt">
+                              <input
+                                type="password"
+                                class="input_txt big"
+                                title="비밀번호를 입력"
+                                placeholder="비밀번호를 입력해 주세요."
+                                name="pwdCfrmYnPwd00"
+                                id="pwdCfrmYnPwd00"
+                                maxlength="24"
+                              />
+                              <button type="reset" class="ico16_delete">
+                                <span class="blind">삭제</span>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <input type="hidden" id="chkPwdCfrmYn_sPopDivId" />
+                <input type="hidden" id="chkPwdCfrmYn_sUrl" />
+                <input type="hidden" id="chkPwdCfrmYn_oData" />
+                <input type="hidden" id="chkPwdCfrmYn_oCallbackFunc" />
+                <div class="box_btn_wrap flex_al_c">
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    class="btn big closed type02"
+                    >취소</a
+                  >
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    class="btn fill big type01 text_center"
+                    onclick="(function fn(){$(&#39;#pwdCfrmForm000&#39;)[0].reset(); $(&#39;#chkPwdCfrmYn&#39;).hide(); $(&#39;#chkPwdCfrmYnChg&#39;).show(); })();"
+                    >비밀번호<br />재설정
+                  </a>
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    class="btn big type01 text_center"
+                    onclick="(function fn(){ $(&#39;#pwdCfrmForm000&#39;)[0].reset(); $(&#39;#chkPwdCfrmYn&#39;).hide(); $(&#39;#chkPwdCfrmYnReset&#39;).show(); })();"
+                    >비밀번호<br />초기화
+                  </a>
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    class="btn fill big type01"
+                    id="btn_chkPwdCfrmYn"
+                    >확인</a
+                  >
+                </div>
+              </div>
+              <!--// 팝업 2 -->
+            </div>
+            <!-- 닫기 -->
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              class="closed"
+            >
+              <span class="blind">팝업 닫기</span>
+            </a>
+            <!--// 닫기 -->
+          </section>
+
+          <!--  비밀번호 변경 -->
+          <section
+            class="full_pop large full_01"
+            id="chkPwdCfrmYnChg"
+            tabindex="0"
+          >
+            <!-- 헤더 -->
+            <header class="head type2">
+              <h1 class="h2_sb">비밀번호 변경</h1>
+            </header>
+            <!--// 헤더 -->
+            <!--// 헤더 -->
+            <!-- 본문 컨텐츠 -->
+            <div class="cont">
+              <div class="box_notice_wrap">
+                <p class="tit">안내</p>
+                <ul class="box_list_area">
+                  <li class="txt_list">
+                    다량의 개인정보가 포함된 메뉴를 특정사용자만 이용하시려면
+                    비밀번호 설정 후 이용하실 수 있습니다.
+                  </li>
+                  <li class="txt_list">
+                    비밀번호 사용여부는 기업회원 정보 수정 메뉴에서 가능합니다.
+                  </li>
+                </ul>
+              </div>
+              <!-- 팝업 3 -->
+              <div class="box_form_login">
+                <h3 class="t1_sb">
+                  비밀번호 변경<span class="cir_required"
+                    >(<span></span>표시된 부분은 필수 입력 항목입니다.)
+                  </span>
+                </h3>
+
+                <ul class="box_form_table">
+                  <li>
+                    <label class="list_tit" for="pwdCfrmYnPwd04"
+                      >기존 비밀번호<span class="essential"
+                        ><i class="blind">필수</i></span
+                      >
+                    </label>
+                    <div class="list_txt">
+                      <div class="box_table_group">
+                        <div class="cell">
+                          <div class="cell_wrap">
+                            <span class="box_ipt">
+                              <input
+                                type="password"
+                                class="input_txt big"
+                                title="비밀번호를 입력"
+                                placeholder="비밀번호를 입력해 주세요."
+                                name="pwdCfrmYnPwd04"
+                                id="pwdCfrmYnPwd04"
+                                maxlength="24"
+                              />
+                              <button type="reset" class="ico16_delete">
+                                <span class="blind">삭제</span>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <label class="list_tit" for="pwdCfrmYnPwd05"
+                      >새 비밀번호<span class="essential"
+                        ><i class="blind">필수</i></span
+                      >
+                    </label>
+                    <div class="list_txt">
+                      <div class="box_table_group">
+                        <div class="cell">
+                          <div class="cell_wrap">
+                            <span class="box_ipt">
+                              <input
+                                type="password"
+                                class="input_txt big"
+                                title="신규 비밀번호를 입력"
+                                placeholder="신규 비밀번호를 입력해 주세요."
+                                name="pwdCfrmYnPwd05"
+                                id="pwdCfrmYnPwd05"
+                                maxlength="24"
+                              />
+                              <button type="reset" class="ico16_delete">
+                                <span class="blind">삭제</span>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                        <p class="txt_notice">
+                          비밀번호는 영문(대/소문자)과 숫자, 특수문자 중 3가지
+                          이상 종류로 조합하여 8~24 이내로 입력합니다. (단 , ^,
+                          _, \, ‘, [, ], 〮, -, &lt;, &gt; 제외)
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <label class="list_tit" for="pwdCfrmYnPwd06"
+                      >새 비밀번호 확인<span class="essential"
+                        ><i class="blind">필수</i></span
+                      >
+                    </label>
+                    <div class="list_txt">
+                      <div class="box_table_group">
+                        <div class="cell">
+                          <div class="cell_wrap">
+                            <span class="box_ipt">
+                              <input
+                                type="password"
+                                class="input_txt big"
+                                title="신규 비밀번호를 입력"
+                                placeholder="신규 비밀번호를 입력해 주세요."
+                                name="pwdCfrmYnPwd06"
+                                id="pwdCfrmYnPwd06"
+                                maxlength="24"
+                              />
+                              <button type="reset" class="ico16_delete">
+                                <span class="blind">삭제</span>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <label class="list_tit" for="pwdCfrmUsrNm"
+                      >변경자 성명<span class="essential"
+                        ><i class="blind">필수</i></span
+                      >
+                    </label>
+                    <div class="list_txt">
+                      <div class="box_table_group">
+                        <div class="cell">
+                          <div class="cell_wrap">
+                            <span class="box_ipt">
+                              <input
+                                type="text"
+                                class="input_txt big"
+                                title="성명입력"
+                                placeholder="성명을 입력해 주세요."
+                                name="pwdCfrmUsrNm"
+                                id="pwdCfrmUsrNm"
+                                maxlength="24"
+                              />
+                              <button type="reset" class="ico16_delete">
+                                <span class="blind">삭제</span>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="box_btn_wrap flex_al_c">
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    class="btn big closed type02"
+                    id="btn_chkPwdCfrmYnChgClose"
+                    >취소</a
+                  >
+                  <a
+                    href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                    class="btn fill big type01"
+                    id="btn_chkPwdCfrmYnChg"
+                    >변경</a
+                  >
+                </div>
+              </div>
+              <!--// 팝업 3 -->
+            </div>
+            <!-- 닫기 -->
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              class="closed"
+            >
+              <span class="blind">팝업 닫기</span>
+            </a>
+            <!--// 닫기 -->
+          </section>
+
+          <!--  비밀번호 초기화 -->
+          <section
+            class="full_pop large full_01"
+            id="chkPwdCfrmYnReset"
+            tabindex="0"
+          >
+            <!-- 헤더 -->
+            <header class="head">
+              <!-- 타이틀 -->
+              <h1 class="h2_sb">비밀번호 초기화</h1>
+              <!--// 타이틀 -->
+            </header>
+            <!--// 헤더 -->
+            <!-- 본문 컨텐츠 -->
+            <div class="cont">
+              <div class="box_notice_wrap">
+                <p class="tit">안내</p>
+                <ul class="box_list_area">
+                  <li class="txt_list">
+                    "비밀번호 초기화" 버튼을 누르시는 경우 기업회원정보에 등록된
+                    대표담당자 휴대전화로 초기화 비밀번호가 전송됩니다.
+                  </li>
+                </ul>
+              </div>
+              <div class="box_form_login">
+                <h3 class="t1_sb">
+                  비밀번호 초기화<span class="cir_required"
+                    >(<span></span>표시된 부분은 필수 입력 항목입니다.)
+                  </span>
+                </h3>
+
+                <ul class="box_form_table">
+                  <li>
+                    <label class="list_tit" for="pwdCfrmUsrNm"
+                      >변경자 성명<span class="essential"
+                        ><i class="blind">필수</i></span
+                      >
+                    </label>
+                    <div class="list_txt">
+                      <div class="box_table_group">
+                        <div class="cell">
+                          <div class="cell_wrap">
+                            <span class="box_ipt">
+                              <input
+                                type="text"
+                                class="input_txt big"
+                                title="성명입력"
+                                placeholder="성명을 입력해 주세요."
+                                name="pwdCfrmUsrNm1"
+                                id="pwdCfrmUsrNm1"
+                                maxlength="24"
+                              />
+                              <button type="reset" class="ico16_delete">
+                                <span class="blind">삭제</span>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 버튼 -->
+            <div class="box_btn_wrap flex_al_r">
+              <a
+                href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                class="btn fill big type01"
+                id="btn_chkPwdCfrmYnReset"
+                >초기화</a
+              >
+              <a
+                href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+                class="btn big closed type02"
+                id="btn_chkPwdCfrmYnResetClose"
+                ><span>닫기</span></a
+              >
+            </div>
+            <!--// 버튼 -->
+            <!-- 닫기 -->
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              class="closed"
+            >
+              <span class="blind">팝업 닫기</span>
+            </a>
+            <!--// 닫기 -->
+          </section>
+        </form>
+
+        <section
+          class="full_pop large full_01"
+          id="fileValidationView"
+          style="z-index: 10000"
+          tabindex="0"
+        >
+          <!-- 헤더 -->
+          <header class="head">
+            <!-- 타이틀 -->
+            <h1 class="h2_sb">첨부 파일 실패</h1>
+            <!--// 타이틀 -->
+          </header>
+          <!--// 헤더 -->
+          <!-- 본문 컨텐츠 -->
+          <div class="cont">
+            <div class="box_notice_wrap">
+              <ul class="box_list_area" id="fileValidationViewList"></ul>
+            </div>
+          </div>
+          <!-- 버튼 -->
+          <div class="box_btn_wrap flex_al_r">
+            <a
+              href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+              class="btn big closed type02"
+              id="btn_fileValidationViewClose"
+              ><span>닫기</span></a
+            >
+          </div>
+          <!--// 버튼 -->
+          <!-- 닫기 -->
+          <a
+            href="https://m.work24.go.kr/wk/p/a/1200/resumeMng.do#none"
+            class="closed"
+            id="btn_fileValidationViewClose2"
+          >
+            <span class="blind">팝업 닫기</span>
+          </a>
+          <!--// 닫기 -->
+        </section>
+      </footer>
+      <div id="spin"></div>
+      <!--// #footer -->
+
+      <!-- 오픈전까지 임시버튼
+
+
+<button class="error_btn_open type02" id="btn_openTeg">오류신고<br>(1544-4430)</button>
+
+<style>
+    .error_btn_open{position:fixed;top:130px;left:10px;width:70px;height:70px;background:#EE2E62;color:#fff;border-radius:100%;z-index:999;font-weight:bold}
+    .error_btn_open.type02{width:120px;height:120px;background:#ccc;color:#333;line-height: 1.4;} /* 23/12/07 퍼블: type02 생성 */
+</style>-->
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $("#btn_fileValidationViewClose2")
+            .off("click")
+            .on("click", function () {
+              ui.dimHide();
+              $("#fileValidationView").hide();
+              $("#fileValidationViewList").empty();
+            });
+
+          $("#btn_fileValidationViewClose")
+            .off("click")
+            .on("click", function () {
+              $("#btn_fileValidationViewClose2").click();
+            });
+
+          $("#btn_chkPwdCfrmYnCancel").click(function () {
+            if (ComLib.isEmpty($("#pwdCfrmUsrNm2").val())) {
+              alert("변경자 성명을 입력하세요");
+              return false;
+            }
+
+            if (
+              confirm(
+                "비밀번호 사용여부는 기업회원 정보 수정 메뉴에서 가능합니다 \n비밀번호를 미사용 하시겠습니까?"
+              )
+            ) {
+              var request = ComLib.ajaxReqObj(
+                "/cm/z/b/0220/chkPwdCfrmYnCancel.do",
+                { pwdCfrmUsrNm: $("#pwdCfrmUsrNm2").val() },
+                false
+              );
+              request.done(function (responseObj, statusText, xhr) {
+                alert("정상처리 되었습니다.");
+                $("#btn_chkPwdCfrmYnAddClose").click();
+              });
+            }
+          });
+
+          //비밀번호 설정
+          $("#btn_chkPwdCfrmYnAdd").click(function () {
+            if (
+              $("#pwdCfrmYnPwd01").val() != null &&
+              $("#pwdCfrmYnPwd01").val() != ""
+            ) {
+              if (PwdLib.validationPwdChk("pwdCfrmYnPwd01", "3") == false) {
+                alert(
+                  "비밀번호는 영문(대/소문자)과 숫자, 특수문자 중 3가지 이상의 종류로 조합하여 8~24자 이내로 입력하세요."
+                );
+                return;
+              }
+
+              if (ComLib.isEmpty($("#pwdCfrmUsrNm2").val())) {
+                alert("변경자 성명을 입력하세요");
+                return false;
+              }
+
+              if ($("#pwdCfrmYnPwd01").val() == $("#pwdCfrmYnPwd01").val()) {
+                if (confirm("비밀번호를 사용 하시겠습니까?")) {
+                  var request = ComLib.ajaxReqObj(
+                    "/cm/z/b/0220/chkPwdCfrmYnAdd.do",
+                    {
+                      pwdCfrmUsrNm: $("#pwdCfrmUsrNm2").val(),
+                      pwdCfrm: $("#pwdCfrmYnPwd01").val(),
+                    },
+                    false
+                  );
+                  request.done(function (responseObj, statusText, xhr) {
+                    alert("정상처리 되었습니다.");
+                    $("#btn_chkPwdCfrmYnAddClose").click();
+                  });
+                }
+              }
+            } else {
+              alert("비밀번호를 확인 바랍니다.");
+            }
+          });
+
+          $("#btn_chkPwdCfrmYn").click(function () {
+            if ($("#pwdCfrmYnPwd00").val() != null) {
+              var request = ComLib.ajaxReqObj(
+                "/cm/z/b/0220/chkPwdCfrmYn.do",
+                { pwdCfrm: $("#pwdCfrmYnPwd00").val() },
+                false
+              );
+              request.done(function (responseObj, statusText, xhr) {
+                if ($("#chkPwdCfrmYn_sPopDivId").val() != "") {
+                  ComFnLib.fn_openLayerPopup(
+                    $("#chkPwdCfrmYn_sPopDivId").val(),
+                    $("#chkPwdCfrmYn_sUrl").val(),
+                    JsonLib.parse($("#chkPwdCfrmYn_oData").val()),
+                    $("#chkPwdCfrmYn_oCallbackFunc").val(),
+                    "P"
+                  );
+                  $("#chkPwdCfrmYn").hide();
+                } else {
+                  ComLib.submit("headerMenuVO");
+                }
+              });
+            } else {
+              alert("비밀번호를 확인 바랍니다.");
+            }
+          });
+
+          $("#btn_chkPwdCfrmYnChg").click(function () {
+            if (ComLib.isEmpty($("#pwdCfrmYnPwd04").val())) {
+              alert("기존 비밀번호를 입력하세요");
+              return false;
+            }
+
+            if (
+              $("#pwdCfrmYnPwd05").val() != null &&
+              $("#pwdCfrmYnPwd05").val() != ""
+            ) {
+              if ($("#pwdCfrmYnPwd05").val() == $("#pwdCfrmYnPwd06").val()) {
+                if (ComLib.isEmpty($("#pwdCfrmUsrNm").val())) {
+                  alert("변경자 성명을 입력하세요");
+                  return false;
+                }
+
+                if ($("#pwdCfrmYnPwd04").val() == $("#pwdCfrmYnPwd05").val()) {
+                  alert("기존 비밀번호와 새 비밀번호가 동일합니다.");
+                  return false;
+                }
+
+                if (confirm("비밀번호를 변경 하시겠습니까?")) {
+                  var request = ComLib.ajaxReqObj(
+                    "/cm/z/b/0220/chkPwdCfrmYnUpdate.do",
+                    {
+                      pwdCfrmUsrNm: $("#pwdCfrmUsrNm").val(),
+                      pwdCfrmChg: $("#pwdCfrmYnPwd05").val(),
+                      pwdCfrmOri: $("#pwdCfrmYnPwd04").val(),
+                    },
+                    false
+                  );
+                  request.done(function (responseObj, statusText, xhr) {
+                    alert("정상처리 되었습니다.");
+                    $("#btn_chkPwdCfrmYnChgClose").click();
+                  });
+                }
+              } else {
+                alert("새 비밀번호를 확인 바랍니다.");
+              }
+            } else {
+              alert("비밀번호를 확인 바랍니다.");
+            }
+          });
+
+          $("#btn_chkPwdCfrmYnReset").click(function () {
+            if (ComLib.isEmpty($("#pwdCfrmUsrNm1").val())) {
+              alert("변경자 성명을 입력하세요");
+              return false;
+            }
+
+            if (confirm("비밀번호를 초기화 하시겠습니까?")) {
+              var request = ComLib.ajaxReqObj(
+                "/cm/z/b/0220/chkPwdCfrmYnReset.do",
+                { pwdCfrmUsrNm: $("#pwdCfrmUsrNm1").val() },
+                false
+              );
+              request.done(function (responseObj, statusText, xhr) {
+                alert("정상처리 되었습니다.");
+                $("#btn_chkPwdCfrmYnResetClose").click();
+              });
+            }
+          });
+
+          //결함등록
+          $("#btn_openTestTeg").click(function () {
+            var regUrl = encodeURIComponent(location.href);
+            var menuId = _menuId;
+            var menuNm = $(".cont_wrap_area .sub_tl .h2_sb").text();
+            if (menuNm == "") menuNm = document.title; //메뉴명이 없을때, 타이틀로 셋팅
+
+            var url =
+              "/cm/test/testRegPopup.do?regUrl=" +
+              regUrl +
+              "&menuId=" +
+              menuId +
+              "&menuNm=" +
+              menuNm;
+            var name = "getPup";
+            var height = 800;
+            var width = 600;
+            var scroll = true;
+            PopLib.openPup(url, name, height, width, scroll);
+          });
+
+          $("#btn_openTeg").click(function () {
+            location.href = "/cm/c/c/0120/selectUtzeInqrLst.do";
+          });
+        });
+      </script>
+
+      <script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <ul class="in">
+        	<li class="template-upload">
+        		{% for (var ret in file) { %}
+        			<input type="hidden" id="file-{%=ret%}-{%=i%}" value="{%=file[ret]%}"/>
+        		{% } %}
+        		<span>
+                	<a href="javaScript:void(0);" onclick="gfn_downloadAttFile({%=file.mydriveFileDownloadUrl%});" class="btn_filelist_name">{%=file.orgnlFlnm%}</a>
+                </span>
+        		<span class="box_filelist_btn">
+        			<a href="javaScript:void(0);" onclick="gfn_downloadAttFile({%=file.mydriveFileDownloadUrl%});" class="ico16_file download"><i class="blind">다운로드</i></a>
+        			<a href="javaScript:void(0);" onclick="fn_deleteAttFile($(this).parent().parent().find('input[type=hidden]'));" class="ico16_file del">
+        				<i class="blind">삭제</i>
+        			</a>
+        		</span>
+        	</li>
+        </ul>
+        {% } %}
+      </script>
+      <script id="template-upload" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <ul class="in mt08">
+        	<li class="template-upload">
+                <div class="flex_box flex_al_c">
+        		  <span>
+                	   <a href="#" class="btn_filelist_name">{%=file.name%}</a>
+                    </span>
+                    <span class="box_filelist_btn ml08 mt04">
+        			 <a href="#" class="ico16_file del btn btn-warning cancel" onclick="gfn_delFildDiv(this);"><i class="blind">삭제</i></a>
+        		    </span>
+                </div>
+        		<div class="error text-danger"></div>
+        	</li>
+        </ul>
+        {% } %}
+      </script>
+      <script id="template-upload2" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <ul class="in">
+        	<li class="template-upload">
+        		<span>
+                	<a href="#" class="btn_filelist_name">{%=file.name%}</a>
+                </span>
+        		<div class="fileupload-progress fade">
+        			<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-valuemax="100">
+        				<div class="progress-bar progress-bar-success" style="width: 0%;"></div>
+        			</div>
+        		</div>
+                <span class="box_filelist_btn">
+        			<a href="#" class="ico16_file del btn btn-warning cancel" onclick="gfn_delFildDiv(this);"><i class="blind">삭제</i></a>
+        		</span>
+        		<div class="error text-danger"></div>
+        	</li>
+        </ul>
+        {% } %}
+      </script>
+      <script id="cvplFomt-template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <ul class="in">
+        	<li class="template-upload">
+        		{% for (var ret in file) { %}
+        			<input type="hidden" id="file-{%=ret%}-{%=file.ncmnNo%}" value="{%=file[ret]%}"/>
+        		{% } %}
+        		<span>
+                	<a href="javaScript:void(0);" onclick="gfn_downloadAttFile({%=file.mydriveFileDownloadUrl%});" class="btn_filelist_name">{%=file.orgnlFlnm%}</a>
+                </span>
+        		<span class="box_filelist_btn">
+        			<a href="javaScript:void(0);" onclick="gfn_downloadAttFile({%=file.mydriveFileDownloadUrl%});" class="ico16_file download"><i class="blind">다운로드</i></a>
+        			<a href="javaScript:void(0);" onclick="gfn_delCurrent(this,'{%=o.fieldName%}');" class="ico16_file del">
+        				<i class="blind">삭제</i>
+        			</a>
+        		</span>
+        	</li>
+        </ul>
+        {% } %}
+      </script>
+      <script id="cvplFomt-template-download-view" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <ul class="in">
+        	<li class="template-upload">
+        		{% for (var ret in file) { %}
+        			<input type="hidden" id="file-{%=ret%}-{%=file.ncmnNo%}" value="{%=file[ret]%}"/>
+        		{% } %}
+        		<span>
+                	<a href="javaScript:void(0);" onclick="gfn_downloadAttFile({%=file.mydriveFileDownloadUrl%});" class="btn_filelist_name">{%=file.orgnlFlnm%}</a>
+                </span>
+        		<span class="box_filelist_btn">
+        			<a href="javaScript:void(0);" onclick="gfn_downloadAttFile({%=file.mydriveFileDownloadUrl%});" class="ico16_file download"><i class="blind">다운로드</i></a>
+        		</span>
+        	</li>
+        </ul>
+        {% } %}
+      </script>
+      <script id="cvplFomt-template-download2" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <ul class="in">
+        	<li class="template-upload">
+        		{% for (var ret in file) { %}
+        			<input type="hidden" id="file-{%=ret%}-{%=file.ncmnNo%}" value="{%=file[ret]%}"/>
+        		{% } %}
+        		<span>
+                	<a href="javaScript:void(0);" onclick="gfn_downloadAttFile({%=file.mydriveFileDownloadUrl%});" class="btn_filelist_name">{%=file.orgnlFlnm%}</a>
+                </span>
+        		<span class="box_filelist_btn">
+        			<a href="javaScript:void(0);" onclick="gfn_downloadAttFile({%=file.mydriveFileDownloadUrl%});" class="ico16_file download"><i class="blind">다운로드</i></a>
+        			<a href="javaScript:void(0);" onclick="gfn_delCurrent(this,'{%=file.fieldName%}');" class="ico16_file del">
+        				<i class="blind">삭제</i>
+        			</a>
+        		</span>
+        	</li>
+        </ul>
+        {% } %}
+      </script>
+      <script type="text/x-jsrender" id="fileBody_template">
+        <div id="fileGroup_{{:athflMdulId}}_{{:atchPaprId}}">
+        <div class="upload_btn_area">
+        	<span class="b1_sb">{{:idx}}. {{:atchPaprCn}}
+        {{if essYn == 'Y' }}
+        	<span class="essential" ><i class="blind">필수</i></span>
+        {{/if}}
+        	</span>
+        	<div class="flex_wrap flex_item_r">
+        {{if elctProfDocKndCd != '' && elctProfDocKndCd != undefinded }}
+        	<div class="box_chk-group">
+        		<span>
+        			<input type="checkbox" id="chkEcid_{{:athflMdulId}}_{{:atchPaprId}}" data-elctcrtfevdcpaprid="{{:elctProfDocKndCd}}" data-id="{{:athflMdulId}}_{{:atchPaprId}}">
+        			<label for="chkEcid_{{:athflMdulId}}_{{:atchPaprId}}">전자증명서 제출(예정)</label>
+        		</span>
+        	</div>
+        	<button style="display: none;" class="btn small type01" data-elctprofdockndcd="{{:elctProfDocKndCd}}" data-value="{{:elctProfDocKndCd}}-{{:athflMdulId}}-{{:atchPaprId}}" data-id="{{:athflMdulId}}_{{:atchPaprId}}" id="btn_reqEcid_{{:elctProfDocKndCd}}" ><span>전자증명서 삭제</span></button>
+        {{/if}}
+        {{if smplAthflDownloadUrl != '' && smplAthflDownloadUrl != undefinded }}
+        	<button class="btn small type01" name="btn_smplAthflDownloadUrlDownload" data-smplAthflDownloadUrl='{{:smplAthflDownloadUrl}}'><span>샘플서식다운로드</span></button>
+        {{/if}}
+        	</div>
+        </div>
+        {{if atchPaprDcCn != '' && atchPaprDcCn != undefinded }}<div class="type_has_text pd0 mb12 ml12"><p>{{:atchPaprDcCn}}</p></div>{{/if}}
+        {{if inFileCnt != '' && inFileCnt > 0 }}
+        <div class="box_file_wrap type2" id="dropZone_{{:athflMdulId}}_{{:atchPaprId}}">
+            <div class="box_add_file">
+                <div class="input_file_group">
+                    <button type="button" class="fake_file" id="btn_{{:athflMdulId}}_{{:atchPaprId}}">여기를 클릭</button>
+                </div>
+                <p>하여 파일을 첨부하거나 원하는 파일을 마우스로 끌어오세요.</p>
+            </div>
+        </div>
+        {{/if}}
+        <div id="fileContainer_{{:athflMdulId}}_{{:atchPaprId}}"></div>
+        {{if elctProfDocKndCd != '' && elctProfDocKndCd != undefinded }}
+        <div class="box_file_wrap type2" id="ecidArea_{{:athflMdulId}}_{{:atchPaprId}}" style="display: none;">
+            <div class="box_add_file">
+                <p id="ecidAreaP_{{:athflMdulId}}_{{:atchPaprId}}" >전자증명파일이 제출되었습니다.</p>
+            </div>
+        </div>
+        {{/if}}
+        </div>
+      </script>
+      <script type="text/x-jsrender" id="fileBody_template_view">
+        <div id="fileGroup_{{:athflMdulId}}_{{:atchPaprId}}">
+        <div class="upload_btn_area">
+        	<span class="b1_sb">{{:idx}}. {{:atchPaprCn}}</span>
+        	<div class="flex_wrap flex_item_r">
+        {{if elctProfDocKndCd != '' && elctProfDocKndCd != undefinded }}
+        	<div class="box_chk-group">
+        		<span>
+        			<input type="checkbox" disabled="disabled" id="chkEcid_{{:athflMdulId}}_{{:atchPaprId}}" data-elctcrtfevdcpaprid="{{:athflMdulId}}" data-id="{{:athflMdulId}}_{{:atchPaprId}}">
+        			<label for="chkEcid_{{:athflMdulId}}_{{:atchPaprId}}">전자증명서 제출(예정)</label>
+        		</span>
+        	</div>
+        	<button style="display: none;" class="btn small type01" data-elctprofdockndcd="{{:elctProfDocKndCd}}" data-value="{{:elctProfDocKndCd}}-{{:athflMdulId}}-{{:atchPaprId}}" data-id="{{:athflMdulId}}_{{:atchPaprId}}" id="btn_reqEcid_{{:elctProfDocKndCd}}" ><span>전자증명서 삭제</span></button>
+        {{/if}}
+        {{if smplAthflDownloadUrl != '' && smplAthflDownloadUrl != undefinded }}
+        	<button class="btn small type01" name="btn_smplAthflDownloadUrl" data-smplathfldownloadurl='{{:smplAthflDownloadUrl}}'><span>샘플서식다운로드</span></button>
+        {{/if}}
+        	</div>
+        </div>
+        <div id="fileContainer_{{:athflMdulId}}_{{:atchPaprId}}">
+        {{if elctProfDocKndCd != '' && elctProfDocKndCd != undefinded }}
+        <div class="box_file_wrap type2" id="ecidArea_{{:athflMdulId}}_{{:atchPaprId}}" style="display: none;">
+            <div class="box_add_file">
+                <p id="ecidAreaP_{{:athflMdulId}}_{{:atchPaprId}}" >전자증명파일이 제출되었습니다.</p>
+            </div>
+        </div>
+        {{/if}}
+        </div>
+        </div>
+      </script>
+      <script type="text/x-jsrender" id="cvplFomtFile_info">
+        <ul class="box_list_area">
+        	<li class="txt_list">파일용량은 {{:atchFlszMb}}MB 이하이며, {{:maxFileCnt}}개 파일 업로드 가능합니다.</li>
+        	<li class="txt_list">등록 가능 파일 : {{:athflFnen}}</li>
+        </ul>
+      </script>
+      <script type="text/x-jsrender" id="cvplFomtFile_layout">
+        <div class="upload_box">
+            <p class="upload_tl"><span class="t2_sb">첨부파일</span></p>
+        	<div class="box_small_wrap" id="layoutInfo_{{:id}}"></div>
+            <div id="cvplFomtFileLayout_{{:id}}"></div>
+        </div>
+      </script>
+      <script type="text/x-jsrender" id="fileBody_template_etc_subject">
+        <div class="upload_btn_area">
+            <span class="b1_sb">{{:idx}}. {{:atchPaprCn}}</span>
+        </div>
+      </script>
+      <script type="text/x-jsrender" id="fileBody_template_etc">
+        <div id="fileGroup_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}">
+        <div class="box_btn_wrap type3">
+            <div class="box_table_group">
+                <div class="cell">
+                    <span class="box_ipt">
+                        <input type="text" class="input_txt" title="기타 첨부파일명을 입력해 주세요." value="" placeholder="파일명을 입력해 주세요." id="fileTxt_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}" name="fileTxt_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}">
+                        <button type="reset" class="ico16_delete"><span class="blind">삭제</span></button>
+                    </span>
+                </div>
+            </div>
+            <a href="#none" class="btn medium ico_line_minus type_r type02" onclick="gfn_delCurrent(this,'{{:fieldName}}','etc')">삭제</a>
+            <a href="#none" class="btn medium ico_line_plus type02" onclick="gfn_addEtc(this,'{{:fieldName}}')">추가</a>
+        </div>
+        <div class="box_file_wrap type2" id="dropZone_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}">
+            <div class="box_add_file">
+                <div class="input_file_group">
+                    <button type="button" class="fake_file" id="btn_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}">여기를 클릭</button>
+                </div>
+                <p>하여 파일을 첨부하거나 원하는 파일을 마우스로 끌어오세요.</p>
+            </div>
+        </div>
+        <div id="fileContainer_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}" ></div>
+        <div>
+      </script>
+      <script type="text/x-jsrender" id="fileBody_template_etc_view">
+        <div id="fileGroup_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}">
+        <div class="box_btn_wrap type3">
+            <div class="box_table_group">
+                <div class="cell">
+                    <span class="box_ipt">
+                        <input type="text" class="input_txt" readOnly title="기타 첨부파일명을 입력해 주세요." value="" placeholder="파일명을 입력해 주세요." id="fileTxt_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}" name="fileTxt_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}">
+                        <button type="reset" class="ico16_delete"><span class="blind">삭제</span></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="fileContainer_{{:athflMdulId}}_{{:atchPaprId}}_etc_{{:currentCnt}}" ></div>
+        <div>
+      </script>
+      <script>
+        (function (f, d, k, h) {
+          var b;
+          var a = m() + "ver=" + c(d);
+          g();
+
+          function e() {
+            var o = document.getElementsByTagName(f)[0];
+            var n = document.createElement(f);
+            n.async = true;
+            n.charset = "utf-8";
+            n.src = a;
+            o.parentNode.insertBefore(n, o);
+          }
+
+          function c(n) {
+            var o = new Date().getTime();
+            var p = n * 1000 * 60;
+            return n > 0 ? Math.floor(o / p) * p : o;
+          }
+
+          function g() {
+            var n = l();
+            if (!n) {
+              return false;
+            }
+            n.open("GET", a, true);
+            n.withCredentials = h;
+            n.send(null);
+            n.onload = function () {
+              j();
+              e();
+            };
+            n.onerror = n.onabort = function () {
+              j();
+            };
+            i(function () {
+              n.abort();
+            }, k);
+          }
+
+          function l() {
+            var q;
+
+            var o = [
+              function () {
+                return new XDomainRequest();
+              },
+              function () {
+                return new XMLHttpRequest();
+              },
+              function () {
+                return new ActiveXObject("Msxml2.XMLHTTP");
+              },
+              function () {
+                return new ActiveXObject("Msxml3.XMLHTTP");
+              },
+              function () {
+                return new ActiveXObject("Microsoft.XMLHTTP");
+              },
+            ];
+
+            for (var n = 0; n < o.length; n++) {
+              try {
+                q = o[n]();
+              } catch (p) {
+                continue;
+              }
+              break;
+            }
+            return q;
+          }
+
+          function i(o, n) {
+            b = setTimeout(o, n);
+          }
+
+          function j() {
+            if (b) {
+              clearTimeout(b);
+              b = null;
+            }
+          }
+        })("script", 60, /*{{timeout}}*/ 2000, /*{{withCredentials}}*/ false);
+      </script>
+    </div>
+
+    <ul
+      id="ui-id-1"
+      tabindex="0"
+      class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"
+      unselectable="on"
+      style="display: none"
+    ></ul>
+    <div
+      role="status"
+      aria-live="assertive"
+      aria-relevant="additions"
+      class="ui-helper-hidden-accessible"
+    ></div>
+  </body>
+</html>

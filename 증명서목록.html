@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://m.work24.go.kr/wk/p/a/1200/resumeMng.do -->
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- 헤더에 csrf토큰 -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link
+      rel="icon"
+      href="https://m.work24.go.kr/cm/static/images/work24_logo_ico.png"
+    />
+    <!-- favicon -->
+    <link rel="stylesheet" href="./resources/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./resources/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./resources/style.css" />
+    <!-- 공통 CSS -->
+    <!-- 공통 퍼블리싱UI JS -->
+
+    <title>이력서/자기소개서 관리</title>
+
+    <script type="text/javascript">
+      var _contextPath = "/wk";
+      var _prgmId = "";
+      var _menuId = "EBG020000000551";
+    </script>
+  </head>
+  <body style="">
+
+    <div id="wrap" class="person">
+      </div>
+      <section id="hpwkpa1300p05" class="full_pop middle full_01 pop-scroll-t on" tabindex="0" style="display: block;"><!-- 팝업open : class="on"추가, small : 640px, middle : 800px, large : 1040px 로 각각 클래스 적용  -->
+        <!-- 헤더 -->
+        <header class="head">
+          <!-- 타이틀 -->
+          <h1 class="h2_sb">증명서 발급목록</h1>
+          <!--// 타이틀 -->
+        </header>
+        <!--// 헤더 -->
+      
+        <form id="regFrm" name="regFrm" action="/wk/p/a/1300/registerJobAbl.do" method="post">
+          <input type="hidden" name="jhntMbn" id="jhntMbn" value="0000007849222">
+          <input type="hidden" name="tmplSeqno" id="tmplSeqno" value="1">
+          <input type="hidden" name="anlyTrgtSevl" id="anlyTrgtSevl" value="1">		<!-- 분석대상구분값 1:이력서 2:자소서 -->
+      
+          <input type="hidden" id="empHopeJobCont" value="하루종일 컴퓨터에 빠지고싶습니다.|">
+          <input type="hidden" id="eduInfoCont" value="컴퓨터공학전공|">
+          <input type="hidden" id="licenseInfoCont" value="어로기능사|컴퓨터그래픽스운용기능사|컴퓨터활용능력1급|정보처리기사|">
+          <input type="hidden" id="jobTrainCont" value="퍼블릭 클라우드 개발을 위한 AWS 클라우드 과정|유전자데이터로 업무혁신 이루기|AI로 변화되는 미래_인공지능을 모르면 바보가 된다|">
+          <input type="hidden" id="carrerInfoCont" value="||">
+          <input type="hidden" id="prjtInfoCont" value="">
+          <input type="hidden" id="selfIntroCont" value="">
+        
+          <!-- 본문 컨텐츠 -->
+          <div class="cont">  
+            <div class="loading" style="display: none;">
+              <div class="img ico48_searchWait mt24"></div>
+              <div class="box_file_progress type_no_bd on">						
+                <div class="progressbar">
+                  <span class="progress"></span>
+                </div>
+                <div class="progress_num_area">								
+                  <div class="progress_num" style="color: rgb(77, 101, 225);">100</div>
+                </div>
+              </div>
+              <p class="b1_r">직무능력을 분석하고 있습니다.</p>
+            </div>
+            
+            <div class="result" style="">
+              
+          
+              <!-- tableArea -->
+              <div class="box_table_wrap mt40 list">
+                <article class="box_form_content mt24">
+                  <button type="button" class="btn btn_round type01" onclick="fn_chngDiv('0')" ;="" id="btn_main">전체</button>
+                 <button type="button" class="btn btn_round type02" onclick="fn_chngDiv('1')" ;="" id="btn_sub">직업훈련</button>
+                 <button type="button" class="btn btn_round type02" onclick="fn_chngDiv('2')" ;="" id="btn_sub">졸업증</button>
+                 <button type="button" class="btn btn_round type02" onclick="fn_chngDiv('3')" ;="" id="btn_sub">어학성적</button>
+                  <div class="ai_peronwrap mt16 div_0" style="">
+                          <div class="recommand_list prototype_list career">
+                                      <a href="#none" class="a_block" onclick="fn_goEmpDetail('VALIDATION', 'K120612405310020');">
+                                        <div class="tit">경력증명서</div>
+                                        <span class="recruit_info">
+                                          한국고용정보원 고용보험이력 발급
+                                        </span>
+                                      </a>
+                                    </div>
+                          </div>
+                          <div class="ai_peronwrap mt16 div_0" style="">
+                            <div class="recommand_list prototype_list certificate">
+                                      <a href="#none" class="a_block" onclick="fn_goEmpDetail('VALIDATION', 'K120612405310020');">
+                                        <div class="tit">자격증</div>
+                                        <span class="recruit_info">
+                                          국가,민간 자격증 발급
+                                        </span>
+                                      </a>
+                                    </div>
+                          </div>
+                            <div class="ai_peronwrap mt16 div_0" style="">
+                              <div class="recommand_list prototype_list toeic">
+                                        <a href="토익성적증명서.html" class="a_block" onclick="fn_goEmpDetail('VALIDATION', 'K120612405310020');">
+                                          <div class="tit">TOEIC 성적증명서</div>
+                                          <span class="recruit_info">
+                                            한국TOEIC위원회 성적증명서 발급
+                                          </span>
+                                        </a>
+                                      </div>
+                        </div>
+                        <div class="ai_peronwrap mt16 div_0" style="">
+                          <div class="recommand_list prototype_list college">
+                                    <a href="졸업증명서.html" class="a_block" onclick="fn_goEmpDetail('VALIDATION', 'K120612405310020');">
+                                      <div class="tit">대학교 졸업증명서</div>
+                                      <span class="recruit_info">
+                                        졸업한 대학교의 졸업증명서 발급
+                                      </span>
+                                    </a>
+                                  </div>
+                      </div>
+                      <div class="ai_peronwrap mt16 div_0" style="">
+                        <div class="recommand_list prototype_list tocit">
+                                  <a href="#none" class="a_block" onclick="fn_goEmpDetail('VALIDATION', 'K120612405310020');">
+                                    <div class="tit">정보통신기획평가원</div>
+                                    <span class="recruit_info">
+                                      TOCIT 성적 증명서
+                                    </span>
+                                  </a>
+                                </div>
+                    </div>
+                </article>
+              </div>
+              <!-- //tableArea -->
+            </div>
+          </div>
+          <!--// 본문 컨텐츠 -->
+        </form>
+      
+        <!-- 버튼 -->
+        <div class="box_btn_wrap flex_al_r">
+          <a href="증명서관리.html" class="btn big type02 closed">닫기</a>
+          
+        </div>
+        <!--// 버튼 -->
+      
+        <!-- 닫기 -->
+        <a href="증명서관리.html" class="closed">
+          <span class="blind">팝업 닫기</span>
+        </a>
+        <!--// 닫기 -->
+      </section>
+  </body>
+</html>
